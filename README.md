@@ -1,7 +1,7 @@
 # JS-TIPS
 JavaScript Tips, Tricks, and Techniques.  Moderate to intermediate level of knowledge, overall.
 
-1. Fundamentals
+## Fundamentals
 1. What is Javascript?
 Javascript is basically scripting language used to make web pages
 more interactive as it can be inserted into HTML.
