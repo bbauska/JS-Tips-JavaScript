@@ -1,7 +1,7 @@
 <h1 id="js-tips">JS-TIPS (1st 151 things to learn)</h1>
 <h4>JavaScript Tips, Tricks, and Techniques.  Moderate to intermediate level of knowledge, overall.</h4>
 
-<h3>Fundamentals</h3>
+<h2 id="1-fundamentals">1. Fundamentals</h2>
 <ol type="1">
   <li>What is Javascript?<br/>
   Javascript is basically scripting language used to make web pages
@@ -83,7 +83,7 @@
       <li>Segregated external JavaScript files are cached by browsers and can speed up page load times.</li>
       <li>These small js files can be minified to reduce the size and make it not readable 
 	  by humans, using Google closure or YUI Compressor or other.</li>
-      <ol>Many popular JavaScript libraries are available as hosted on content delivery networks 
+      <li>Many popular JavaScript libraries are available as hosted on content delivery networks 
 	  (cdn) and you can simply point to them using the URL in the src, this avoids copying the 
 	  js file to local folder.</li>
       <li>Using external JS you can take benefits of advanced tools such as RequireJS or CommonJS 
@@ -96,13 +96,13 @@
     will generate error. e.g.<br/>
       var pratik;<br/>
       var praTik;<br/>
-    In above case pratik and praTik will be considered as different variables.</li.
+    In above case pratik and praTik will be considered as different variables.</li>
   <li>Is Semicolon compulsory in Javascript at end of the statement?<br/>
     No, it is not necessary to use semicolon at end of the statement still it will be considered 
 	as valid statement.</li>
   <li>What are different data types in Javascript?<br/>
     Below are basic data types in Javascript:<br/>
-    Primitive Data Types:
+    <b>Primitive Data Types:</b>
 	<ul style="list-style-type="square">
       <li>Number: Represent numeric values, both integer and float.</li>
 	  <li>String: Sequence of characters are represented using String.</li>
@@ -110,7 +110,7 @@
 	  <li>Undefined: Represent undefined value.</li>
 	  <li>Null: Represent null.</li>
 	</ul>
-	Non-Primitive Data Types:
+	<b>Non-Primitive Data Types:</b>
 	<ul style="list-style-type="disc">
       <li>Object: Represent more complex data structure.</li>
 	  <li>Array: Represent group of elements.</li>
@@ -149,6 +149,10 @@
 	  <li>Mithril</li>
 	</ul>
   </li>
+</ol>
+
+<h2 id="2-vars">2. Variables, Operators and Statements</h2>
+<ol start="15">
   <li>Explain variable in Javascript.<br/>
     Basically, variable is used for temporary storage of data. It has name, value and 
 	memory address. You have to declare variable before using it for storing data.<br/>
@@ -296,41 +300,41 @@ JavaScript variable names are case sensitive.
 Global variable can be created by many developers resulting in
 duplicate global variables.
 Duplicate variable can overwrite the value of your variable.
-3. Functions
-37. What are functions?
-Function is a collection of statements which can be used anywhere in
-program, it is used to perform specific task.
-38. What are types of functions in Javascript?
-Below are the types of functions:
-Named: Functions which have name at the time of definition are
-named functions.
-e.g.
-function print() {
-​ console.log(“This is named function!!!”);
-}
-Anonymous: Functions which do not have names are anonymous
-functions.
-var print=function() {
-​ console.log(“This is anonymous function!!!”);
-}
-39. What are frequently used built-in global functions?
-Alert(), prompt(),isNan(), eval(), isFinite(),confirm(), parseInt(),
-parseFloat(), escape(), unescape() are most frequently used built-in
-global functions.
-40. What is isNaN?
-It is a function which determine whether or not value is an illegal
-number. The isNan() method returns true if the passed value is
-NaN(Not a number) and is of type number, else it returns false.
-e.g.
-Input: ‘213’
-Output: false
-Input:’hello’
-Output: true
-41. What is parseInt?
-The parseInt is a function which parses the string and returns the
-integer value found in string.
-42. What is alert?
-The alert() function is used to display information in message box.
+<h2 id="3-functions">3. Functions</h2>
+<ol start="37">
+  <li>What are functions?<br/>
+    Function is a collection of statements which can be used anywhere in
+    program, it is used to perform specific task.
+    </li>
+  <li>What are types of functions in Javascript?<br>
+    Below are the types of functions:<br>
+    <b>Named</b>: Functions which have name at the time of definition are named functions.<br/>
+    e.g. function print() {<br>
+  ​ console.log(“This is named function!!!”);<br/>
+   }<br/>
+   <b>Anonymous</b>: Functions which do not have names are anonymous functions.<br/>
+   var print=function() {<br/>
+  ​ console.log(“This is anonymous function!!!”);<br/>
+   }</li>
+  <li>What are frequently used built-in global functions?<br/>
+    Alert(), prompt(),isNan(), eval(), isFinite(),confirm(), parseInt(),
+    parseFloat(), escape(), unescape() are most frequently used built-in
+    global functions.</li>
+  <li>What is isNaN?<br/>
+    It is a function which determine whether or not value is an illegal 
+	number. The isNan() method returns true if the passed value is 
+	NaN(Not a number) and is of type number, else it returns false.<br/>
+    e.g.<br>
+    Input: ‘213’<br/>
+    Output: false<br/>
+    Input:’hello’<br/>
+    Output: true</li>
+  <li>What is parseInt?<br/>
+    The parseInt is a function which parses the string and returns the integer value found in string.</li>
+  <li>What is alert?<br/>
+    The alert() function is used to display information in message box.</li>
+</ol>
+
 43. What is confirm?
 The confirm() function displays a message box with two buttons, Ok
 and cancel. When you click the Ok button, the function returns true.
@@ -424,7 +428,8 @@ four escape sequences representing UTF-8 encoding of character.
 54. What is decodeURI() method?
 The decodeURI() method decodes a Uniform Resource Identifier
 previously created by encodeURI().
-4. Events
+
+<h2 id="4-events">4. Events</h2>
 55. What are Events?
 Events are actions or occurrences that happen in the system you are
 programming to which you can respond in some way. Events are
@@ -650,7 +655,8 @@ A good example is a series of list items <li> — You can set
 the click event listener on the parent <ul>, if you want each one of
 them<li> to pop up a message when clicked and it will bubble to
 the list items.
-5. Objects
+
+<h2 id="5-objects">5. Objects</h2>
 65. What is Object?
 The object is collection of properties and methods.
 Object in Javascript are variables as well. Object can have properties
@@ -831,7 +837,9 @@ This enables asynchronous methods return values like synchronous
 methods: instead of immediately returning final value, the
 asynchronous method returns a promise to provide the value at some
 point in the future.
-What is Browser Object Model?
+<h2 id="6-bom">6. Browser Object Model</h2>
+
+82. What is Browser Object Model?
 The browser object model (BOM) is a hierarchy of browser objects
 that are used to manipulate methods and properties associated with
 the Web browser itself.
@@ -924,7 +932,8 @@ window object.
 Location object provides methods like assign(), reload and replace().
 96. How to print a web page?
 The window.print() will print the current web page when invoked.
-7. Document Object Model
+
+<h2 id="7-dom">7. Document Object Model</h2>
 97. What is Document Object?
 The Document object represents HTML document that is displayed in
 window. Document object has properties which allows access and
@@ -1050,6 +1059,8 @@ for...of loops will loop over NodeList objects accurately.
 111. What are frames?
 Frame divides page into section and in each section different page
 can be displayed.
+
+<h2 id="8-cookies">8. Cookies</h2>
 What is cookie?
 The Cookies are small items of data that consists of name and value
 pair. Cookies are stored on your computer so that it can be accessed
@@ -1173,7 +1184,8 @@ Session Storage : It is similar to local storage; the only difference is
 data stored in local storage has no expiration time whereas data
 stored in session storage gets cleared when the page session ends.
 Session Storage will cleared when the browser is closed.
-9. Form validation
+
+<h2 id="9-formValidation">9. Form validation</h2>
 121. What is form validation?
 Form validation verifies whether all fields in form are filled
 according to required format.
@@ -1274,7 +1286,8 @@ return false;
 }
 return true;
 }
-10. Error and Exception Handling
+
+<h2 id="10-errorHandling">10. Error and Exception Handling</h2>
 131. What is error object?
 When an exception occurs, an object representing the error is
 constructed and thrown.
@@ -1324,7 +1337,8 @@ exception.
 e.g.
 throw “error occurred!!”;
 throw new SyntaxError(“syntax error occurred!!”);
-11. Debugging
+
+<h2 id="11-debug">11. Debugging</h2>
 136. What is debugging?
 Debugging is the process of detecting and fixing existing and
 potential errors in software code that can cause it to behave
@@ -1386,7 +1400,8 @@ analysis are JSLint and JSHint, the second being a fork of the first
 one. There are however many different tools that try to achieve the
 same goal and you might find something more suited to your own
 needs
-12. AJAX overview
+
+<h2 id="12-ajax">12. AJAX overview</h2>
 146. What is AJAX?
 AJAX stands for Asynchronous Javascript and XML. It is collection of
 related technologies like Javascript, XML, JSON, HTML and
