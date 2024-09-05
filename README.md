@@ -192,7 +192,7 @@ Operators are types of operators.
 Below are types of operators:
 • Arithmetic operators : Arithmetic operators are used to
 perform arithmetic between variables and values.
-Addition (+), Subtraction (-), Multiplication (*), Division
+Addition (+), Subtraction (&dash;), Multiplication (&ast;), Division
 (/), Modulus (%), Increment (++) and Decrement (--)
 are arithmetic operators.
 • Assignment operators : Assignment operators are used
@@ -201,12 +201,12 @@ are Assignment operators.
 • Comparison operators : Comparison operators are used
 to compare variables or values. Equal to (==), equal
 value and type (===), not equal (!=), not equal value
-or type (!==),less than (<), greater than (>), less than
-or equal to (<=) and greater than or equal to (>=) are
+or type (!==),less than (&lt;), greater than (&gt;), less than
+or equal to (&lt;=) and greater than or equal to (&gt;=) are
 comparison operators.
 • Logical operators : Logical operators allow program to
 make decision based on multiple conditions logic. Logical
-operators used for decision making are And (&&), or (||),
+operators used for decision making are And (&amp;&amp;), or (&vert;&vert;),
 not (!).
 • Conditional operator : Conditional operators are used to
 assign values to variable conditionally. (condition) ?
@@ -272,18 +272,18 @@ Escape characters (backslash) is used before special characters like
 ampersand, single quotes, double quotes and apostrophes to display
 them.
 e.g.
-console.log(‘I\’m Pratik Bandal’); ☐ Correct syntax
-console.log(‘I’m Pratik Bandal’); ☐ Syntax error
+console.log(‘I\’m Brian Bauska’); ☐ Correct syntax
+console.log(‘I’m Brian Bauska’); ☐ Syntax error
 In above example, if backslash is not used before single quotes this
 line will give syntax error.
 33. How to create array in javascript?
 You can define arrays using the array literal as follows-
-var a = [];
-var b = [1, 2, 3];
+var a = &lbrack;&rbrack;;
+var b = &lbrack;1, 2, 3&rbrack;;
 34. How to create three dimensional array?
 You can define three dimentionalarray arrays using the array
 follows:
-var threedimentionalarray = [[[]]];
+var threedimentionalarray = &lbrack;&lbrack;&lbrack;&rbrack;&rbrack;&rbrack;;
 35. What are the variable naming conventions in JavaScript?
 The following rules are to be followed while naming variables in
 JavaScript:
