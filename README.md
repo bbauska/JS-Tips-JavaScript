@@ -26,13 +26,13 @@
         Javascript is not dependant on network unless backend data is required to be processed. 
         Need to compile Javascript on the client–side as it is interpreted directly by web browsers.</li>
       <li>Interoperability : Javascript can be inserted into web page regardless of extension. 
-	    Within other languages such as Perl and PHP it can be used inside the script.</li>
+	Within other languages such as Perl and PHP it can be used inside the script.</li>
       <li>Rich interfaces : Javascript has vast libraries like (charts, drag and drop, sliders etc.) 
-	    which enables you to provide attractive look to your website.</li>
+	which enables you to provide attractive look to your website.</li>
       <li>Reduction in server load : Since Javascript is client-side scripting language it reduces 
-	    load on website servers as many operations can be performed at client-side which reduces 
-		load on server and enables it to serve to more users.</li>
-	  </ol></li>
+        load on website servers as many operations can be performed at client-side which reduces 
+        load on server and enables it to serve to more users.</li>
+    </ol></li>
   <li>What are disadvantages of Javascript?
     <ol type="a">
       <li>Client-side security : JavaScript code executes in users computer hence in some cases 
@@ -47,16 +47,16 @@
 	specifications.</li>
   <li>Who developed Javascript?<br/>
     JavaScript was created in 1995 by Brendan Eich during his time at Netscape Communications. It 
-	was inspired by Java, Scheme and Self.</li>
+    was inspired by Java, Scheme and Self.</li>
   <li>How to insert Javascript in Web page?<br/>
     You can use &lt;script&gt;l tag in html. &lt;script&gt; tag has type attribute which 
 	defined which code is there inside the script tag.<br/>
     You can use &lt;script&gt; element in web pages in following ways:
-	  <ol type="1">
+      <ol type="1">
         <li>In head element</li>
         <li>In body element</li>
         <li>As an external script file<li>
-	  <ol>
+	<ol>
     To use Javascript as a scripting language for web pages in &lt;head&gt; or &lt;body&gt; 
 	you can define type as “text/javascript”. e.g.,<br/>
       &lt;script type=”text/javascript”&gt;<br/>
