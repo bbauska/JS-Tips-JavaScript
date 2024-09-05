@@ -56,7 +56,7 @@
         <li>In head element</li>
         <li>In body element</li>
         <li>As an external script file<li>
-	<ol>
+      </ol>
     To use Javascript as a scripting language for web pages in &lt;head&gt; or &lt;body&gt; 
 	you can define type as “text/javascript”. e.g.,<br/>
       &lt;script type=”text/javascript”&gt;<br/>
