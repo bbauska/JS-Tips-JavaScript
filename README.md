@@ -1,7 +1,10 @@
+ <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 id="js-tips">JS-TIPS (1st 151 things to learn)</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript Tips, Tricks, and Techniques.  Moderate to intermediate level of knowledge, overall.</h4>
-
-<h2 id="1-fundamentals">1. Fundamentals</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="1-fundamentals">1. Fundamentals</h2>  <!-- 1 thru 14 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol type="1">
   <li>What is Javascript?<br/>
   Javascript is basically scripting language used to make web pages
@@ -52,7 +55,7 @@
     JavaScript was created in 1995 by Brendan Eich during his time at Netscape Communications. It 
     was inspired by Java, Scheme and Self.</li>
   <li>How to insert Javascript in Web page?<br/>
-    You can use &lt;script&gt;l tag in html. &lt;script&gt; tag has type attribute which 
+    You can use &lt;script&gt; tag in html. &lt;script&gt; tag has type attribute which 
 	defined which code is there inside the script tag.<br/>
     You can use &lt;script&gt; element in web pages in following ways:
       <ul style="list-style-type="disc">
@@ -150,8 +153,9 @@
 	</ul>
   </li>
 </ol>
-
-<h2 id="2-vars">2. Variables, Operators and Statements</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="2-vars">2. Variables, Operators and Statements</h2>  <!-- 15 thru 36 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="15">
   <li>Explain variable in Javascript.<br/>
     Basically, variable is used for temporary storage of data. It has name, value and 
@@ -185,122 +189,119 @@
   <li>What is automatic type conversion?<br/>
     When Javascript tries to operate on a wrong date type it will try to convert the 
     value to a “right” type.</li>
-</ol>
-
-22. What are operators in Javascript?
-An operator is a symbol or word which is used to perform particular
-operation.
-Arithmetic, Assignment, Comparison, Logical and Conditional
-Operators are types of operators.
-23. Explain different types of operators in Javascript.
-Below are types of operators:
-• Arithmetic operators : Arithmetic operators are used to
+  <li>What are operators in Javascript?<br/>
+    An operator is a symbol or word which is used to perform particular operation.<br/>
+    Arithmetic, Assignment, Comparison, Logical and Conditional Operators are types of operators.</li>
+  <li>Explain different types of operators in Javascript.<br/>
+    Below are types of operators:<br/>
+    <ul>
+      <li>Arithmetic operators : Arithmetic operators are used to
 perform arithmetic between variables and values.
 Addition (+), Subtraction (&dash;), Multiplication (&ast;), Division
 (/), Modulus (%), Increment (++) and Decrement (--)
-are arithmetic operators.
-• Assignment operators : Assignment operators are used
+are arithmetic operators.</li>
+      <li>Assignment operators : Assignment operators are used
 to assign values to variables. =, +=, -=, *=, /=, %=
-are Assignment operators.
-• Comparison operators : Comparison operators are used
+are Assignment operators.</li>
+      <li>Comparison operators : Comparison operators are used
 to compare variables or values. Equal to (==), equal
 value and type (===), not equal (!=), not equal value
 or type (!==),less than (&lt;), greater than (&gt;), less than
 or equal to (&lt;=) and greater than or equal to (&gt;=) are
-comparison operators.
-• Logical operators : Logical operators allow program to
+comparison operators.</li>
+      <li>Logical operators : Logical operators allow program to
 make decision based on multiple conditions logic. Logical
 operators used for decision making are And (&amp;&amp;), or (&vert;&vert;),
-not (!).
-• Conditional operator : Conditional operators are used to
+not (!).</li>
+      <li>Conditional operator : Conditional operators are used to
 assign values to variable conditionally. (condition) ?
-value1: value2 is conditional operator.
-24. What are control flow statements?
-You can change the sequence in which Javascript statements are
-executed by using control flow statements.
-Below are types of control flow statements:
-Selection statements : Selection statements use condition to
-determine which group of statements should be executed, if….else,
-if and switch are selection statements.
-Loops : Loops allow you to execute group of statements repeatedly
-till condition is satisfied, while, do…while and for are loops.
-Jump statements : Jump statements are used to break or exit loop,
-break and continue are jump statements.
-25. What is break statement?
-Break statement stops execution of loop entirely.
-26. What is continue statement?
-Continue statement stops execution of current iteration in a loop and
-continues with next iteration of loop.
-27. What is the difference between comparing variables using "=="
-and "===" operator?
-The ‘==’ operator tests for abstract equality i.e. it does the required
-type conversions before doing the equality comparison.
-But the ‘===’ operator tests for strict equality i.e. it will not do the
-type conversion thus if the two values are not of the same type, when
-compared, it will return false.
-28. What is typeof operator?
-The typeof operator is used to get the data type of its operand. The
-operand can be either a literal or a data structure such as variable,
-function or an object.
-e.g.
-console.log(typeof somevar);
-The typeof operator returns below values as string: object, Boolean,
-function, number, string and undefined.
-29. What is variable hoisting?
-In Javascript regardless of where the actual declaration has been
-made, all variable declarations that are using var, are hoisted/lifted
-to the top of their functional/local scope (if declared inside a
-function) or to the top of their global scope (if declared outside of a
-function).
-This lifting of scopes is called hoisting.
-Hence,
-​ bla = 2;
-​ var bla;
-​ // ...is implicitly understood as:
-​ var bla;
-​ bla = 2;
-30. What is difference between undefined and null?
-The undefined means a variable has been declared but has no value
-has yet been assigned.
-On the other hand, null is basically a value which has been assigned.
-Also, undefined is a type itself (undefined) while null is an object.
-Unassigned variables are initialized with a default value of undefined
-by JavaScript or undefined can be assigned to variable through code.
-Whereas JavaScript never sets a value to null.
-That must be done programmatically.
-31. What is output of null == undefined?
-null == undefined will return true .
-However, null === undefined will return false .
-32. What are escape characters?
-Escape characters (backslash) is used before special characters like
-ampersand, single quotes, double quotes and apostrophes to display
-them.
-e.g.
-console.log(‘I\’m Brian Bauska’); ☐ Correct syntax
-console.log(‘I’m Brian Bauska’); ☐ Syntax error
-In above example, if backslash is not used before single quotes this
-line will give syntax error.
-33. How to create array in javascript?
-You can define arrays using the array literal as follows-
-var a = &lbrack;&rbrack;;
-var b = &lbrack;1, 2, 3&rbrack;;
-34. How to create three dimensional array?
-You can define three dimentionalarray arrays using the array
-follows:
-var threedimentionalarray = &lbrack;&lbrack;&lbrack;&rbrack;&rbrack;&rbrack;;
-35. What are the variable naming conventions in JavaScript?
-The following rules are to be followed while naming variables in
-JavaScript:
-You are not allowed to use any of the reserved keyword as variable
-name.
-JavaScript variable names should not begin with a numbers (0-9).
-They must start with a letter or the underscore character.
-JavaScript variable names are case sensitive.
-36. Why you should not prefer to use global variables?
-Global variable can be created by many developers resulting in
-duplicate global variables.
-Duplicate variable can overwrite the value of your variable.
-<h2 id="3-functions">3. Functions</h2>
+value1: value2 is conditional operator.</li>
+  </ul></li>
+  <li>What are control flow statements?<br/>
+    You can change the sequence in which Javascript statements are
+    executed by using control flow statements.
+	Below are types of control flow statements:<br/>
+	Selection statements : Selection statements use condition to
+	determine which group of statements should be executed, if….else,
+	if and switch are selection statements.
+	Loops : Loops allow you to execute group of statements repeatedly
+	till condition is satisfied, while, do…while and for are loops.
+	Jump statements : Jump statements are used to break or exit loop,
+	break and continue are jump statements.</li>
+  <li>What is break statement?<br/>
+    Break statement stops execution of loop entirely.</li>
+  <li>What is continue statement?<br/>
+    Continue statement stops execution of current iteration in a loop and
+	continues with next iteration of loop.</li>
+  <li>What is the difference between comparing variables using "==" and "===" operator?
+    The ‘==’ operator tests for abstract equality i.e. it does the required
+	type conversions before doing the equality comparison.
+	But the ‘===’ operator tests for strict equality i.e. it will not do the
+	type conversion thus if the two values are not of the same type, when
+	compared, it will return false.</li>
+  <li>What is typeof operator?<br/>
+    The typeof operator is used to get the data type of its operand. The
+	operand can be either a literal or a data structure such as variable,
+	function or an object.
+	e.g.<br/>
+	console.log(typeof somevar);<br/>
+	The typeof operator returns below values as string: object, Boolean, function, 
+	number, string and undefined.</li>
+  <li>What is variable hoisting?<br/>
+    In Javascript regardless of where the actual declaration has been
+	made, all variable declarations that are using var, are hoisted/lifted
+	to the top of their functional/local scope (if declared inside a
+	function) or to the top of their global scope (if declared outside of a
+	function).
+	This lifting of scopes is called hoisting.
+	Hence,<br/>
+	​bla = 2;<br/>
+   ​ var bla;<br/>
+    // ...is implicitly understood as:<br/>
+​    var bla;<br/>
+    bla = 2;</li>
+  <li>What is difference between undefined and null?<br/>
+    The undefined means a variable has been declared but has no value has yet been assigned.
+	On the other hand, null is basically a value which has been assigned.
+	Also, undefined is a type itself (undefined) while null is an object.
+	Unassigned variables are initialized with a default value of undefined
+	by JavaScript or undefined can be assigned to variable through code.
+	Whereas JavaScript never sets a value to null.
+	That must be done programmatically.</li>
+  <li>What is output of null == undefined?<br/>
+    null == undefined will return true.<br/>
+	However, null === undefined will return false .</li>
+  <li>What are escape characters?<br/>
+    Escape characters (backslash) is used before special characters like
+	ampersand, single quotes, double quotes and apostrophes to display
+	them.<br/>
+	e.g.<br/>
+    console.log(‘I\’m Brian Bauska’); ☐ Correct syntax<br/>
+	console.log(‘I’m Brian Bauska’); ☐ Syntax error<br/>
+    In above example, if backslash is not used before single quotes this
+	line will give syntax error.</li>
+  <li>How to create array in javascript?<br/>
+    You can define arrays using the array literal as follows-<br/>
+	var a = &lbrack;&rbrack;;<br/>
+	var b = &lbrack;1, 2, 3&rbrack;;</li>
+  <li>How to create three dimensional array?<br/>
+    You can define three dimentionalarray arrays using the array
+	follows:<br/>
+	var threedimentionalarray = &lbrack;&lbrack;&lbrack;&rbrack;&rbrack;&rbrack;;</li>
+  <li>What are the variable naming conventions in JavaScript?<br/>
+    The following rules are to be followed while naming variables in JavaScript:<br/>
+    You are not allowed to use any of the reserved keyword as variable name.
+    JavaScript variable names should not begin with a numbers (0-9).
+    They must start with a letter or the underscore character.
+    JavaScript variable names are case sensitive.</li>
+  <li>Why you should not prefer to use global variables?<br/>
+    Global variable can be created by many developers resulting in
+	duplicate global variables.
+	Duplicate variable can overwrite the value of your variable.</li>
+</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="3-functions">3. Functions</h2>  <!-- 37 thru 54 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="37">
   <li>What are functions?<br/>
     Function is a collection of statements which can be used anywhere in
@@ -429,7 +430,9 @@ four escape sequences representing UTF-8 encoding of character.
 The decodeURI() method decodes a Uniform Resource Identifier
 previously created by encodeURI().
 
-<h2 id="4-events">4. Events</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="4-events">4. Events</h2>  <!-- 55 thru 64 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 55. What are Events?
 Events are actions or occurrences that happen in the system you are
 programming to which you can respond in some way. Events are
@@ -655,8 +658,9 @@ A good example is a series of list items <li> — You can set
 the click event listener on the parent <ul>, if you want each one of
 them<li> to pop up a message when clicked and it will bubble to
 the list items.
-
-<h2 id="5-objects">5. Objects</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="5-objects">5. Objects</h2>  <!-- 65 - 81 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 65. What is Object?
 The object is collection of properties and methods.
 Object in Javascript are variables as well. Object can have properties
@@ -837,8 +841,9 @@ This enables asynchronous methods return values like synchronous
 methods: instead of immediately returning final value, the
 asynchronous method returns a promise to provide the value at some
 point in the future.
-<h2 id="6-bom">6. Browser Object Model</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="6-bom">6. Browser Object Model</h2>  <!-- 82 - 96 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 82. What is Browser Object Model?
 The browser object model (BOM) is a hierarchy of browser objects
 that are used to manipulate methods and properties associated with
@@ -932,8 +937,9 @@ window object.
 Location object provides methods like assign(), reload and replace().
 96. How to print a web page?
 The window.print() will print the current web page when invoked.
-
-<h2 id="7-dom">7. Document Object Model</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="7-dom">7. Document Object Model</h2>  <!-- 97 thru 111 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 97. What is Document Object?
 The Document object represents HTML document that is displayed in
 window. Document object has properties which allows access and
@@ -1059,8 +1065,9 @@ for...of loops will loop over NodeList objects accurately.
 111. What are frames?
 Frame divides page into section and in each section different page
 can be displayed.
-
-<h2 id="8-cookies">8. Cookies</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="8-cookies">8. Cookies</h2>  <!-- 112 thru 120 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 What is cookie?
 The Cookies are small items of data that consists of name and value
 pair. Cookies are stored on your computer so that it can be accessed
@@ -1184,8 +1191,9 @@ Session Storage : It is similar to local storage; the only difference is
 data stored in local storage has no expiration time whereas data
 stored in session storage gets cleared when the page session ends.
 Session Storage will cleared when the browser is closed.
-
-<h2 id="9-formValidation">9. Form validation</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="9-formValidation">9. Form validation</h2>  <!-- 121 thru 130 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 121. What is form validation?
 Form validation verifies whether all fields in form are filled
 according to required format.
@@ -1286,8 +1294,9 @@ return false;
 }
 return true;
 }
-
-<h2 id="10-errorHandling">10. Error and Exception Handling</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="10-errorHandling">10. Error and Exception Handling</h2>  <!-- 131 thru 135 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 131. What is error object?
 When an exception occurs, an object representing the error is
 constructed and thrown.
@@ -1337,8 +1346,9 @@ exception.
 e.g.
 throw “error occurred!!”;
 throw new SyntaxError(“syntax error occurred!!”);
-
-<h2 id="11-debug">11. Debugging</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="11-debug">11. Debugging</h2>  <!-- 136 thru 145 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 136. What is debugging?
 Debugging is the process of detecting and fixing existing and
 potential errors in software code that can cause it to behave
@@ -1400,8 +1410,9 @@ analysis are JSLint and JSHint, the second being a fork of the first
 one. There are however many different tools that try to achieve the
 same goal and you might find something more suited to your own
 needs
-
-<h2 id="12-ajax">12. AJAX overview</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="12-ajax">12. AJAX overview</h2>  <!-- 146 thru 151 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 146. What is AJAX?
 AJAX stands for Asynchronous Javascript and XML. It is collection of
 related technologies like Javascript, XML, JSON, HTML and
@@ -1472,23 +1483,28 @@ xmlHttpRequest.onreadystatechange=(e)=>{
 151. What are HTTP status codes?
 HTTP status code are the standard response code given by web site
 servers. These codes help identify the cause of problem when web
-page or other resource does not load properly.
-4xx Client Error:
+page or other resource does not load properly.<br/>
+
+<b>4xx Client Error:</b><br/>
 This category of HTTP status code includes those where request for a
 web page or other resource contains bad syntax or cannot be filled
 for some other reason, presumably due to fault of client.
-Some common client error HTTP status codes are 404 (Not Found),
-403 (Forbidden) and 400 (Bad request).
-5xx Client Error:
+
+Some common client error HTTP status codes are<br/>
+<b>404 (Not Found)</b>, <b>403 (Forbidden) and 400 (Bad request).</b>
+
+<b>5xx Client Error:</b><br/>
 This category of HTTP status code include those where the request
 for a web page or other resource is understood by the websites server
-but is incapable of filling it for some reason.
-Some common server error HTTP status codes are 500 (Internal
-server error), 503 (Service Unavailable) and 502 (Bad Gateway).
-There are also 1xx, 2xx and 3xx code that are informational, confirm
+but is incapable of filling it for some reason.<br/>
+Some common server error HTTP status codes are<br/>
+
+<b>500 (Internal server error), 503 (Service Unavailable) and 502 (Bad Gateway).</b>
+There are also <b>1xx, 2xx and 3xx</b> code that are informational, confirm
 success or dictate redirection which are not errors, so you shouldn’t
-be alerted about them.
-You may also like to read (available on amazon):
+be alerted about them.<br/>
+
+You may also like to read (available on amazon):<br/>
 Angular Interview Questions and Answers: Includes Angular 8, 7, 6, 5, 4
 and 2
 Core Java Interview Questions and Answers: Includes Java 12, 11, 10, ...
