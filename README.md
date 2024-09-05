@@ -1,112 +1,94 @@
-# JS-TIPS
-JavaScript Tips, Tricks, and Techniques.  Moderate to intermediate level of knowledge, overall.
+# JS-TIPS (1st 151 things to learn)
+#### JavaScript Tips, Tricks, and Techniques.  Moderate to intermediate level of knowledge, overall.
 
-## Fundamentals
-1. What is Javascript?
-Javascript is basically scripting language used to make web pages
-more interactive as it can be inserted into HTML.
-Javascript is understood by all modern web browsers.
-2. What are features of Javascript?
-Input validation : Javascript allows you to validate user input
-before sending it to server for backend operations.
-Control over browser : Javascript gives more control over browser
-due to which you can change the background colour of this page as
-well as the text on the browser's status bar.
-Detect browser and OS : Javascript enables you to detect user’s
-browser and OS due to which you can perform platform dependant
-operations.
-Handling date and time : Javascript enables you to write code
-based users date and time, it also enables you to capture users date
-and time as user and server may be in different time zone.
-Generating HTML on fly : Javascript enables you to dynamically
-generate HTML.
-3. What are advantages of Javascript?
-Faster speed : JavaScript is fast because it run immediately within
-the client-side browser. Javascript is not dependant on network
-unless backend data is required to be processed. Need to compile
-Javascript on the client–side as it is interpreted directly by web
-browsers.
-Interoperability : Javascript can be inserted into web page
-regardless of extension. Within other languages such as Perl and PHP
-it can be used inside the script.
-Rich interfaces : Javascript has vast libraries like (charts, drag and
-drop, sliders etc.) which enables you to provide attractive look to
-your website.
-Reduction in server load : Since Javascript is client-side scripting
-language it reduces load on website servers as many operations can
-be performed at client-side which reduces load on server and enables
-it serve to more users.
-4. What are disadvantages of Javascript?
-Client-side security : JavaScript code executes in users computer
-hence in some cases it can be manipulated for malicious purpose.
-Browser support : JavaScript is sometimes interpreted differently by
-different browsers.
-5. What is difference between Javascript and ECMAScript?
-JavaScript is a scripting language that has been formed by keeping
-ECMAScript specification at its core.
-ECMAScript is nothing but a standard or specification defined in
-order to create different scripting languages and one of them is
-JavaScript.
-Javascript, Jscript and ActionScript are few scripting languages that
-follow ECMAScript specifications.
-6. Who developed Javascript?
-JavaScript was created in 1995 by Brendan Eich during his time at
-Netscape Communications. It was inspired by Java, Scheme and Self.
-7. How to insert Javascript in Web page?
-You can use <script> tag in html. <script> tag has type attribute
-which defined which code is there inside the script tag.
-You can use <script> element in web pages in following ways:
-• In head element
-• In body element
-• As an external script file
-To use Javascript as a scripting language for web pages in <head>
-or <body> you can define type as “text/javascript”.
-e.g.
-<script type=”text/javascript”>
-</script>
-Sometime you may need to use same Javascript code in several web
-pages, in such cases you can store Javascript code in external file and
-save file as <filename>.js file.
-Then this script can be made available to web page using src
-attribute of <script> tag
-e.g.
-<script src=”external file URL”>
-</script>
-8. What are advantages of using external javascript?
-Placing JavaScript code in external js files has few advantages over
-inline scripts:
-Segregating HTML and JavaScript code helps to manage the code
-base better.
-To improve development output designers can work along with
-coders in parallel without code conflicts.
-This approach also works well with modern source code version
-control systems like GIT and SVN.
-Each of these files can maintain history.
-Segregating HTML and JavaScript makes code as well as HTML is
-easily readable.
-Segregated external JavaScript files are cached by browsers and can
-speed up page load times
-These small js files can be minified to reduce the size and make it not
-readable by humans, using Google closure or YUI Compressor or
-other.
-Many popular JavaScript libraries are available as hosted on content
-delivery networks (cdn) and you can simply point to them using the
-URL in the src, this avoids copying the js file to local folder.
-Using external Js you can take benifits of advanced tools such as
-RequireJS or CommonJS to load these scripts logically and
-modularly
-9. Javascript is case sensitive language?
-Yes, Javascript is case sensitive scripting language. Variables,
-functions, keywords must have consistent casing otherwise it will not
-be recognized by Javascript and will generate error.
-e.g.
-​ var pratik;
-​ var praTik;
-In above case pratik and praTik will be considered as different
-variables.
-10. Is Semicolon compulsory in Javascript at end of the statement?
-No, it is not necessary to use semicolon at end of the statement still it
-will be considered as valid statement.
+<h3>Fundamentals</h3>
+<ol type="1">
+  <li>What is Javascript?<br/>
+  Javascript is basically scripting language used to make web pages
+  more interactive as it can be inserted into HTML.
+  Javascript is understood by all modern web browsers.</li>
+  <li>What are features of Javascript?<br/>
+    a. Input validation : Javascript allows you to validate user input before sending it 
+	  to server for backend operations.<br/>
+    b. Control over browser : Javascript gives more control over browser due to which you can 
+	  change the background colour of this page as well as the text on the browser's status bar.<br/>
+    c. Detect browser and OS : Javascript enables you to detect user’s browser and OS due to 
+	  which you can perform platform dependant operations.<br/>
+    d. Handling date and time : Javascript enables you to write code based users date and time, 
+	  it also enables you to capture users date and time as user and server may be in different 
+	  time zone.<br/>
+    e. Generating HTML on fly : Javascript enables you to dynamically generate HTML.</li>
+  <li>What are advantages of Javascript?<br/>
+    1. Faster speed : JavaScript is fast because it run immediately within the client-side browser. 
+	  Javascript is not dependant on network unless backend data is required to be processed. 
+	  Need to compile Javascript on the client–side as it is interpreted directly by web browsers.
+    2. Interoperability : Javascript can be inserted into web page regardless of extension. 
+	  Within other languages such as Perl and PHP it can be used inside the script.<br/>
+    3. Rich interfaces : Javascript has vast libraries like (charts, drag and drop, sliders etc.) 
+	  which enables you to provide attractive look to your website.<br/>
+	4. Reduction in server load : Since Javascript is client-side scripting language it reduces 
+	  load on website servers as many operations can be performed at client-side which reduces 
+	  load on server and enables it to serve to more users.<br/></li>
+	<li>What are disadvantages of Javascript?<br/>
+    a. Client-side security : JavaScript code executes in users computer hence in some cases 
+	  it can be manipulated for malicious purpose.<br/>
+    b. Browser support : JavaScript is sometimes interpreted differently by different browsers.</li>
+
+  <li>What is difference between Javascript and ECMAScript?<br/>
+    JavaScript is a scripting language that has been formed by keeping ECMAScript specification 
+	at its core. ECMAScript is nothing but a standard or specification defined in order to create 
+	different scripting languages and one of them is JavaScript.<br/>
+    Javascript, Jscript and ActionScript are few scripting languages that follow ECMAScript 
+	specifications.</li>
+  <li>Who developed Javascript?<br/>
+    JavaScript was created in 1995 by Brendan Eich during his time at Netscape Communications. It 
+	was inspired by Java, Scheme and Self.</li>
+  <li>How to insert Javascript in Web page?<br/>
+    You can use &lt;script&gt;l tag in html. &lt;script&gt; tag has type attribute which 
+	defined which code is there inside the script tag.<br/>
+    You can use &lt;script&gt; element in web pages in following ways:<br/>
+	1. In head element<br/>
+	2. In body element<br/>
+	3. As an external script file<br/>
+    To use Javascript as a scripting language for web pages in &lt;head&gt; or &lt;body&gt; 
+	you can define type as “text/javascript”. e.g.
+	  &lt;script type=”text/javascript”&gt;
+      &lt;/script&gt;
+    <p>Sometime you may need to use same Javascript code in several web
+    pages, in such cases you can store Javascript code in external file and
+    save file as &lt;filename&gt;.js file.
+    Then this script can be made available to web page using src attribute of &lt;script&gt; tag e.g.<br/>
+    &lt;script src=”external file URL”&gt;
+    &lt;/script&gt;</li>
+  <li>What are advantages of using external javascript?<br/>
+    Placing JavaScript code in external js files has few advantages over inline scripts:<br/>
+    a. Segregating HTML and JavaScript code helps to manage the code base better.<br/>
+    b. To improve development output designers can work along with coders in parallel without 
+	  code conflicts.<br/>
+    c. This approach also works well with modern source code version control systems like GIT 
+	  and SVN.<br/>
+    d. Each of these files can maintain history.<br/>
+    e. Segregating HTML and JavaScript makes code as well as HTML is easily readable.<br/>
+	f. Segregated external JavaScript files are cached by browsers and can speed up page load times.
+	g. These small js files can be minified to reduce the size and make it not readable 
+	  by humans, using Google closure or YUI Compressor or other.<br/>
+	h. Many popular JavaScript libraries are available as hosted on content delivery networks 
+	  (cdn) and you can simply point to them using the URL in the src, this avoids copying the 
+	  js file to local folder.<br/>
+	i. Using external JS you can take benefits of advanced tools such as RequireJS or CommonJS 
+	  to load these scripts logically and modularly.</li>
+  <li>Javascript is case sensitive language?<br/>
+    Yes, Javascript is case sensitive scripting language. Variables, functions, keywords 
+    must have consistent casing otherwise it will not be recognized by Javascript and 
+    will generate error. e.g.<br/>
+      var pratik;<br/>
+      var praTik;<br/>
+    In above case pratik and praTik will be considered as different variables.</li.
+  <li>Is Semicolon compulsory in Javascript at end of the statement?<br/>
+    No, it is not necessary to use semicolon at end of the statement still it will be considered 
+	as valid statement.</li>
+</ol>
+
 11. What are different data types in Javascript?
 Below are basic data types in Javascript:
 Primitive Data Types:
