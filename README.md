@@ -1,4 +1,4 @@
- <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 id="js-tips">JS-TIPS (1st 151 things to learn)</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript Tips, Tricks, and Techniques.  Moderate to intermediate level of knowledge, overall.</h4>
@@ -140,16 +140,27 @@
   <li>What are different Javascript frameworks that you know?<br/>
     Many frameworks are based on Javascript now, below are few of them:
 	<ul style="list-style-type="circle">
-      <li>Angular</li>
       <li>React</li>
+      <li>Angular</li>
 	  <li>Vue</li>
 	  <li>Node</li>
-	  <li>Ember</li>
+	  <li>Express</li>
 	  <li>Meteor</li>
+	  <li>Next</li>
+	  <li>Ember</li>
 	  <li>Backbone</li>
+	  <li>Svelte</li>
+      <li>Gatsby</li>
+	  <li>Remix</li>
+	  <li>Nuxt</li>
+	  <li>Astro</li>
+	  <li>Solid</li>
+	  <li>Preact</li>
+	  <li>Alpine</li>
 	  <li>Aurelia</li>
 	  <li>Polymer</li>
 	  <li>Mithril</li>
+	  <li>Backend JS: Express, Nest, Meteor</li>
 	</ul>
   </li>
 </ol>
