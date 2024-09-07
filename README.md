@@ -140,21 +140,102 @@
   <li>What are different Javascript frameworks that you know?<br/>
     Many frameworks are based on Javascript now, below are few of them:
 	<ul style="list-style-type="circle">
-      <li>React</li>
-      <li>Angular</li>
-	  <li>Vue</li>
-	  <li>Node</li>
-	  <li>Express</li>
-	  <li>Meteor</li>
-	  <li>Next</li>
-	  <li>Ember</li>
-	  <li>Backbone</li>
-	  <li>Svelte</li>
-      <li>Gatsby</li>
+	<li><a href="https://reactjs.org/" target="_blank">React</a></li>
+	<li><a href="https://angularjs.org/" target="_blank">Angular</a></li>
+    <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
+	<li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+	<li><a href="https://expressjs.com/" target="_blank">Express.js</a></li>
+	<li><a href="https://www.meteor.com/" target="_blank">Meteor.js</a></li>
+	<li><a href="https://nextjs.org/" target="_blank">Next.js</a></li>
+	<li><a href="https://emberjs.com/" target="_blank">Ember.js</a></li>
+	<li><a href="https://backbonejs.org/" target="_blank">Backbone.js</a></li>
+	<li><a href="https://svelte.dev/" target="_blank">Svelte</a></li>
+	<li><a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a></li>
 	  <li>Remix</li>
-	  <li>Nuxt</li>
+      <li><a href="https://nuxt.com/" target="_blank">Nuxt.js</a></li>
 	  <li>Astro</li>
 	  <li>Solid</li>
+	<li><a href="https://github.com/CesiumGS/cesium" target="_blank">Cesium</a></li>
+	<li><a href="https://zzz.dog/" target="_blank">Zdog</a></li>
+	<li><a href="https://www.vantajs.com/" target="_blank">Vanta.js</a></li>
+	<li><a href="https://github.com/micku7zu/vanilla-tilt.js" target="_blank">Tilt.js</a></li>
+	<li><a href="https://threejs.org/" target="_blank">Three.js</a></li>
+	<li><a href="https://www.sencha.com/products/extjs/" target="_blank">ExtJS</a></li>
+	<li><a href="https://mithril.js.org/" target="_blank">Mithril</a></li>
+	<li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+	<li><a href="https://playcanvas.com/" target="_blank">PlayCanvas</a></li>
+	<li><a href="https://polymer-library.polymer-project.org/" target="_blank">Polymer</a></li>
+	<li><a href="http://aurelia.io/" target="_blank">Aurelia</a></li>
+	<li><a href="https://alpinejs.dev/" target="_blank">Alpine.js</a></li>
+	<li><a href="https://d3js.org/" target="_blank">D3.js</a></li>
+	<li><a href="https://underscorejs.org/" target="_blank">Underscore.js</a></li>
+	<li><a href="https://lodash.com/" target="_blank">Lodash</a></li>
+	<li><a href="https://pixijs.com/" target="_blank">PixiJS</a></li>
+	<li><a href="https://animejs.com/" target="_blank">Anime.js</a></li>
+	<li><a href="https://rishabhp.github.io/bideo.js/" target="_blank">Bideo.js</a></li>
+	<li><a href="https://www.chartjs.org/" target="_blank">Chart.js</a></li>
+	<li><a href="https://nosir.github.io/cleave.js/" target="_blank">Cleave.js</a></li>
+	<li><a href="https://glimmerjs.com/" target="_blank">Glimmer</a></li>
+	<li><a href="https://sarcadass.github.io/granim.js/" target="_blank">Granim.js</a></li>
+	<li><a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank">fullPage.js</a></li>
+	<li><a href="https://leafletjs.com/" target="_blank">Leaflet</a></li>
+	<li><a href="https://multiple.js.org/" target="_blank">Multiple.js</a></li>
+	<li><a href="https://momentjs.com/" target="_blank">Moment.js</a></li>
+	<li><a href="https://masonry.desandro.com/" target="_blank">Masonry</a></li>
+	<li><a href="http://omniscientjs.github.io/" target="_blank">Omniscient</a></li>
+	<li><a href="http://parsleyjs.org/" target="_blank">Parsley</a></li>
+	<li><a href="https://popper.js.org/" target="_blank">Popper.js</a></li>
+	<li><a href="https://github.com/sindresorhus/screenfull.js/" target="_blank">Screenfull.js</a></li>
+	<li><a href="https://vocajs.com/" target="_blank">Voca</a></li>
+	<li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+	<li><a href="https://mochajs.org/" target="_blank">Mocha</a></li>
+	<li><a href="https://ionicframework.com/" target="_blank">Ionic</a></li>
+	<li><a href="https://webix.com/" target="_blank">Webix</a></li>
+	<li><a href="https://p5js.org/" target="_blank">p5</a></li>
+	<li><a href="https://www.babylonjs.com/" target="_blank">Babylon.js</a></li>
+	<li><a href="https://github.com/aframevr/aframe" target="_blank">Aframe</a></li>
+	<li><a href="https://zeptojs.com/" target="_blank">Zepto</a></li>
+	<li><a href="https://createjs.com/" target="_blank">CreateJS</a></li>
+	<li><a href="https://nightwatchjs.org/" target="_blank">Nightwatch.js</a></li>
+	<li><a href="https://stimulus.hotwired.dev/" target="_blank">Stimulus</a></li>
+	<li><a href="https://nativescript.org/" target="_blank">NativeScript</a></li>
+	<li><a href="https://relay.dev/" target="_blank">Relay</a></li>
+	<li><a href="https://cycle.js.org/" target="_blank">Cycle.js</a></li>
+	<li><a href="https://flightjs.github.io/" target="_blank">Flight</a></li>
+    <li><a href="http://trykickoff.com/" target="_blank">Kickoff</a></li>
+	<li><a href="https://cylonjs.com/" target="_blank">Cylon.js</a></li>
+	<li><a href="https://jestjs.io/" target="_blank">Jest</a></li>
+	<li><a href="https://feathersjs.com/" target="_blank">Feathers</a></li>
+	<li><a href="http://bootboxjs.com/" target="_blank">Bootbox.js</a></li>
+	<li><a href="https://modernizr.com/" target="_blank">Modernizr</a></li>
+	<li><a href="https://cube.dev/" target="_blank">Cube.js</a></li>
+	<li><a href="https://requirejs.org/" target="_blank">RequireJS</a></li>
+	<li><a href="https://jasmine.github.io/" target="_blank">Jasmine</a></li>
+	<li><a href="https://qunitjs.com/" target="_blank">QUnit</a></li>
+	<li><a href="https://github.com/soulwire/sketch.js" target="_blank">sketch.js</a></li>
+	<li><a href="https://github.com/wso2/jaggery" target="_blank">Jaggery</a></li>
+	<li><a href="https://kangoextensions.com/" target="_blank">Kango</a></li>
+	<li><a href="https://www.cappuccino.dev/" target="_blank">Cappuccino</a></li>
+	<li><a href="https://konvajs.org/" target="_blank">Konva</a></li>
+	<li><a href="https://sproutcore.com/" target="_blank">SproutCore</a></li>
+	<li><a href="https://webix.com/" target="_blank">Webix</a></li>
+	<li><a href="https://github.com/quirkey/sammy" target="_blank">Sammy</a></li>
+	<li><a href="https://seemple.js.org/#!home" target="_blank">Seemple.js</a></li>
+	<li><a href="https://socket.io/" target="_blank">Socket.IO</a></li>
+	<li><a href="https://xstyled.dev/" target="_blank">xstyled</a></li>
+	<li><a href="http://vanilla-js.com/" target="_blank">VanillaJS</a></li>
+	<li><a href="https://github.com/linnovate/mean" target="_blank">MEAN</a></li>
+	<li><a href="https://github.com/flatiron/flatiron" target="_blank">Flatiron</a></li>
+	<li><a href="https://ripplejs.github.io/" target="_blank">ripple.js</a></li>
+	<li><a href="https://sailsjs.com/" target="_blank">Sails.js</a></li>
+	<li><a href="https://mochi.github.io/mochikit/" target="_blank">MochiKit</a></li>
+	<li><a href="https://optimizely.github.io/nuclear-js/" target="_blank">NuclearJS</a></li>
+	<li><a href="https://ampersandjs.com/" target="_blank">Ampersand.js</a></li>
+	<li><a href="https://heisenbergjs.github.io/heisenberg/" target="_blank">Heisenberg.js</a></li>
+	<li><a href="https://marionettejs.com/" target="_blank">Marionette</a></li>
+	<li><a href="https://pagerjs.com/" target="_blank">pager.js</a></li>
+	<li><a href="https://canjs.com/" target="_blank">CanJS</a></li>
+    <li><a href="http://rivetsjs.com/" target="_blank">Rivets.js</a></li>
 	  <li>Preact</li>
 	  <li>Alpine</li>
 	  <li>Aurelia</li>
@@ -345,102 +426,85 @@ value1: value2 is conditional operator.</li>
     The parseInt is a function which parses the string and returns the integer value found in string.</li>
   <li>What is alert?<br/>
     The alert() function is used to display information in message box.</li>
+  <li>What is confirm?<br/>
+    The confirm() function displays a message box with two buttons, Ok and cancel. When you click the 
+	Ok button, the function returns true. When you click cancel button function returns false.</li>
+  <li>What is charAt?<br/>
+    The charAt() function returns character from specified index.<br/>
+    e.g.<br/>
+  ​ ​ var str=”Pratik”;<br/>
+  ​ ​ console.log(str.charAt(0));<br/>
+  ​ ​ Output :<br/>
+  ​ ​ P</li>
+  <li>What is indexOf?<br/>
+    This function returns the index within the calling string object of first occurrence 
+	of the specified value and returns index of found occurrence or -1 if not found.<br/>
+    e.g.<br/>
+​   ​ var str=”This is javascript book”;<br/>
+​   ​ console.log(str .indexOf(“javascript”));<br/>
+  ​ ​ Output:<br/>
+  ​ ​ 8</li>
+  <li>What are function scopes?<br/>
+    Scope defines accessibility of function and its variables. In Javascript scope is 
+	divided into two categories:<br/>
+	<ul>
+      <li><b>Global</b> : Function with global scope can be accessed anywhere in the program.</li>
+      <li><b>Local</b> : Function with local scope can be accessed only within its parent function.</li>
+	</ul></li>
+  <li>What is strict mode?<br/>
+    Strict mode prevents certain actions and throws more exceptions. The statement “use strict” 
+	orders browser to use the Strict mode, which is a reduced and safer feature set of JavaScript.<br/>
+    Strict mode eliminates some silent errors in JavaScript by changing them to throw errors.<br/>
+    Strict mode resolves mistakes that make it difficult for JavaScript engines to perform optimizations 
+	hence strict mode code can sometimes run faster than identical code that’s not strict mode.<br/>
+    Strict mode forbids some syntax likely to be defined in future versions of ECMAScript.<br/>
+    It prevents, or throws errors, when unsafe actions are taken (such as gaining access to the 
+	global object). It disables features that are confusing or poorly thought out.
+    Due to Strict mode it becomes easier to write secure JavaScript.<br/>
+    Strict mode applies to individual functions or to entire scripts. It doesn't apply to block statements 
+	enclosed in {} braces; attempting to apply it to such contexts does nothing.<br/>
+    To invoke strict mode for an entire script, put statement "use strict" before any other statements.<br/>
+    To invoke strict mode for a function, put statement "use strict" in the function's body 
+	before any other statements.</li>
+  <li>What is function closure?<br/>
+    A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function’s variables.</li>
+  <li>What is callback function?<br/>
+    A function passed into another function as an argument, which is then invoked inside the outer 
+	function to complete some kind action is called as callback function.<br/>
+    e.g.<br/>
+    function showName(name) {<br/>
+    alert('User name is:' + name);<br/>
+    }<br/>
+    function displayName(callback) {<br/>
+    var name = prompt('Please enter name to be displayed');<br/>
+    callback(name);<br/>
+    }<br/>
+    displayName(showName);</li>
+  <li>What is setTimeout function?<br/>
+    The setTimeout() function executes function at specified interval.<br/>
+    setTimeout(expression, timeout);<br/>
+    Here, expression is the function/code that is called only once and timeout is number of milliseconds 
+	to wait before calling the function. The clearTimeout() function is used to deactivate or 
+	cancel timer set by setTimeout() fuction.</li>
+  <li>What is setInterval function?<br/>
+    The setInterval() function executes a function after a specified time interval.<br/>
+   ​ setInterval(expression, timeout);<br/>
+    Here, expression specifies function/code to be called after particular time interval and timeout 
+	specifies the time interval between function calls.<br/>
+    The clearInterval() function is used to cancel or deactivate the timer set by 
+	setInterval() function.</li>
+  <li>What is difference between setInterval and setTimeout functions?<br/>
+    The setTimeout(expression, timeout) runs the function once after timeout
+    The setInterval(expression, timeout) runs the function in intervals repeatedly, with 
+	length of timeout between them.</li>
+  <li>What is encodeURI() method?<br/>
+    The encodeURI() method encodes a Uniform Resource Identifier by replacing each 
+	instance of particular characters by one, two, three or four escape sequences 
+	representing UTF-8 encoding of character.</li>
+  <li>What is decodeURI() method?<br/>
+    The decodeURI() method decodes a Uniform Resource Identifier previously created by 
+	encodeURI().</li>
 </ol>
-
-43. What is confirm?
-The confirm() function displays a message box with two buttons, Ok
-and cancel. When you click the Ok button, the function returns true.
-When you click cancel button function returns false.
-44. What is charAt?
-The charAt() function returns character from specified index.
-e.g.
-​ ​ var str=”Pratik”;
-​ ​ console.log(str.charAt(0));
-​ ​ Output :
-​ ​ P
-45. What is indexOf?
-This function returns the index within the calling string object of first
-occurrence of the specified value and returns index of found
-occurrence or -1 if not found.
-e.g.
-​ ​ var str=”This is javascript book”;
-​ ​ console.log(str .indexOf(“javascript”));
-​ ​ Output:
-​ ​ 8
-46. What are function scopes?
-Scope defines accessibility of function and its variables. In Javascript
-scope is divided into two categories:
-• Global : Function with global scope can be accessed
-anywhere in the program.
-• Local : Function with local scope can be accessed only
-within its parent function.
-47. What is strict mode?
-Strict mode prevents certain actions and throws more exceptions.
-The statement “use strict” orders browser to use the Strict mode,
-which is a reduced and safer feature set of JavaScript.
-Strict mode eliminates some silent errors in JavaScript by changing
-them to throw errors.
-Strict mode resolves mistakes that make it difficult for JavaScript
-engines to perform optimizations hence strict mode code can
-sometimes run faster than identical code that’s not strict mode.
-Strict mode forbids some syntax likely to be defined in future
-versions of ECMAScript.
-It prevents, or throws errors, when unsafe actions are taken (such as
-gaining access to the global object).
-It disables features that are confusing or poorly thought out.
-Due to Strict mode it becomes easier to write secure JavaScript.
-Strict mode applies to individual functions or to entire scripts. It
-doesn't apply to block statements enclosed in {} braces; attempting
-to apply it to such contexts does nothing.
-To invoke strict mode for an entire script, put statement "use strict"
-before any other statements.
-To invoke strict mode for a function, put statement "use strict" in the
-function's body before any other statements.
-48. What is function closure?
-A closure is a feature in JavaScript where an inner function has
-access to the outer (enclosing) function’s variables.
-49. What is callback function?
-A function passed into another function as an argument, which is
-then invoked inside the outer function to complete some kind action
-is called as callback function.
-e.g.
-function showName(name) {
-alert('User name is:' + name);
-}
-function displayName(callback) {
-var name = prompt('Please enter name to be displayed');
-callback(name);
-}
-displayName(showName);
-50. What is setTimeout function?
-The setTimeout() function executes function at specified interval.
-setTimeout(expression, timeout);
-Here, expression is the function/code that is called only once and
-timeout is number of milliseconds to wait before calling the function.
-The clearTimeout() function is used to deactivate or cancel timer set
-by setTimeout() fuction.
-51. What is setInterval function?
-The setInterval() function executes a function after a specified time
-interval.
-​ setInterval(expression, timeout);
-Here, expression specifies function/code to be called after particular
-time interval and timeout specifies the time interval between
-function calls.
-The clearInterval() function is used to cancel or deactivate the timer
-set by setInterval() function.
-52. What is difference between setInterval and setTimeout functions?
-The setTimeout(expression, timeout) runs the function once after
-timeout
-The setInterval(expression, timeout) runs the function in intervals
-repeatedly, with length of timeout between them.
-53. What is encodeURI() method?
-The encodeURI() method encodes a Uniform Resource Identifier by
-replacing each instance of particular characters by one, two, three or
-four escape sequences representing UTF-8 encoding of character.
-54. What is decodeURI() method?
-The decodeURI() method decodes a Uniform Resource Identifier
-previously created by encodeURI().
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="4-events">4. Events</h2>  <!-- 55 thru 64 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
