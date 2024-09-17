@@ -13,14 +13,14 @@
   <li>What are features of Javascript?
     <ul style="list-style-type:disc">
       <li>Input validation : Javascript allows you to validate user input before sending it 
-	  to server for backend operations.</li>
+      to server for backend operations.</li>
     <li>Control over browser : Javascript gives more control over browser due to which you can 
-	  change the background colour of this page as well as the text on the browser's status bar.</li>
+      change the background colour of this page as well as the text on the browser's status bar.</li>
     <li>Detect browser and OS : Javascript enables you to detect user’s browser and OS due to 
-	  which you can perform platform dependant operations.</li>
+      which you can perform platform dependant operations.</li>
     <li>Handling date and time : Javascript enables you to write code based users date and time, 
-	  it also enables you to capture users date and time as user and server may be in different 
-	  time zone.</li>
+      it also enables you to capture users date and time as user and server may be in different 
+      time zone.</li>
     <li>Generating HTML on fly : Javascript enables you to dynamically generate HTML.</li>
     </ul>
   </li>
@@ -30,9 +30,9 @@
         Javascript is not dependant on network unless backend data is required to be processed. 
         Need to compile Javascript on the client–side as it is interpreted directly by web browsers.</li>
       <li>Interoperability : Javascript can be inserted into web page regardless of extension. 
-	Within other languages such as Perl and PHP it can be used inside the script.</li>
+    Within other languages such as Perl and PHP it can be used inside the script.</li>
       <li>Rich interfaces : Javascript has vast libraries like (charts, drag and drop, sliders etc.) 
-	which enables you to provide attractive look to your website.</li>
+    which enables you to provide attractive look to your website.</li>
       <li>Reduction in server load : Since Javascript is client-side scripting language it reduces 
         load on website servers as many operations can be performed at client-side which reduces 
         load on server and enables it to serve to more users.</li>
@@ -41,22 +41,22 @@
   <li>What are disadvantages of Javascript?
     <ul style="list-style-type: square">
       <li>Client-side security : JavaScript code executes in users computer hence in some cases 
-	    it can be manipulated for malicious purpose.</li>
+        it can be manipulated for malicious purpose.</li>
       <li>Browser support : JavaScript is sometimes interpreted differently by different browsers.</li>
     </ul>
   </li>
   <li>What is difference between Javascript and ECMAScript?<br/>
     JavaScript is a scripting language that has been formed by keeping ECMAScript specification 
-	at its core. ECMAScript is nothing but a standard or specification defined in order to create 
-	different scripting languages and one of them is JavaScript.<br/>
+    at its core. ECMAScript is nothing but a standard or specification defined in order to create 
+    different scripting languages and one of them is JavaScript.<br/>
     Javascript, Jscript and ActionScript are few scripting languages that follow ECMAScript 
-	specifications.</li>
+    specifications.</li>
   <li>Who developed Javascript?<br/>
     JavaScript was created in 1995 by Brendan Eich during his time at Netscape Communications. It 
     was inspired by Java, Scheme and Self.</li>
   <li>How to insert Javascript in Web page?<br/>
     You can use &lt;script&gt; tag in html. &lt;script&gt; tag has type attribute which 
-	defined which code is there inside the script tag.<br/>
+    defined which code is there inside the script tag.<br/>
     You can use &lt;script&gt; element in web pages in following ways:
       <ul style="list-style-type="disc">
         <li>In head element</li>
@@ -64,7 +64,7 @@
         <li>As an external script file</li>
       </ul>
     To use Javascript as a scripting language for web pages in &lt;head&gt; or &lt;body&gt; 
-	you can define type as “text/javascript”. e.g.,<br/>
+    you can define type as “text/javascript”. e.g.,<br/>
       &lt;script type=”text/javascript”&gt;<br/>
       &lt;/script&gt;<br/>
     Sometime you may need to use same Javascript code in several web
@@ -78,20 +78,20 @@
     <ul style="list-style-type="circle">
       <li>Segregating HTML and JavaScript code helps to manage the code base better.</li>
       <li>To improve development output designers can work along with coders in parallel without 
-	  code conflicts.</li>
+      code conflicts.</li>
       <li>This approach also works well with modern source code version control systems like GIT 
-	  and SVN.</li>
+      and SVN.</li>
       <li>Each of these files can maintain history.</li>
       <li>Segregating HTML and JavaScript makes code as well as HTML is easily readable.</li>
       <li>Segregated external JavaScript files are cached by browsers and can speed up page load times.</li>
       <li>These small js files can be minified to reduce the size and make it not readable 
-	  by humans, using Google closure or YUI Compressor or other.</li>
+      by humans, using Google closure or YUI Compressor or other.</li>
       <li>Many popular JavaScript libraries are available as hosted on content delivery networks 
-	  (cdn) and you can simply point to them using the URL in the src, this avoids copying the 
-	  js file to local folder.</li>
+      (cdn) and you can simply point to them using the URL in the src, this avoids copying the 
+      js file to local folder.</li>
       <li>Using external JS you can take benefits of advanced tools such as RequireJS or CommonJS 
-	  to load these scripts logically and modularly.</li>
-	</ul>
+      to load these scripts logically and modularly.</li>
+    </ul>
   </li>
   <li>Is Javascript a case sensitive language?<br/>
     Yes, Javascript is case sensitive scripting language. Variables, functions, keywords 
@@ -102,23 +102,23 @@
     In above case pratik and praTik will be considered as different variables.</li>
   <li>Is Semicolon compulsory in Javascript at end of the statement?<br/>
     No, it is not necessary to use semicolon at end of the statement still it will be considered 
-	as valid statement.</li>
+    as valid statement.</li>
   <li>What are different data types in Javascript?<br/>
     Below are basic data types in Javascript:<br/>
     <b>Primitive Data Types:</b>
-	<ul style="list-style-type="square">
+    <ul style="list-style-type="square">
       <li>Number: Represent numeric values, both integer and float.</li>
-	  <li>String: Sequence of characters are represented using String.</li>
-	  <li>Boolean: Represent Boolean value, true or false.</li>
-	  <li>Undefined: Represent undefined value.</li>
-	  <li>Null: Represent null.</li>
-	</ul>
-	<b>Non-Primitive Data Types:</b>
-	<ul style="list-style-type="disc">
+      <li>String: Sequence of characters are represented using String.</li>
+      <li>Boolean: Represent Boolean value, true or false.</li>
+      <li>Undefined: Represent undefined value.</li>
+      <li>Null: Represent null.</li>
+    </ul>
+    <b>Non-Primitive Data Types:</b>
+    <ul style="list-style-type="disc">
       <li>Object: Represent more complex data structure.</li>
-	  <li>Array: Represent group of elements.</li>
-	  <li>RegExp: Represent regular expression.</li>
-	</ul>
+      <li>Array: Represent group of elements.</li>
+      <li>RegExp: Represent regular expression.</li>
+    </ul>
   </li>
   <li>How to add comment?<br/>
     JavaScript provides two kinds of comments:<br/>
@@ -127,122 +127,122 @@
     e.g. x++; // single-line comment<br/>
     Multiline comments are delimited by /&ast; and &ast;/:
     e.g. /&ast; This <br/>
-	  is a multiline<br/>
-	  comment.<br/>
+      is a multiline<br/>
+      comment.<br/>
     ​  &ast;/</li>
   <li>What is Javascript engine?<br/>
     JavaScript engine is a computer program used to execute Javascript code.
-	JS engines were developed by web browser vendors and every major
-	browser has one.<br/>
-	Chrome V8 from google is most used engine, Google chrome use it.
-	SpiderMonkey is developed by Mozilla for use in firefox.
-	JavaScriptCore is Apples engine for its Safari browser.</li>
+    JS engines were developed by web browser vendors and every major
+    browser has one.<br/>
+    Chrome V8 from google is most used engine, Google chrome use it.
+    SpiderMonkey is developed by Mozilla for use in firefox.
+    JavaScriptCore is Apples engine for its Safari browser.</li>
   <li>What are different Javascript frameworks that you know?<br/>
     Many frameworks are based on Javascript now, below are few of them:
-	<ul style="list-style-type="circle">
-	<li><a href="https://reactjs.org/" target="_blank">React</a></li>
-	<li><a href="https://angularjs.org/" target="_blank">Angular</a></li>
+    <ul style="list-style-type="circle">
+    <li><a href="https://reactjs.org/" target="_blank">React</a></li>
+    <li><a href="https://angularjs.org/" target="_blank">Angular</a></li>
     <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
-	<li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
-	<li><a href="https://expressjs.com/" target="_blank">Express.js</a></li>
-	<li><a href="https://www.meteor.com/" target="_blank">Meteor.js</a></li>
-	<li><a href="https://nextjs.org/" target="_blank">Next.js</a></li>
-	<li><a href="https://emberjs.com/" target="_blank">Ember.js</a></li>
-	<li><a href="https://backbonejs.org/" target="_blank">Backbone.js</a></li>
-	<li><a href="https://svelte.dev/" target="_blank">Svelte</a></li>
-	<li><a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a></li>
-	  <li>Remix</li>
+    <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+    <li><a href="https://expressjs.com/" target="_blank">Express.js</a></li>
+    <li><a href="https://www.meteor.com/" target="_blank">Meteor.js</a></li>
+    <li><a href="https://nextjs.org/" target="_blank">Next.js</a></li>
+    <li><a href="https://emberjs.com/" target="_blank">Ember.js</a></li>
+    <li><a href="https://backbonejs.org/" target="_blank">Backbone.js</a></li>
+    <li><a href="https://svelte.dev/" target="_blank">Svelte</a></li>
+    <li><a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a></li>
+      <li>Remix</li>
       <li><a href="https://nuxt.com/" target="_blank">Nuxt.js</a></li>
-	  <li>Astro</li>
-	  <li>Solid</li>
-	<li><a href="https://github.com/CesiumGS/cesium" target="_blank">Cesium</a></li>
-	<li><a href="https://zzz.dog/" target="_blank">Zdog</a></li>
-	<li><a href="https://www.vantajs.com/" target="_blank">Vanta.js</a></li>
-	<li><a href="https://github.com/micku7zu/vanilla-tilt.js" target="_blank">Tilt.js</a></li>
-	<li><a href="https://threejs.org/" target="_blank">Three.js</a></li>
-	<li><a href="https://www.sencha.com/products/extjs/" target="_blank">ExtJS</a></li>
-	<li><a href="https://mithril.js.org/" target="_blank">Mithril</a></li>
-	<li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
-	<li><a href="https://playcanvas.com/" target="_blank">PlayCanvas</a></li>
-	<li><a href="https://polymer-library.polymer-project.org/" target="_blank">Polymer</a></li>
-	<li><a href="http://aurelia.io/" target="_blank">Aurelia</a></li>
-	<li><a href="https://alpinejs.dev/" target="_blank">Alpine.js</a></li>
-	<li><a href="https://d3js.org/" target="_blank">D3.js</a></li>
-	<li><a href="https://underscorejs.org/" target="_blank">Underscore.js</a></li>
-	<li><a href="https://lodash.com/" target="_blank">Lodash</a></li>
-	<li><a href="https://pixijs.com/" target="_blank">PixiJS</a></li>
-	<li><a href="https://animejs.com/" target="_blank">Anime.js</a></li>
-	<li><a href="https://rishabhp.github.io/bideo.js/" target="_blank">Bideo.js</a></li>
-	<li><a href="https://www.chartjs.org/" target="_blank">Chart.js</a></li>
-	<li><a href="https://nosir.github.io/cleave.js/" target="_blank">Cleave.js</a></li>
-	<li><a href="https://glimmerjs.com/" target="_blank">Glimmer</a></li>
-	<li><a href="https://sarcadass.github.io/granim.js/" target="_blank">Granim.js</a></li>
-	<li><a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank">fullPage.js</a></li>
-	<li><a href="https://leafletjs.com/" target="_blank">Leaflet</a></li>
-	<li><a href="https://multiple.js.org/" target="_blank">Multiple.js</a></li>
-	<li><a href="https://momentjs.com/" target="_blank">Moment.js</a></li>
-	<li><a href="https://masonry.desandro.com/" target="_blank">Masonry</a></li>
-	<li><a href="http://omniscientjs.github.io/" target="_blank">Omniscient</a></li>
-	<li><a href="http://parsleyjs.org/" target="_blank">Parsley</a></li>
-	<li><a href="https://popper.js.org/" target="_blank">Popper.js</a></li>
-	<li><a href="https://github.com/sindresorhus/screenfull.js/" target="_blank">Screenfull.js</a></li>
-	<li><a href="https://vocajs.com/" target="_blank">Voca</a></li>
-	<li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
-	<li><a href="https://mochajs.org/" target="_blank">Mocha</a></li>
-	<li><a href="https://ionicframework.com/" target="_blank">Ionic</a></li>
-	<li><a href="https://webix.com/" target="_blank">Webix</a></li>
-	<li><a href="https://p5js.org/" target="_blank">p5</a></li>
-	<li><a href="https://www.babylonjs.com/" target="_blank">Babylon.js</a></li>
-	<li><a href="https://github.com/aframevr/aframe" target="_blank">Aframe</a></li>
-	<li><a href="https://zeptojs.com/" target="_blank">Zepto</a></li>
-	<li><a href="https://createjs.com/" target="_blank">CreateJS</a></li>
-	<li><a href="https://nightwatchjs.org/" target="_blank">Nightwatch.js</a></li>
-	<li><a href="https://stimulus.hotwired.dev/" target="_blank">Stimulus</a></li>
-	<li><a href="https://nativescript.org/" target="_blank">NativeScript</a></li>
-	<li><a href="https://relay.dev/" target="_blank">Relay</a></li>
-	<li><a href="https://cycle.js.org/" target="_blank">Cycle.js</a></li>
-	<li><a href="https://flightjs.github.io/" target="_blank">Flight</a></li>
+      <li>Astro</li>
+      <li>Solid</li>
+    <li><a href="https://github.com/CesiumGS/cesium" target="_blank">Cesium</a></li>
+    <li><a href="https://zzz.dog/" target="_blank">Zdog</a></li>
+    <li><a href="https://www.vantajs.com/" target="_blank">Vanta.js</a></li>
+    <li><a href="https://github.com/micku7zu/vanilla-tilt.js" target="_blank">Tilt.js</a></li>
+    <li><a href="https://threejs.org/" target="_blank">Three.js</a></li>
+    <li><a href="https://www.sencha.com/products/extjs/" target="_blank">ExtJS</a></li>
+    <li><a href="https://mithril.js.org/" target="_blank">Mithril</a></li>
+    <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+    <li><a href="https://playcanvas.com/" target="_blank">PlayCanvas</a></li>
+    <li><a href="https://polymer-library.polymer-project.org/" target="_blank">Polymer</a></li>
+    <li><a href="http://aurelia.io/" target="_blank">Aurelia</a></li>
+    <li><a href="https://alpinejs.dev/" target="_blank">Alpine.js</a></li>
+    <li><a href="https://d3js.org/" target="_blank">D3.js</a></li>
+    <li><a href="https://underscorejs.org/" target="_blank">Underscore.js</a></li>
+    <li><a href="https://lodash.com/" target="_blank">Lodash</a></li>
+    <li><a href="https://pixijs.com/" target="_blank">PixiJS</a></li>
+    <li><a href="https://animejs.com/" target="_blank">Anime.js</a></li>
+    <li><a href="https://rishabhp.github.io/bideo.js/" target="_blank">Bideo.js</a></li>
+    <li><a href="https://www.chartjs.org/" target="_blank">Chart.js</a></li>
+    <li><a href="https://nosir.github.io/cleave.js/" target="_blank">Cleave.js</a></li>
+    <li><a href="https://glimmerjs.com/" target="_blank">Glimmer</a></li>
+    <li><a href="https://sarcadass.github.io/granim.js/" target="_blank">Granim.js</a></li>
+    <li><a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank">fullPage.js</a></li>
+    <li><a href="https://leafletjs.com/" target="_blank">Leaflet</a></li>
+    <li><a href="https://multiple.js.org/" target="_blank">Multiple.js</a></li>
+    <li><a href="https://momentjs.com/" target="_blank">Moment.js</a></li>
+    <li><a href="https://masonry.desandro.com/" target="_blank">Masonry</a></li>
+    <li><a href="http://omniscientjs.github.io/" target="_blank">Omniscient</a></li>
+    <li><a href="http://parsleyjs.org/" target="_blank">Parsley</a></li>
+    <li><a href="https://popper.js.org/" target="_blank">Popper.js</a></li>
+    <li><a href="https://github.com/sindresorhus/screenfull.js/" target="_blank">Screenfull.js</a></li>
+    <li><a href="https://vocajs.com/" target="_blank">Voca</a></li>
+    <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+    <li><a href="https://mochajs.org/" target="_blank">Mocha</a></li>
+    <li><a href="https://ionicframework.com/" target="_blank">Ionic</a></li>
+    <li><a href="https://webix.com/" target="_blank">Webix</a></li>
+    <li><a href="https://p5js.org/" target="_blank">p5</a></li>
+    <li><a href="https://www.babylonjs.com/" target="_blank">Babylon.js</a></li>
+    <li><a href="https://github.com/aframevr/aframe" target="_blank">Aframe</a></li>
+    <li><a href="https://zeptojs.com/" target="_blank">Zepto</a></li>
+    <li><a href="https://createjs.com/" target="_blank">CreateJS</a></li>
+    <li><a href="https://nightwatchjs.org/" target="_blank">Nightwatch.js</a></li>
+    <li><a href="https://stimulus.hotwired.dev/" target="_blank">Stimulus</a></li>
+    <li><a href="https://nativescript.org/" target="_blank">NativeScript</a></li>
+    <li><a href="https://relay.dev/" target="_blank">Relay</a></li>
+    <li><a href="https://cycle.js.org/" target="_blank">Cycle.js</a></li>
+    <li><a href="https://flightjs.github.io/" target="_blank">Flight</a></li>
     <li><a href="http://trykickoff.com/" target="_blank">Kickoff</a></li>
-	<li><a href="https://cylonjs.com/" target="_blank">Cylon.js</a></li>
-	<li><a href="https://jestjs.io/" target="_blank">Jest</a></li>
-	<li><a href="https://feathersjs.com/" target="_blank">Feathers</a></li>
-	<li><a href="http://bootboxjs.com/" target="_blank">Bootbox.js</a></li>
-	<li><a href="https://modernizr.com/" target="_blank">Modernizr</a></li>
-	<li><a href="https://cube.dev/" target="_blank">Cube.js</a></li>
-	<li><a href="https://requirejs.org/" target="_blank">RequireJS</a></li>
-	<li><a href="https://jasmine.github.io/" target="_blank">Jasmine</a></li>
-	<li><a href="https://qunitjs.com/" target="_blank">QUnit</a></li>
-	<li><a href="https://github.com/soulwire/sketch.js" target="_blank">sketch.js</a></li>
-	<li><a href="https://github.com/wso2/jaggery" target="_blank">Jaggery</a></li>
-	<li><a href="https://kangoextensions.com/" target="_blank">Kango</a></li>
-	<li><a href="https://www.cappuccino.dev/" target="_blank">Cappuccino</a></li>
-	<li><a href="https://konvajs.org/" target="_blank">Konva</a></li>
-	<li><a href="https://sproutcore.com/" target="_blank">SproutCore</a></li>
-	<li><a href="https://webix.com/" target="_blank">Webix</a></li>
-	<li><a href="https://github.com/quirkey/sammy" target="_blank">Sammy</a></li>
-	<li><a href="https://seemple.js.org/#!home" target="_blank">Seemple.js</a></li>
-	<li><a href="https://socket.io/" target="_blank">Socket.IO</a></li>
-	<li><a href="https://xstyled.dev/" target="_blank">xstyled</a></li>
-	<li><a href="http://vanilla-js.com/" target="_blank">VanillaJS</a></li>
-	<li><a href="https://github.com/linnovate/mean" target="_blank">MEAN</a></li>
-	<li><a href="https://github.com/flatiron/flatiron" target="_blank">Flatiron</a></li>
-	<li><a href="https://ripplejs.github.io/" target="_blank">ripple.js</a></li>
-	<li><a href="https://sailsjs.com/" target="_blank">Sails.js</a></li>
-	<li><a href="https://mochi.github.io/mochikit/" target="_blank">MochiKit</a></li>
-	<li><a href="https://optimizely.github.io/nuclear-js/" target="_blank">NuclearJS</a></li>
-	<li><a href="https://ampersandjs.com/" target="_blank">Ampersand.js</a></li>
-	<li><a href="https://heisenbergjs.github.io/heisenberg/" target="_blank">Heisenberg.js</a></li>
-	<li><a href="https://marionettejs.com/" target="_blank">Marionette</a></li>
-	<li><a href="https://pagerjs.com/" target="_blank">pager.js</a></li>
-	<li><a href="https://canjs.com/" target="_blank">CanJS</a></li>
+    <li><a href="https://cylonjs.com/" target="_blank">Cylon.js</a></li>
+    <li><a href="https://jestjs.io/" target="_blank">Jest</a></li>
+    <li><a href="https://feathersjs.com/" target="_blank">Feathers</a></li>
+    <li><a href="http://bootboxjs.com/" target="_blank">Bootbox.js</a></li>
+    <li><a href="https://modernizr.com/" target="_blank">Modernizr</a></li>
+    <li><a href="https://cube.dev/" target="_blank">Cube.js</a></li>
+    <li><a href="https://requirejs.org/" target="_blank">RequireJS</a></li>
+    <li><a href="https://jasmine.github.io/" target="_blank">Jasmine</a></li>
+    <li><a href="https://qunitjs.com/" target="_blank">QUnit</a></li>
+    <li><a href="https://github.com/soulwire/sketch.js" target="_blank">sketch.js</a></li>
+    <li><a href="https://github.com/wso2/jaggery" target="_blank">Jaggery</a></li>
+    <li><a href="https://kangoextensions.com/" target="_blank">Kango</a></li>
+    <li><a href="https://www.cappuccino.dev/" target="_blank">Cappuccino</a></li>
+    <li><a href="https://konvajs.org/" target="_blank">Konva</a></li>
+    <li><a href="https://sproutcore.com/" target="_blank">SproutCore</a></li>
+    <li><a href="https://webix.com/" target="_blank">Webix</a></li>
+    <li><a href="https://github.com/quirkey/sammy" target="_blank">Sammy</a></li>
+    <li><a href="https://seemple.js.org/#!home" target="_blank">Seemple.js</a></li>
+    <li><a href="https://socket.io/" target="_blank">Socket.IO</a></li>
+    <li><a href="https://xstyled.dev/" target="_blank">xstyled</a></li>
+    <li><a href="http://vanilla-js.com/" target="_blank">VanillaJS</a></li>
+    <li><a href="https://github.com/linnovate/mean" target="_blank">MEAN</a></li>
+    <li><a href="https://github.com/flatiron/flatiron" target="_blank">Flatiron</a></li>
+    <li><a href="https://ripplejs.github.io/" target="_blank">ripple.js</a></li>
+    <li><a href="https://sailsjs.com/" target="_blank">Sails.js</a></li>
+    <li><a href="https://mochi.github.io/mochikit/" target="_blank">MochiKit</a></li>
+    <li><a href="https://optimizely.github.io/nuclear-js/" target="_blank">NuclearJS</a></li>
+    <li><a href="https://ampersandjs.com/" target="_blank">Ampersand.js</a></li>
+    <li><a href="https://heisenbergjs.github.io/heisenberg/" target="_blank">Heisenberg.js</a></li>
+    <li><a href="https://marionettejs.com/" target="_blank">Marionette</a></li>
+    <li><a href="https://pagerjs.com/" target="_blank">pager.js</a></li>
+    <li><a href="https://canjs.com/" target="_blank">CanJS</a></li>
     <li><a href="http://rivetsjs.com/" target="_blank">Rivets.js</a></li>
-	  <li>Preact</li>
-	  <li>Alpine</li>
-	  <li>Aurelia</li>
-	  <li>Polymer</li>
-	  <li>Mithril</li>
-	  <li>Backend JS: Express, Nest, Meteor</li>
-	</ul>
+      <li>Preact</li>
+      <li>Alpine</li>
+      <li>Aurelia</li>
+      <li>Polymer</li>
+      <li>Mithril</li>
+      <li>Backend JS: Express, Nest, Meteor</li>
+    </ul>
   </li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -251,10 +251,10 @@
 <ol start="15">
   <li>Explain variable in Javascript.<br/>
     Basically, variable is used for temporary storage of data. It has name, value and 
-	memory address. You have to declare variable before using it for storing data.<br/>
-	Below is syntax to declare variable: var variablename;<br/>
+    memory address. You have to declare variable before using it for storing data.<br/>
+    Below is syntax to declare variable: var variablename;<br/>
     Here var is keyword and variablename is name of the variable.
-	You can also define multiple variables using single statement as:<br/>
+    You can also define multiple variables using single statement as:<br/>
     var variable1, variable2, variable3;<br/>
     Value can be assigned to variable as:<br/>
     var variablename = value;</li>
@@ -265,16 +265,16 @@
     &lbrack;= valueN&rbrack;&rback;];</li>
   <li>What is let?<br/>
     The ‘let’ allows you to declare variables that are limited in scope to
-	the particular block, expression on which it is used or statement.
-	Variables are declared using let as below,<br/>
+    the particular block, expression on which it is used or statement.
+    Variables are declared using let as below,<br/>
     let var1 &lbrack;= value1&rbrack; &lbrack;, var2 &lbrack;= value2&rbrack;&rbrack; &lbrack;, ..., varN &lbrack;= valueN&rbrack;;</li>
   <li>What is const?<br/>
     Constants are block-scoped, much like variables defined using the let statement. The 
-	value of a constant cannot change through reassignment, and it can't be re-declared.</li>
+    value of a constant cannot change through reassignment, and it can't be re-declared.</li>
   <li>What is difference between let and var?<br/>
     The variable defined with var is available anywhere within the function hence ’var’ 
-	keyword has function scope.<br/>
-	The let has a Block Scope. A variable declared with ‘let’ keyword has a scope only with in that block.</li>
+    keyword has function scope.<br/>
+    The let has a Block Scope. A variable declared with ‘let’ keyword has a scope only with in that block.</li>
   <li>What is difference between let and const?<br/>
     ‘let’ allows you change the value of variable any number of times.
     Using ‘const’, after the first assignment of the value we cannot redefine the value again.</li>
@@ -287,99 +287,86 @@
   <li>Explain different types of operators in Javascript.<br/>
     Below are types of operators:<br/>
     <ul>
-      <li>Arithmetic operators : Arithmetic operators are used to
-perform arithmetic between variables and values.
-Addition (+), Subtraction (&dash;), Multiplication (&ast;), Division
-(/), Modulus (%), Increment (++) and Decrement (--)
-are arithmetic operators.</li>
-      <li>Assignment operators : Assignment operators are used
-to assign values to variables. =, +=, -=, *=, /=, %=
-are Assignment operators.</li>
-      <li>Comparison operators : Comparison operators are used
-to compare variables or values. Equal to (==), equal
-value and type (===), not equal (!=), not equal value
-or type (!==),less than (&lt;), greater than (&gt;), less than
-or equal to (&lt;=) and greater than or equal to (&gt;=) are
-comparison operators.</li>
-      <li>Logical operators : Logical operators allow program to
-make decision based on multiple conditions logic. Logical
-operators used for decision making are And (&amp;&amp;), or (&vert;&vert;),
-not (!).</li>
-      <li>Conditional operator : Conditional operators are used to
-assign values to variable conditionally. (condition) ?
-value1: value2 is conditional operator.</li>
-  </ul></li>
+      <li>Arithmetic operators : Arithmetic operators are used to perform arithmetic between 
+        variables and values. Addition (+), Subtraction (&dash;), Multiplication (&ast;), Division
+        (/), Modulus (%), Increment (++) and Decrement (--) are arithmetic operators.</li>
+      <li>Assignment operators : Assignment operators are used to assign values to variables. 
+        =, +=, -=, *=, /=, %= are Assignment operators.</li>
+      <li>Comparison operators : Comparison operators are used to compare variables or values. 
+        Equal to (==), equal value and type (===), not equal (!=), not equal value or type 
+        (!==), less than (&lt;), greater than (&gt;), less than or equal to (&lt;=) and 
+        greater than or equal to (&gt;=) are comparison operators.</li>
+      <li>Logical operators : Logical operators allow program to make decision based on multiple 
+        conditions logic. Logical operators used for decision making are And (&amp;&amp;), or 
+        (&vert;&vert;), not (!).</li>
+      <li>Conditional operator : Conditional operators are used to assign values to variable 
+        conditionally. (condition) ? value1: value2 is conditional operator.</li>
+    </ul>
+  </li>
   <li>What are control flow statements?<br/>
-    You can change the sequence in which Javascript statements are
-    executed by using control flow statements.
-	Below are types of control flow statements:<br/>
-	Selection statements : Selection statements use condition to
-	determine which group of statements should be executed, if….else,
-	if and switch are selection statements.
-	Loops : Loops allow you to execute group of statements repeatedly
-	till condition is satisfied, while, do…while and for are loops.
-	Jump statements : Jump statements are used to break or exit loop,
-	break and continue are jump statements.</li>
+    You can change the sequence in which Javascript statements are executed by using control 
+    flow statements. Below are types of control flow statements:<br/>
+    Selection statements: Selection statements use condition to determine which group of 
+    statements should be executed, if….else, if and switch are selection statements.<br/>
+    Loops: Loops allow you to execute group of statements repeatedly till a condition is 
+    satisfied, while, do…while and for are loops.<br/>
+    Jump statements: Jump statements are used to break or exit loop, break and continue 
+    are jump statements.</li>
   <li>What is break statement?<br/>
     Break statement stops execution of loop entirely.</li>
   <li>What is continue statement?<br/>
     Continue statement stops execution of current iteration in a loop and
-	continues with next iteration of loop.</li>
+    continues with next iteration of loop.</li>
   <li>What is the difference between comparing variables using "==" and "===" operator?
     The ‘==’ operator tests for abstract equality i.e. it does the required
-	type conversions before doing the equality comparison.
-	But the ‘===’ operator tests for strict equality i.e. it will not do the
-	type conversion thus if the two values are not of the same type, when
-	compared, it will return false.</li>
+    type conversions before doing the equality comparison.
+    But the ‘===’ operator tests for strict equality i.e. it will not do the
+    type conversion thus if the two values are not of the same type, when
+    compared, it will return false.</li>
   <li>What is typeof operator?<br/>
-    The typeof operator is used to get the data type of its operand. The
-	operand can be either a literal or a data structure such as variable,
-	function or an object.
-	e.g.<br/>
-	console.log(typeof somevar);<br/>
-	The typeof operator returns below values as string: object, Boolean, function, 
-	number, string and undefined.</li>
+    The typeof operator is used to get the data type of its operand. The operand can be 
+    either a literal or a data structure such as variable, function or an object. e.g.<br/>
+    console.log(typeof somevar);<br/>
+    The typeof operator returns below values as string: object, Boolean, function, 
+    number, string and undefined.</li>
   <li>What is variable hoisting?<br/>
     In Javascript regardless of where the actual declaration has been
-	made, all variable declarations that are using var, are hoisted/lifted
-	to the top of their functional/local scope (if declared inside a
-	function) or to the top of their global scope (if declared outside of a
-	function).
-	This lifting of scopes is called hoisting.
-	Hence,<br/>
-	​bla = 2;<br/>
+    made, all variable declarations that are using var, are hoisted/lifted
+    to the top of their functional/local scope (if declared inside a
+    function) or to the top of their global scope (if declared outside of a
+    function).
+    This lifting of scopes is called hoisting.
+    Hence,<br/>
+    ​bla = 2;<br/>
    ​ var bla;<br/>
     // ...is implicitly understood as:<br/>
 ​    var bla;<br/>
     bla = 2;</li>
   <li>What is difference between undefined and null?<br/>
     The undefined means a variable has been declared but has no value has yet been assigned.
-	On the other hand, null is basically a value which has been assigned.
-	Also, undefined is a type itself (undefined) while null is an object.
-	Unassigned variables are initialized with a default value of undefined
-	by JavaScript or undefined can be assigned to variable through code.
-	Whereas JavaScript never sets a value to null.
-	That must be done programmatically.</li>
+    On the other hand, null is basically a value which has been assigned.
+    Also, undefined is a type itself (undefined) while null is an object.
+    Unassigned variables are initialized with a default value of undefined
+    by JavaScript or undefined can be assigned to variable through code.
+    Whereas JavaScript never sets a value to null. That must be done programmatically.</li>
   <li>What is output of null == undefined?<br/>
     null == undefined will return true.<br/>
-	However, null === undefined will return false .</li>
+    However, null === undefined will return false .</li>
   <li>What are escape characters?<br/>
     Escape characters (backslash) is used before special characters like
-	ampersand, single quotes, double quotes and apostrophes to display
-	them.<br/>
-	e.g.<br/>
+    ampersand, single quotes, double quotes and apostrophes to display them.<br/>
+    e.g.<br/>
     console.log(‘I\’m Brian Bauska’); ☐ Correct syntax<br/>
-	console.log(‘I’m Brian Bauska’); ☐ Syntax error<br/>
+    console.log(‘I’m Brian Bauska’); ☐ Syntax error<br/>
     In above example, if backslash is not used before single quotes this
-	line will give syntax error.</li>
+    line will give syntax error.</li>
   <li>How to create array in javascript?<br/>
     You can define arrays using the array literal as follows-<br/>
-	var a = &lbrack;&rbrack;;<br/>
-	var b = &lbrack;1, 2, 3&rbrack;;</li>
+    var a = &lbrack;&rbrack;;<br/>
+    var b = &lbrack;1, 2, 3&rbrack;;</li>
   <li>How to create three dimensional array?<br/>
-    You can define three dimentionalarray arrays using the array
-	follows:<br/>
-	var threedimentionalarray = &lbrack;&lbrack;&lbrack;&rbrack;&rbrack;&rbrack;;</li>
+    You can define three dimensional arrays using the array as follows:<br/>
+    var threedimensionalarray = &lbrack;&lbrack;&lbrack;&rbrack;&rbrack;&rbrack;;</li>
   <li>What are the variable naming conventions in JavaScript?<br/>
     The following rules are to be followed while naming variables in JavaScript:<br/>
     You are not allowed to use any of the reserved keyword as variable name.
@@ -388,8 +375,8 @@ value1: value2 is conditional operator.</li>
     JavaScript variable names are case sensitive.</li>
   <li>Why you should not prefer to use global variables?<br/>
     Global variable can be created by many developers resulting in
-	duplicate global variables.
-	Duplicate variable can overwrite the value of your variable.</li>
+    duplicate global variables.
+    Duplicate variable can overwrite the value of your variable.</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="3-functions">3. Functions</h2>  <!-- 37 thru 54 -->
@@ -415,8 +402,8 @@ value1: value2 is conditional operator.</li>
     global functions.</li>
   <li>What is isNaN?<br/>
     It is a function which determine whether or not value is an illegal 
-	number. The isNan() method returns true if the passed value is 
-	NaN(Not a number) and is of type number, else it returns false.<br/>
+    number. The isNan() method returns true if the passed value is 
+    NaN(Not a number) and is of type number, else it returns false.<br/>
     e.g.<br>
     Input: ‘213’<br/>
     Output: false<br/>
@@ -428,7 +415,7 @@ value1: value2 is conditional operator.</li>
     The alert() function is used to display information in message box.</li>
   <li>What is confirm?<br/>
     The confirm() function displays a message box with two buttons, Ok and cancel. When you click the 
-	Ok button, the function returns true. When you click cancel button function returns false.</li>
+    Ok button, the function returns true. When you click cancel button function returns false.</li>
   <li>What is charAt?<br/>
     The charAt() function returns character from specified index.<br/>
     e.g.<br/>
@@ -438,7 +425,7 @@ value1: value2 is conditional operator.</li>
   ​ ​ P</li>
   <li>What is indexOf?<br/>
     This function returns the index within the calling string object of first occurrence 
-	of the specified value and returns index of found occurrence or -1 if not found.<br/>
+    of the specified value and returns index of found occurrence or -1 if not found.<br/>
     e.g.<br/>
 ​   ​ var str=”This is javascript book”;<br/>
 ​   ​ console.log(str .indexOf(“javascript”));<br/>
@@ -446,31 +433,31 @@ value1: value2 is conditional operator.</li>
   ​ ​ 8</li>
   <li>What are function scopes?<br/>
     Scope defines accessibility of function and its variables. In Javascript scope is 
-	divided into two categories:<br/>
-	<ul>
+    divided into two categories:<br/>
+    <ul>
       <li><b>Global</b> : Function with global scope can be accessed anywhere in the program.</li>
       <li><b>Local</b> : Function with local scope can be accessed only within its parent function.</li>
-	</ul></li>
+    </ul></li>
   <li>What is strict mode?<br/>
     Strict mode prevents certain actions and throws more exceptions. The statement “use strict” 
-	orders browser to use the Strict mode, which is a reduced and safer feature set of JavaScript.<br/>
+    orders browser to use the Strict mode, which is a reduced and safer feature set of JavaScript.<br/>
     Strict mode eliminates some silent errors in JavaScript by changing them to throw errors.<br/>
     Strict mode resolves mistakes that make it difficult for JavaScript engines to perform optimizations 
-	hence strict mode code can sometimes run faster than identical code that’s not strict mode.<br/>
+    hence strict mode code can sometimes run faster than identical code that’s not strict mode.<br/>
     Strict mode forbids some syntax likely to be defined in future versions of ECMAScript.<br/>
     It prevents, or throws errors, when unsafe actions are taken (such as gaining access to the 
-	global object). It disables features that are confusing or poorly thought out.
+    global object). It disables features that are confusing or poorly thought out.
     Due to Strict mode it becomes easier to write secure JavaScript.<br/>
     Strict mode applies to individual functions or to entire scripts. It doesn't apply to block statements 
-	enclosed in {} braces; attempting to apply it to such contexts does nothing.<br/>
+    enclosed in {} braces; attempting to apply it to such contexts does nothing.<br/>
     To invoke strict mode for an entire script, put statement "use strict" before any other statements.<br/>
     To invoke strict mode for a function, put statement "use strict" in the function's body 
-	before any other statements.</li>
+    before any other statements.</li>
   <li>What is function closure?<br/>
     A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function’s variables.</li>
   <li>What is callback function?<br/>
     A function passed into another function as an argument, which is then invoked inside the outer 
-	function to complete some kind action is called as callback function.<br/>
+    function to complete some kind action is called as callback function.<br/>
     e.g.<br/>
     function showName(name) {<br/>
     alert('User name is:' + name);<br/>
@@ -484,80 +471,77 @@ value1: value2 is conditional operator.</li>
     The setTimeout() function executes function at specified interval.<br/>
     setTimeout(expression, timeout);<br/>
     Here, expression is the function/code that is called only once and timeout is number of milliseconds 
-	to wait before calling the function. The clearTimeout() function is used to deactivate or 
-	cancel timer set by setTimeout() fuction.</li>
+    to wait before calling the function. The clearTimeout() function is used to deactivate or 
+    cancel timer set by setTimeout() fuction.</li>
   <li>What is setInterval function?<br/>
     The setInterval() function executes a function after a specified time interval.<br/>
    ​ setInterval(expression, timeout);<br/>
     Here, expression specifies function/code to be called after particular time interval and timeout 
-	specifies the time interval between function calls.<br/>
+    specifies the time interval between function calls.<br/>
     The clearInterval() function is used to cancel or deactivate the timer set by 
-	setInterval() function.</li>
+    setInterval() function.</li>
   <li>What is difference between setInterval and setTimeout functions?<br/>
     The setTimeout(expression, timeout) runs the function once after timeout
     The setInterval(expression, timeout) runs the function in intervals repeatedly, with 
-	length of timeout between them.</li>
+    length of timeout between them.</li>
   <li>What is encodeURI() method?<br/>
     The encodeURI() method encodes a Uniform Resource Identifier by replacing each 
-	instance of particular characters by one, two, three or four escape sequences 
-	representing UTF-8 encoding of character.</li>
+    instance of particular characters by one, two, three or four escape sequences 
+    representing UTF-8 encoding of character.</li>
   <li>What is decodeURI() method?<br/>
     The decodeURI() method decodes a Uniform Resource Identifier previously created by 
-	encodeURI().</li>
+    encodeURI().</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="4-events">4. Events</h2>  <!-- 55 thru 64 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-55. What are Events?
-Events are actions or occurrences that happen in the system you are
-programming to which you can respond in some way. Events are
-handled by function know as event handler.
-56. What are different events in Javascript?
-Few of the important events are listed below:
-Input Events
-• onsubmit - triggers on submitting a form.
-• onselect - triggers on selecting an element.
-• onchange - triggers when changes happen to an element.
-• onfocus - triggers when windows gets focus.
-• onreset - triggers when user clicks reset button.
-• onblur - triggers when window loses focus.
-• onkeyup - triggers on releasing a key.
-• onkeydown - triggers on pressing a key.
-Click Events
-• onclick - trigger on clicking a mouse button.
-• ondblclick - triggers on double clicking mouse button.
-Mouse Events
-• ondrag - triggers when element is dragged.
-• ondragend - triggers when drag ends.
-• ondragstart - triggers when drag starts.
-• ondragenter - triggers when dragged element is dropped.
-• ondragleave - triggers on leaving target while dragging
-element.
-• onmouseover - triggers when mouse pointer moves over
-element.
-• onmousedown - triggers on pressing mouse button.
-• onmouseup - triggers on releasing mouse button.
-• onscroll -​ triggers on scrolling a scroll bar of an element.
-Load Events
-• onload- triggers when page has been loaded.
-• onerror- triggers when an error occurs when loading an
-image.
-• onunload- triggers when browser closes document.
-57. What are event handlers?
-Event handler is a routine that is used to deal with event, allowing
-programmer to write code that will be executed when event occurs.
-58. What is addEventListener() method?
-The addEventListener() method attaches an event handler to
-specified element.
-You can add multiple event handlers to one element.
-It is possible to add event listener to any DOM object.
-e.g.
-document.getElementById(“someUniqueDivId”).addEventListener(“click”,
-respondtoclick);
-function respondtoclick() {
-console.log(“Do some stuff!!!”);
-}
-59. How to remove event listener from any element?
+<ol start="55">
+  <li>What are Events?<br/>
+    Events are actions or occurrences that happen in the system you are programming to 
+	which you can respond in some way. Events are handled by function known as event handler.</li>
+  <li>What are different events in Javascript?<br/>
+    Few of the important events are listed below:<br/>
+	<b><i>Input Events</i></b>
+	• onsubmit - triggers on submitting a form.
+	• onselect - triggers on selecting an element.
+	• onchange - triggers when changes happen to an element.
+	• onfocus - triggers when windows gets focus.
+	• onreset - triggers when user clicks reset button.
+	• onblur - triggers when window loses focus.
+	• onkeyup - triggers on releasing a key.
+	• onkeydown - triggers on pressing a key.
+    <b><i>Click Events</i></b>
+	• onclick - trigger on clicking a mouse button.
+	• ondblclick - triggers on double clicking mouse button.
+    <b><i>Mouse Events</i></b>
+	• ondrag - triggers when element is dragged.
+	• ondragend - triggers when drag ends.
+	• ondragstart - triggers when drag starts.
+	• ondragenter - triggers when dragged element is dropped.
+	• ondragleave - triggers on leaving target while dragging element.
+	• onmouseover - triggers when mouse pointer moves over element.
+	• onmousedown - triggers on pressing mouse button.
+	• onmouseup - triggers on releasing mouse button.
+	• onscroll -​ triggers on scrolling a scroll bar of an element.
+	<b><i>Load Events</i></b>
+	• onload- triggers when page has been loaded.
+	• onerror- triggers when an error occurs when loading an image.
+	• onunload- triggers when browser closes document.</li>
+  <li>What are event handlers?<br/>
+    Event handler is a routine that is used to deal with event, allowing programmers to 
+	write code that will be executed when event occurs.</li>
+  <li>What is addEventListener() method?<br/>
+    The addEventListener() method attaches an event handler to specified element.
+    You can add multiple event handlers to one element. It is possible to add event 
+	listener to any DOM object. e.g.
+	<pre>
+      document.getElementById(“someUniqueDivId”).addEventListener(“click”, respondtoclick);
+      function respondtoclick() {
+        console.log(“Do some stuff!!!”);
+      }
+	</pre>
+  </li>
+  <li>How to remove event listener from any element?<br/>
 The removeEventListener() is an inbuilt function in JavaScript which
 removes an event handler from an element for attached event.
 Below example show how to remove event listener which was added
@@ -565,35 +549,32 @@ in previous example.
 e.g.
 document.getElementById(“someUniqueDivId”).removeEventListener("click",
 respondtoclick);
-60. What are different key codes?
+  <li>What are different key codes?<br/>
 It is necessary to know the codes associated with keys to identify
-which key is pressed in the code.
-Below table gives key codes:
+which key is pressed in the code.<br/>
+Below table gives key codes:<br/>
+
 Key
 CodeKey
 CodeKey
 CodeKey
 Code
-backspace
-8A
-65numpad 0
-96semi-colon
-186
-Tab
-9B
-66numpad 1
-97equal sign
-187
-Enter
-13C
-67numpad 2
-98comma
-188
-Shift
-16D
-68numpad 3
-99dash
-189
+backspace 8
+A 65
+numpad 0 96
+semi-colon 186
+Tab 9
+B 66
+numpad 1 97
+equal sign 187
+Enter 13
+C 67
+numpad 2 98
+comma 188
+Shift 16
+D 68
+numpad 3 99
+dash 189
 Ctrl
 17E
 69numpad 4
@@ -698,41 +679,42 @@ delete
 9
 57select key
 93scroll lock
-145
-61. What is event bubbling?
+145</li>
+<li>What is event bubbling?<br/>
 When an event happens on an element, it first runs the handlers on
 that particular element, after that handlers on its parent runs, this
 happens all the way up on all other ancestors.
 This bubbling of events from child to parent is called event bubbling.
-A click on inner <p> first runs onclick on that <p>, then on outer
-<div>, then on outer <form> and so on till document object.
+A click on inner &lt;p&gt; first runs onclick on that &lt;p&gt;, then on outer
+&lt;div&gt;, then on outer &lt;form&gt; and so on till document object.
 
 This process is called “bubbling”, because events “bubble” from the
-inner element up through parent like a bubble in the water.
-62. Is it possible to stop event bubbling?
+inner element up through parent like a bubble in the water.</li>
+  <li>Is it possible to stop event bubbling?<br/>
 Yes, by using method event.stopPropagation().
 If you want to stop the event flow from event target to top element
 in DOM, event.stopPropagation() method stops the event to travel to
-the bottom to top.
-63. What is event capturing?
-In the capturing phase:
+the bottom to top.</li>
+<li>What is event capturing?<br/>
+In the capturing phase:<br/>
 The browser checks to see if the element's outer-most ancestor
-(<html>) has an onclick event handler registered on it during the
+(&lt;html&gt;) has an onclick event handler registered on it during the
 capturing phase, and runs it if so.
-Then it moves on to the next element inside <html> and does the
+Then it moves on to the next element inside &lt;html&gt; and does the
 same thing, then the next one, and so on until it reaches the element
 that was actually clicked on.
-The capturing phase is not often used. Usually it is invisible to us.
-64. What is event delegation?
+The capturing phase is not often used. Usually it is invisible to us.</li>
+<li>What is event delegation?<br/>
 Event delegation concept relies on the fact that if you want some
 code to run when you click on any one of a large number of grouped
 child elements, you can set the event listener on their parent and
 have events that happen on them bubble up to their parent, instead
 of having to set the event listener on every child individually.
-A good example is a series of list items <li> — You can set
-the click event listener on the parent <ul>, if you want each one of
-them<li> to pop up a message when clicked and it will bubble to
-the list items.
+A good example is a series of list items &lt;li&gt; — You can set
+the click event listener on the parent &lt;ul&gt;, if you want each one of
+them&lt;li&gt; to pop up a message when clicked and it will bubble to
+the list items.</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="5-objects">5. Objects</h2>  <!-- 65 - 81 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
