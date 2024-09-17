@@ -927,16 +927,8 @@ along with the OK button in the confirm dialog, which allows the
 user to confirm if a given action should be taken.<br/>
 For example, the following line of code displays the confirm dialog
 shown in Figure 
-<pre>confirm(“Do you wish to proceed?”);</pre>
-Explain confirm method of window object.<br/>
-A confirm dialog appears similar to an alert dialog.
-The main difference between them is the presence of a Cancel button
-along with the OK button in the confirm dialog, which allows the
-user to confirm if a given action should be taken.<br/>
-For example, the following line of code displays the confirm dialog
-shown in Figure
-<pre>confirm(“Do you wish to proceed?”);</pre>
-Explain prompt method of window object.<br/>
+<pre>confirm(“Do you wish to proceed?”);</pre></li>
+<li>Explain prompt method of window object.<br/>
 The prompt method is used to display dialog with input from user.
 Along with OK and Cancel buttons, prompt dialog also has a text box
 where the user is asked to enter some data.<br/>
