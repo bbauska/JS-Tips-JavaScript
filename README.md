@@ -716,63 +716,62 @@ the list items.</li>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="5-objects">5. Objects</h2>  <!-- 65 - 81 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-65. What is Object?
+<ol start="65">
+  <li>What is Object?<br/>
 The object is collection of properties and methods.
 Object in Javascript are variables as well. Object can have properties
 any data types (String, Number, Boolean etc.).
 Object properties can be primitive values, other objects and
-functions.
-e.g.
-var book = {
-​ name : “Javascript Book”,
-​ auther: “Pratik Bandal”,
-​ pages: 100
-}
-66. What are ways to create objects?
+functions. e.g.
+<pre>var book = {
+​  name : “Javascript Book”,
+​  auther: “Pratik Bandal”,
+​  pages: 100
+}</p></li>
+  <li>What are ways to create objects?<br/>
 In Javascript you can create objects through following ways:
 Using literals:
 Using object literal you can basically create object by using name
 value pairs inside curly {} braces.
 e.g.
-var book = {
+<pre>var book = {
 ​ name : “Javascript Book”,
 ​ auther: “Pratik Bandal”,
 ​ pages: 100
-}
+}</pre>
 Using new keyword with built-in object constructor function:
 Using new keyword you can create object and then set its properties
 as below,
 e.g.
-var book= new Object();
+<pre>var book= new Object();
 person.name= "John";
 person.auther= "Doe";
-person.pages= 50;
-Using new keyword with built-in user defined constructor
-function:
+person.pages= 50;</pre>
+Using new keyword with built-in user defined constructor function:
 We first create a constructor function and then get objects using
 ‘new’ keyword. .
-e.g.
-function Book(name, author, pages) {
+e.g.<pre>function Book(name, author, pages) {
 this.name = name;
 this.author = author;
 this.pages = pages;
-}
+}</pre>
 And then we create Book object as below,
-​ var book = new Book(“Javascript Book”, ”Pratik Bandal”, 100);
+​  <pre>var book = new Book(“Javascript Book”, ”Pratik Bandal”, 100);</pre>
 Using Object.create():
 The Object.create() method creates a new object, using an existing
 object as the prototype
 of the newly created object.
 e.g.
-​ const person = {
+<pre>​ const person = {
 ​ ​ isHuman: false,
 ​ ​ printIntroduction: function () {
 ​ };​ ​ }​ ​ ​ console.log(`Am I human? ${this.isHuman}`);
-​ const me = Object.create(person);
-67. Which are built-in or native objects?
+​ const me = Object.create(person);</pre>
+</li>
+67. <li>Which are built-in or native objects?<br/>
 JavaScript provides Number, Boolean, String, Array, Date, Math,
-RegExp which are built in objects.
-68. What is ‘this’ keyword?
+RegExp which are built in objects.</li>
+  <li>What is ‘this’ keyword?<br/>
 The this keyword refers to the object it belongs to.
 In an object method, this refers to the object to which method
 belongs.
@@ -781,72 +780,72 @@ Global object (Windows object).
 In a function, this refers to the Global object (Windows object).
 In strict mode, when used in a function, this is undefined.
 In HTML event handlers, this refers to the element in html that
-received the event.
-69. What is String object?
+received the event.</li>
+  <li>69. What is String object?<br/>
 String object is basically sequence of characters. String object
 provides number of methods to perform required operations on
 String object.
 It provides methods like charAt(), charCodeAt(), concat(), indexOf(),
 match(), slice(), split(), substr(), toLowerCase(), toUpperCase(),
 valueOf(), toString() which provides important functionalities that
-can be performed on string.
-70. What is Number object?
+can be performed on string.</li>
+  <li>70. What is Number object?<br/>
 The number is Javascript wrapper object which allows you to work
 with numerical values.
 Number object is created as,
 var numberVar = new Number([value]);
-It
-provides
-methods
-like
-isNaN(),
+It provides methods like
+<pre>isNaN(),
 isFinite(),
 isInteger(),
-isSafeInteger(), parseInt(), parseFloat() to work with numbers.
-71. What is Boolean object?
+isSafeInteger(), parseInt(), parseFloat() to work with numbers.</pre>
+</li>
+  <li>71. What is Boolean object?<br/>
 The Boolean object wraps a boolean value.
 Boolean object is created as,
 var booleanVar = new Boolean([value]).
 If the value is omitted or is 0, -0, null, false, NaN, undefined, or the
 empty string (""), the object has an initial value of false. All other
 values, including any object or the string "false", create an object
-with an initial value of true.
-72. Explain about Array object.
+with an initial value of true.</li>
+  <li>72. Explain about Array object.<br/>
 The Array is a global object that is used to store different elements
 for the construction of arrays.
 Array object is created as,
 new Array(ele0, ele1[, ...[, eleN]])
-new Array(arrayLength)
-73. Explain about Date object.
+new Array(arrayLength)</li>
+  <li>Explain about Date object.
 The JavaScript Date object represents a single moment in time. Date
 objects use a unix timestamp which is a integer value that is number
 of milliseconds since 1 January 1970.
 Date object is created as,
+<pre>
 new Date();
 new Date(value);
 new Date(dateString);
-new Date(year, monthIndex [, day [, hours [, minutes [, seconds [,
-milliseconds]]]]]);
-74. Explain about Math object.
+new Date(year, monthIndex &lbrack;, day &lbrack;, hours &lbrack;, minutes &lbrack;, seconds &lbrack;, milliseconds&rbrack;&rbrack;&rbrack;&rbrack;);
+</pre></li>
+  <li>74. Explain about Math object.<br/>
 Math is a built-in object that has methods and properties for
 mathematical constants and functions.
 Unlike the other global objects, Math does not have a constructor. All
 methods and properties of Math are static.
 It provides methods like sin(x), cos(x), tan(x), exp(x), floor(x),
-max([x[, y[, …]]]), min([x[, y[, …]]]), pow(x, y), random(),
-round(x), trunc(x) for mathematical operations.
-75. Explain about RegExp object.
+max(&lbrack;x&lbrack;, y&lbrack;, …&rbrack;&rbrack;), min(&lbrack;x&lbrack;, y&lbrack;, …&rbrack;&rbrack;&rbrack;), pow(x, y), random(),
+round(x), trunc(x) for mathematical operations.</li>
+  <li>75. Explain about RegExp object.<br/>
 The RegExp constructor is used to create a regular expression object
 for matching text with a pattern.
 Date object is created as,
-new RegExp(pattern[, flags])
-76. What is namespace?
+new RegExp(pattern&lbrack;, flags&rbrack;)</li>
+  <li>76. What is namespace<br/>
 In JavaScript, namespace is a single global object which will contain
 all our functions, methods, variables.
 Javascript don’t provide default namespace you have to create it, so
-all functions, variables and object in Javascript are by default global.
-77. How to create namespace?
+all functions, variables and object in Javascript are by default global.</li>
+  <li>77. How to create namespace?<br/>
 Below is example to create namespace and access function within it:
+<pre>
 var myProjectNameSpace = {
 ​ projectfunctionone: function() {
 },
@@ -857,7 +856,9 @@ projectfunctiontwo: function() {
 .
 .
 myProjectNameSpace. Projectfunctionone();
-78. What is prototype in javascript?
+</pre>
+</li>
+  <li>78. What is prototype in javascript?<br/>
 All objects in Javascript have property called as prototype,
 the prototype is an object which has a constructor properties by
 default.
@@ -868,14 +869,14 @@ visible.
 The prototype property allows you to add properties and methods to
 any object.
 e.g.
-somecustomcreationobject.prototype.age=29;
-79. What is prototypal inheritance?
+<pre>somecustomcreationobject.prototype.age=29;</pre></li>
+  <li>79. What is prototypal inheritance?<br/>
 Object have property called as prototype which can refer to other
 object.
 When you want to read a property from object, and it’s missing,
 JavaScript automatically takes it from the prototype. This is called
-“prototypal inheritance”.
-80. What is difference between call() and apply()?
+“prototypal inheritance”.</li>
+  <li>80. What is difference between call() and apply()?<br/>
 The Function.prototype.call() method calls a function with a
 provided this value and arguments provided individually.
 It is necessary to know arguments of function when using call()
@@ -884,8 +885,8 @@ The Function.prototype.apply() method calls a function with a
 provided this value, and arguments provided as an array (or an
 array-like object).
 It is necessary to know arguments of function when using apply()
-method.
-81. What is Promise?
+method.</li>
+  <li>81. What is Promise?<br/>
 The Promise object represents the eventual completion (or failure) of
 an asynchronous operation along with its resulting value.
 A Promise is a proxy for a value which may or may not be known
@@ -895,7 +896,8 @@ eventual success value or failure reason.
 This enables asynchronous methods return values like synchronous
 methods: instead of immediately returning final value, the
 asynchronous method returns a promise to provide the value at some
-point in the future.
+point in the future.</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="6-bom">6. Browser Object Model</h2>  <!-- 82 - 96 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
