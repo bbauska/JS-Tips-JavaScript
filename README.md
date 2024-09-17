@@ -534,12 +534,10 @@
     The addEventListener() method attaches an event handler to specified element.
     You can add multiple event handlers to one element. It is possible to add event 
 	listener to any DOM object. e.g.
-	<pre>
-      document.getElementById(“someUniqueDivId”).addEventListener(“click”, respondtoclick);
+	<pre>      document.getElementById(“someUniqueDivId”).addEventListener(“click”, respondtoclick);
       function respondtoclick() {
         console.log(“Do some stuff!!!”);
-      }
-	</pre>
+      }</pre>
   </li>
   <li>How to remove event listener from any element?<br/>
 The removeEventListener() is an inbuilt function in JavaScript which
