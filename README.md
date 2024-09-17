@@ -837,7 +837,7 @@ round(x), trunc(x) for mathematical operations.</li>
 The RegExp constructor is used to create a regular expression object
 for matching text with a pattern.
 Date object is created as,
-new RegExp(pattern&lbrack;, flags&rbrack;)</li>
+<pre>new RegExp(pattern&lbrack;, flags&rbrack;)</pre></li>
   <li>What is namespace<br/>
 In JavaScript, namespace is a single global object which will contain
 all our functions, methods, variables.
@@ -845,18 +845,12 @@ Javascript don’t provide default namespace you have to create it, so
 all functions, variables and object in Javascript are by default global.</li>
   <li>How to create namespace?<br/>
 Below is example to create namespace and access function within it:
-<pre>
-var myProjectNameSpace = {
-​ projectfunctionone: function() {
-},
-projectfunctiontwo: function() {
+<pre>var myProjectNameSpace = {
+​  projectfunctionone: function() {},
+  projectfunctiontwo: function() {}
 }
-}
-.
-.
-.
-myProjectNameSpace. Projectfunctionone();
-</pre>
+...
+myProjectNameSpace. Projectfunctionone();</pre>
 </li>
   <li>What is prototype in javascript?<br/>
 All objects in Javascript have property called as prototype,
@@ -867,8 +861,7 @@ by default in JavaScript, where function's prototype property is
 accessible and modifiable and object's prototype property is not
 visible.
 The prototype property allows you to add properties and methods to
-any object.
-e.g.
+any object. e.g.
 <pre>somecustomcreationobject.prototype.age=29;</pre></li>
   <li>What is prototypal inheritance?<br/>
 Object have property called as prototype which can refer to other
@@ -901,7 +894,8 @@ point in the future.</li>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="6-bom">6. Browser Object Model</h2>  <!-- 82 - 96 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-82. What is Browser Object Model?
+<ol start="82">
+  <li>What is Browser Object Model?<br/>
 The browser object model (BOM) is a hierarchy of browser objects
 that are used to manipulate methods and properties associated with
 the Web browser itself.
@@ -909,219 +903,206 @@ The default object of browser is window means you can invoke all
 the functions of window by specifying window or directly
 Objects that make up the BOM include the window object, navigator
 object, screen object, location object, history, and the document
-object.
-83. What is Window Object?
+object.</li>
+  <li>What is Window Object?<br/>
 In a tabbed browser, each tab is represented as Window object.
 Every object, variable, and function defined in a web page uses of
 the window as its Global object.
 Window object provides methods like alert(), blur(), close(),
-confirm(), print(), prompt(), open().
-84. What alert method in window object?
+confirm(), print(), prompt(), open().</li>
+  <li>What alert method in window object?<br/>
 Alert dialogs are typically used when users has to be made aware of
 something that they have no control over, such as errors.
 Often alert dialogs pops up when the user enters invalid data into a
-form.
+form.<br/>
 When alert() is called,the browser creates a system message box that
-displays the given text with an OK button.
+displays the given text with an OK button.<br/>
 For example, the following line of code causes the message box in to
 be displayed:
-alert(“Your error message!!!”);
-85. Explain confirm method of window object.
+<pre>alert(“Your error message!!!”);</pre></li>
+  <li>Explain confirm method of window object.<br/>
 A confirm dialog appears similar to an alert dialog.
 The main difference between them is the presence of a Cancel button
 along with the OK button in the confirm dialog, which allows the
-user to confirm if a given action should be taken.
+user to confirm if a given action should be taken.<br/>
 For example, the following line of code displays the confirm dialog
-shown in Figure
-confirm(“Do you wish to proceed?”);
-Explain confirm method of window object.
+shown in Figure 
+<pre>confirm(“Do you wish to proceed?”);</pre>
+Explain confirm method of window object.<br/>
 A confirm dialog appears similar to an alert dialog.
 The main difference between them is the presence of a Cancel button
 along with the OK button in the confirm dialog, which allows the
-user to confirm if a given action should be taken.
+user to confirm if a given action should be taken.<br/>
 For example, the following line of code displays the confirm dialog
 shown in Figure
-confirm(“Do you wish to proceed?”);
-Explain prompt method of window object.
+<pre>confirm(“Do you wish to proceed?”);</pre>
+Explain prompt method of window object.<br/>
 The prompt method is used to display dialog with input from user.
 Along with OK and Cancel buttons, prompt dialog also has a text box
-where the user is asked to enter some data.
+where the user is asked to enter some data.<br/>
 The prompt() method accepts two arguments: the text to display to
 the user and the default value for the text box (which can be an
-empty string if you so desire).The following line results in the
+empty string if you so desire). The following line results in the
 window displayed:
-prompt("Enter the country","USA");
-87. How to redirect other webpage?
+<pre>prompt("Enter the country","USA");</pre></li>
+  <li>How to redirect other webpage?<br/>
 It is possible to redirect to other webpage in javascript by directly
-assigning
-value
-to
-window.location
-or
-by
-using
-location.assign(),location.replace() and location.reload() methods.
-88. What is Navigator Object?
+assigning value to window.location or by using
+location.assign(),location.replace() and location.reload() methods.</li>
+  <li>What is Navigator Object?<br/>
 The navigator object is used to get browser information like name,
 version, type, language. It has methods like javaEnabled() and
-taintEnabled().
-89. How to identify operating system of client device?
+taintEnabled().</li>
+  <li>How to identify operating system of client device?<br/>
 “Navigator.appVersion” is used to find operating system of client
-device.
-90. What is History Object?
+device.</li>
+  <li>What is History Object?<br/>
 The History object consist of array of URLs which are visited by a
 user in browser.
-History object provides method like back(), forward() and go().
-91. How to load previous page in browser programmatically?
+History object provides method like back(), forward() and go().</li>
+  <li>How to load previous page in browser programmatically?<br/>
 history.back() can be used to load previous page in browser through
-code.
-92. How to load next page in browser programmatically?
+code.</li>
+  <li>How to load next page in browser programmatically?<br/>
 history.forward() can be used to load next page in browser through
-code.
-93. What is go method of history object?
+code.</li>
+  <li>What is go method of history object?<br/>
 The go() method loads a specific URL from the history list.
-history.go(number|URL)
+history.go(number|URL)<br/>
 number|URL parameter can either be a number which goes to the
 URL within the specific position (1 goes forward one page, -1 goes
 back one page), or a string. The string has to be a partial or full URL,
-and the function will go to the first URL that matches the string.
-94. What is Screen Object?
+and the function will go to the first URL that matches the string.</li>
+  <li>What is Screen Object?<br/>
 The Screen object consist of information about display screen like
-height, width and colour bits of screen.
-95. What is Location Object?
+height, width and colour bits of screen.</li>
+  <li>What is Location Object?<br/>
 The Location object consist of information about current URL of
 window object.
-Location object provides methods like assign(), reload and replace().
-96. How to print a web page?
-The window.print() will print the current web page when invoked.
+Location object provides methods like assign(), reload and replace().</li>
+  <li>How to print a web page?<br/>
+The window.print() will print the current web page when invoked.</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="7-dom">7. Document Object Model</h2>  <!-- 97 thru 111 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-97. What is Document Object?
+<ol start="97">
+  <li>What is Document Object?<br/>
 The Document object represents HTML document that is displayed in
 window. Document object has properties which allows access and
 modification of document content.
 The way document is accessed and modified is called Document
-Object Model or DOM.
+Object Model or DOM.<br/>
 Document object provides methods like open(), close(), write(),
-getElementById(), getElementByName(), getElementByTagName().
-98. What is DOM?
+getElementById(), getElementByName(), getElementByTagName().</li>
+  <li>What is DOM?<br/>
 The Document Object Model (DOM) represents HTML or XML page
 in such a way that programs can change document structure, content
-and style.
-The DOM represents the document as nodes as well as objects.
+and style.<br/>
+The DOM represents the document as nodes as well as objects.<br/>
 The DOM is object oriented representation of web page, which can
-be modified by scripting language like Javascript.
-99. What are DOM nodes?
+be modified by scripting language like Javascript.</li>
+  <li>What are DOM nodes?<br/>
 According to the W3C HTML DOM standards, everything in HTML
-can be represented as nodes.
-Document node represents whole document.
+can be represented as nodes.<br/>
+Document node represents whole document.<br/>
 Element node represents every HTML element such as HTML, HEAD,
-BODY, A, H1 etc.
+BODY, A, H1 etc.<br/>
 Text node represents text content inside the element.
-Attribute node represents every HTML attribute.
-Node has node properties that contain information about the node
-The nodeName property specifies name of the node.
-The nodeValue property specifies value of the node.
-The nodeType property specifies type of the node.
-100. How to get element with id in DOM?
+Attribute node represents every HTML attribute.<br/>
+Node has node properties that contain information about the node<br/>
+The nodeName property specifies name of the node.<br/>
+The nodeValue property specifies value of the node.<br/>
+The nodeType property specifies type of the node.</li>
+  <li>How to get element with id in DOM?<br/>
 The getElementById() method of document object can be used to get
-element using id.
-e.g.
-document.getElementById(“myUniqueId”);
-101. How to get element using class in DOM?
-The getElementByClassName () method of document object can be
-used to get element using class.
-e.g.
-document.getElementByClassName(“myClass”);
-102. How to get content of any element?
+element using id. e.g.
+<pre>document.getElementById(“myUniqueId”);</pre></li>
+  <li>How to get element using class in DOM?<br/>
+The getElementByClassName() method of document object can be
+used to get element using class. e.g.
+<pre>document.getElementByClassName(“myClass”);</pre></li>
+  <li>How to get content of any element?<br/>
 The innerHTML property is useful for getting or replacing the
-content of HTML elements.
-103. What are DOM levels?
+content of HTML elements.</li>
+  <li>What are DOM levels?<br/>
 The W3C DOM specifications are divided into different levels where
-each level contain some required and optional modules.
-Level 0: Provide low-level set of interfaces.
-Level1: DOM level 1 can be described in two parts: CORE and HTML.
+each level contain some required and optional modules.<br/>
+Level 0: Provide low-level set of interfaces.<br/>
+Level1: DOM level 1 can be described in two parts: CORE and HTML.<br/>
 CORE provides a low level interfaces that can be used to represent
-any structured document.
+any structured document.<br/>
 HTML provides high-level interfaces that can be used to represent
-HTML document.
-Level2: Consist of six specifications:
-CORE2, VIEWS, EVENTS, STYLE, TRAVERSAL and RANGE.
-CORE2: extends functionality of CORE specified by DOM level 1.
+HTML document.<br/>
+Level2: Consist of six specifications:<br/>
+CORE2, VIEWS, EVENTS, STYLE, TRAVERSAL and RANGE.<br/>
+CORE2: extends functionality of CORE specified by DOM level 1.<br/>
 VIEWS: views allow programs to dynamically access and manipulate
-content of document.
-EVENTS: events are scripts that are executed when user reacts to web
-page.
+content of document.<br/>
+EVENTS: events are scripts that are executed when user reacts to web page.<br/>
 STYLES: allow programs to dynamically access and manipulate
-content of style sheets.
-TRAVERSAL: allows programs to dynamically traverse the document.
+content of style sheets.<br/>
+TRAVERSAL: allows programs to dynamically traverse the document.<br/>
 RANGE: allows programs to dynamically identify range of content in
-document.
+document.<br/>
 Level3: consists of five different specifications: CORE3, LOAD, SAVE,
-VALIDATIONS, EVENTS and XPATH.
+VALIDATIONS, EVENTS and XPATH.<br/>
 CORE3: extents functionality of CORE specified by DOM level 2.
 LOAD and SAVE: allows program to dynamically load the content of
 XML document into DOM document and save DOM document into
-XML document by serialization.
+XML document by serialization.<br/>
 VALIDATION: allows program to dynamically update the content and
-structure of document while ensuring the document is valid.
-EVENTS: extents functionality of Events specified by DOM level 2.
+structure of document while ensuring the document is valid.<br/>
+EVENTS: extents functionality of Events specified by DOM level 2.<br/>
 XPATH: XPATH is a path language that can be used to access DOM
-tree.
-104. What are deferred scripts?
+tree.</li>
+  <li>What are deferred scripts?<br/>
 By default, Javascript files will interrupt parsing of HTML document
-in order for them to be fetched and executed.
+in order for them to be fetched and executed.<br/>
 The defer attribute tells browser to only execute the script file once
-the HTML document has been fully parsed.
-<script defer src=”myscript.js”>
+the HTML document has been fully parsed.<br/>
+&lt;script defer src=”myscript.js”&gt;<br/>
 This reduces loading time of web page and web page is displayed
-faster.
-105. What are asynchronous scripts?
+faster.</li>
+  <li>What are asynchronous scripts?<br/>
 By default, Javascript files will interrupt parsing of HTML document
-in order for them to be fetched and executed.
+in order for them to be fetched and executed.<br/>
 The async attribute is used to indicate browser that script file can be
-executed asynchronously.
-<script async src=”somescript.js”>
+executed asynchronously.<br/>
+&lt;script async src=”somescript.js”&gt;<br/>
 The HTML parser does not have pause at the point it reaches the
 script tag to fetch and execute, the execution can occur whenever the
 script becomes ready after being fetched in parallel with document
-parsing.
-106. What is difference between attribute and property?
+parsing.</li>
+  <li>What is difference between attribute and property?<br/>
 Attributes: Provide more details on an element like id, type, value
-etc.
+etc.<br/>
 Property: Value assigned to the property like type=”text”,
-value=’Name’ etc.
-107. What is the difference between innerHTML & innerText?
-innerHTML: It will process an HTML tag if found in a string
-innerText: It will not process an HTML tag if found in a string
-108. What is the difference between textContent & innerText?
-The textContent returns every element in the node.
+value=’Name’ etc.</li>
+  <li>What is the difference between innerHTML & innerText?<br/>
+innerHTML: It will process an HTML tag if found in a string<br/>
+innerText: It will not process an HTML tag if found in a string</li>
+  <li>What is the difference between textContent & innerText?<br/>
+The textContent returns every element in the node.<br/>
 The innerText is aware of styling and won't return the text of
-“hidden” elements.
-109. What is HTMLCollection?
+“hidden” elements.</li>
+  <li>What is HTMLCollection?<br/>
 The HTMLCollection interface represents a generic collection of
 elements (in document order) and offers methods & properties for
-selecting from the list.
+selecting from the list.<br/>
 HTMLCollection has length property which returns the number of
-items in the collection.
+items in the collection.<br/>
 It is not possible to iterate over HTMLCollection list using forEach by
-default.
-110. What is NodeList?
+default.</li>
+  <li>What is NodeList?<br/>
 NodeList objects are collections of nodes which are usually returned
-by
-properties
-such
-as Node.childNodes and
-functions
-such
-as document.querySelectorAll().
-NodeList has length property which returns the number of nodes in
-nodelist.
-for...of loops will loop over NodeList objects accurately.
-111. What are frames?
+by properties such as Node.childNodes and functions such as document.querySelectorAll().<br/>
+NodeList has length property which returns the number of nodes in nodelist.<br/>
+for...of loops will loop over NodeList objects accurately.</li>
+  <li>What are frames?<br/>
 Frame divides page into section and in each section different page
-can be displayed.
+can be displayed.</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="8-cookies">8. Cookies</h2>  <!-- 112 thru 120 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
