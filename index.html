@@ -1,3 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of js-tips.bauska.xyz ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Brian Bauska (bbauska)" />
+  <meta name="title" content="JavaScript Tips" />
+  <meta name="description" content="JavaScript (JS) Tips - first 151 'things to know' with 
+    regard to with JavaScript, jQuery, AJAX and JS-related: The course objective is to 
+	familiarize viewers with all things JavaScript." />
+  <title>JavaScript Tips</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+<!--  <link rel="stylesheet" type="text/css" href="/css/hover-menu.css"> -->
+</head>
+<body>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <script>
+  <!-- get the button -->
+  var mybutton = document.getElementById("myBtn");
+
+  <!-- when the user scrolls down 10px from the top of the document, show the button -->
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  <!-- when the user clicks on the button, scroll to the top of the document. 0,0 or -->
+  <!-- to table of contents (approx ###), if applicable was; 315 -->
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <header id="title-block-header">
+    <h1 style="text-align:center;" class="title">JavaScript Tips</h1>
+    <h6 style="text-align:center;">(by Brian Bauska, retired Systems Analyst
+    <span class="citation" data-cites="Bauska">@bbauska</span>)</h6>
+  </header>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of js-tips.bauska.xyz ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7,9 +61,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="1-fundamentals">
 <ol type="1">
-  <li>Fundamentals
-</h2>
-<!-- 1 thru 14 -->
+  <li>Fundamentals</h2>  <!-- 1 thru 14 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol type="1">
   <li>What is Javascript?<br/> Javascript is basically scripting language used to make web 
@@ -149,7 +201,7 @@
   <tr>
     <th><b><a href="https://reactjs.org/" target="_blank">React</a></b></th>
     <th>The library for web and native user interfaces.</th>
-    <th><a href="https://angularjs.org/" target="_blank">Angular</a></th>
+    <th><a href="https://angularjs.org/" target="_blank">Angular</a> - Angular is a typescript-based web application framework that supports full-stack development for building all types of web applications.</th>
 	<th><a href="https://vuejs.org/" target="_blank">Vue.js</a></th>
 	<th><a href="https://nodejs.org/en/" target="_blank">Node.js</a></th>
 	<th><a href="https://expressjs.com/" target="_blank">Express.js</a></th>
@@ -258,64 +310,63 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="2-vars">
 <ol start="2" type="1">
-<li>Variables, Operators and Statements
-</h2>
-<!-- 15 thru 36 -->
+  <li>Variables, Operators and Statements</h2>  <!-- 15 thru 36 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="15">
-<li>Explain variable in Javascript.<br/> Basically, variable is used for
-temporary storage of data. It has name, value and memory address. You
-have to declare variable before using it for storing data.<br/> Below is
-syntax to declare variable: var variablename;<br/> Here var is keyword
-and variablename is name of the variable. You can also define multiple
-variables using single statement as:<br/> var variable1, variable2,
-variable3;<br/> Value can be assigned to variable as:<br/> var
-variablename = value;</li>
-<li>What is var?<br/> The var statement declares a variable and can also
-optionally initialize its value.<br/> Variables are declared using var
-as below,<br/> var varname1 [= value1] [, varname2 [ = value2] … [,
-varnameN [= valueN]&amp;rback;];</li>
-<li>What is let?<br/> The ‘let’ allows you to declare variables that are
-limited in scope to the particular block, expression on which it is used
-or statement. Variables are declared using let as below,<br/> let var1
-[= value1] [, var2 [= value2]] [, …, varN [= valueN];</li>
-<li>What is const?<br/> Constants are block-scoped, much like variables
-defined using the let statement. The value of a constant cannot change
-through reassignment, and it can’t be re-declared.</li>
-<li>What is difference between let and var?<br/> The variable defined with
-var is available anywhere within the function hence ’var’ keyword has
-function scope.<br/> The let has a Block Scope. A variable declared with
-‘let’ keyword has a scope only with in that block.</li>
-<li>What is difference between let and const?<br/> ‘let’ allows you change
-the value of variable any number of times. Using ‘const’, after the
-first assignment of the value we cannot redefine the value again.</li>
-<li>What is automatic type conversion?<br/> When Javascript tries to operate
-on a wrong date type it will try to convert the value to a “right” type.</li>
-<li>What are operators in Javascript?<br/> An operator is a symbol or word
-which is used to perform particular operation.<br/> Arithmetic,
-Assignment, Comparison, Logical and Conditional Operators are types of
-operators.</li>
-<li>Explain different types of operators in Javascript.<br/> Below are types
-of operators:<br/>
-  <ul>
-    <li>Arithmetic operators : Arithmetic operators are used to perform
-arithmetic between variables and values. Addition (+), Subtraction (‐),
-Multiplication (*), Division (/), Modulus (%), Increment (++) and
-Decrement (–) are arithmetic operators.</li>
-    <li>Assignment operators : Assignment operators are used to assign values to
-variables. =, +=, -=, *=, /=, %= are Assignment operators.</li>
-    <li>Comparison operators : Comparison operators are used to compare
-variables or values. Equal to (==), equal value and type (===), not
-equal (!=), not equal value or type (!==), less than (&lt;), greater
-than (&gt;), less than or equal to (&lt;=) and greater than or equal to
-(&gt;=) are comparison operators.</li>
-    <li>Logical operators : Logical operators allow program to make decision
-based on multiple conditions logic. Logical operators used for decision
-making are And (&amp;&amp;), or (||), not (!).</li>
-    <li>Conditional operator : Conditional operators are used to assign values
-to variable conditionally. (condition) ? value1: value2 is conditional
-operator.</li>
-  </ul>
+  <li>Explain variable in Javascript.<br/> Basically, variable is used for temporary storage 
+    of data. It has name, value and memory address. You have to declare variable before using 
+	it for storing data.<br/> Below is syntax to declare variable: var variablename;<br/> 
+	Here var is keyword and variablename is name of the variable. You can also define multiple
+    variables using single statement as:<br/>
+	<pre>var variable1, variable2, variable3;</pre><br/>
+	Value can be assigned to variable as:
+	<pre>var variablename = value;</pre>
+  </li>
+  <li>What is var?<br/> The var statement declares a variable and can also optionally initialize 
+    its value.<br/>
+	Variables are declared using var as below,<br/>
+    <pre>
+	var varname1 &lbrack;= value1&rbrack; &lbrack;, varname2 &lbrack; = value2&rbrack; … &lbrack;, 
+      varnameN &lbrack;= valueN&rbrack;&amp;rback;&rbrack;;
+	</pre>
+  </li>
+  <li>What is let?<br/> The ‘let’ allows you to declare variables that are limited in scope 
+    to the particular block, expression on which it is used or statement. Variables are declared 
+	using let as below,<br/>
+	<pre>let var1 [= value1] [, var2 [= value2]] [, …, varN [= valueN];</pre>
+  </li>
+  <li>What is const?<br/> Constants are block-scoped, much like variables defined using the 
+    let statement. The value of a constant cannot change through reassignment, and it can’t 
+	be re-declared.</li>
+  <li>What is difference between let and var?<br/> The variable defined with var is available 
+    anywhere within the function hence ’var’ keyword has function scope.<br/> The let has a 
+	Block Scope. A variable declared with ‘let’ keyword has a scope only with in that block.</li>
+  <li>What is difference between let and const?<br/> ‘let’ allows you change the value of 
+    variable any number of times. Using ‘const’, after the first assignment of the value 
+	we cannot redefine the value again.</li>
+  <li>What is automatic type conversion?<br/> When Javascript tries to operate on a wrong 
+    date type it will try to convert the value to a “right” type.</li>
+  <li>What are operators in Javascript?<br/>
+    An operator is a symbol or word which is used to perform particular operation.<br/>
+    Arithmetic, Assignment, Comparison, Logical and Conditional Operators are types of operators.</li>
+  <li>Explain different types of operators in Javascript.<br/>
+    Below are types of operators:
+    <ul>
+      <li><b><i>Arithmetic operators</i></b> : Arithmetic operators are used to perform arithmetic between 
+	    variables and values. Addition (+), Subtraction (‐), Multiplication (*), Division (/), 
+		Modulus (%), Increment (++) and Decrement (–) are arithmetic operators.</li>
+      <li><b><i>Assignment operators</i></b> : Assignment operators are used to assign values to variables. 
+	    =, +=, -=, *=, /=, %= are Assignment operators.</li>
+      <li><b><i>Comparison operators</i></b> : Comparison operators are used to compare variables 
+	    or values. Equal to (==), equal value and type (===), not equal (!=), not equal value or 
+		type (!==), less than (&lt;), greater than (&gt;), less than or equal to (&lt;=) 
+		and greater than or equal to (&gt;=) are comparison operators.</li>
+      <li><b><i>Logical operators</i></b> : Logical operators allow program to make decision
+        based on multiple conditions logic. Logical operators used for decision making are 
+        And (&amp;&amp;), or (||), not (!).</li>
+      <li><b><i>Conditional operator</i></b> : Conditional operators are used to assign values 
+	    to variable conditionally. (condition) ? value1: value2 is conditional operator.</li>
+    </ul>
   </li>
   <li>What are control flow statements?<br/> You can change the sequence in
 which Javascript statements are executed by using control flow
@@ -351,66 +402,46 @@ console.log(typeof somevar);<br/> The typeof operator returns below
 values as string: object, Boolean, function, number, string and
 undefined.
 </li>
-<li>
-What is variable hoisting?<br/> In Javascript regardless of where the
+<li>What is variable hoisting?<br/> In Javascript regardless of where the
 actual declaration has been made, all variable declarations that are
 using var, are hoisted/lifted to the top of their functional/local scope
 (if declared inside a function) or to the top of their global scope (if
 declared outside of a function). This lifting of scopes is called
 hoisting. Hence,<br/> ​bla = 2;<br/> ​ var bla;<br/> // …is implicitly
-understood as:<br/> ​ var bla;<br/> bla = 2;
-</li>
-<li>
-What is difference between undefined and null?<br/> The undefined means
+understood as:<br/> ​ var bla;<br/> bla = 2;</li>
+<li>What is difference between undefined and null?<br/> The undefined means
 a variable has been declared but has no value has yet been assigned. On
 the other hand, null is basically a value which has been assigned. Also,
 undefined is a type itself (undefined) while null is an object.
 Unassigned variables are initialized with a default value of undefined
 by JavaScript or undefined can be assigned to variable through code.
 Whereas JavaScript never sets a value to null. That must be done
-programmatically.
-</li>
-<li>
-What is output of null == undefined?<br/> null == undefined will return
-true.<br/> However, null === undefined will return false .
-</li>
-<li>
-What are escape characters?<br/> Escape characters (backslash) is used
+programmatically.</li>
+<li>What is output of null == undefined?<br/> null == undefined will return
+true.<br/> However, null === undefined will return false.</li>
+<li>What are escape characters?<br/> Escape characters (backslash) is used
 before special characters like ampersand, single quotes, double quotes
 and apostrophes to display them.<br/> e.g.<br/> console.log(‘I’m Brian
 Bauska’); ☐ Correct syntax<br/> console.log(‘I’m Brian Bauska’); ☐
 Syntax error<br/> In above example, if backslash is not used before
-single quotes this line will give syntax error.
-</li>
-<li>
-How to create array in javascript?<br/> You can define arrays using the
-array literal as follows-<br/> var a = [];<br/> var b = [1, 2, 3];
-</li>
-<li>
-How to create three dimensional array?<br/> You can define three
-dimensional arrays using the array as follows:<br/> var
-threedimensionalarray = [[[]]];
-</li>
-<li>
-What are the variable naming conventions in JavaScript?<br/> The
-following rules are to be followed while naming variables in
-JavaScript:<br/> You are not allowed to use any of the reserved keyword
-as variable name. JavaScript variable names should not begin with a
-numbers (0-9). They must start with a letter or the underscore
-character. JavaScript variable names are case sensitive.
-</li>
-<li>
-Why you should not prefer to use global variables?<br/> Global variable
-can be created by many developers resulting in duplicate global
-variables. Duplicate variable can overwrite the value of your variable.
-</li>
+single quotes this line will give syntax error.</li>
+  <li>How to create array in javascript?<br/> You can define arrays using the array literal 
+    as follows-<br/> var a = [];<br/> var b = [1, 2, 3];</li>
+  <li>How to create three dimensional array?<br/> You can define three dimensional arrays 
+    using the array as follows:<br/> var threedimensionalarray = [[[]]];</li>
+  <li>What are the variable naming conventions in JavaScript?<br/> The following rules are 
+    to be followed while naming variables in JavaScript:<br/> You are not allowed to use 
+	any of the reserved keyword as variable name. JavaScript variable names should not begin 
+	with a numbers (0-9). They must start with a letter or the underscore character. JavaScript 
+	variable names are case sensitive.</li>
+  <li>Why you should not prefer to use global variables?<br/> Global variable can be created 
+    by many developers resulting in duplicate global variables. Duplicate variable can overwrite 
+	the value of your variable.</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="3-functions">
 <ol start="3" type="1">
-<li>Functions
-</h2>
-<!-- 37 thru 54 -->
+  <li>Functions</h2>  <!-- 37 thru 54 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="37">
 <li>
@@ -550,9 +581,7 @@ Uniform Resource Identifier previously created by encodeURI().
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="4-events">
 <ol start="4" type="1">
-<li>Events
-</h2>
-<!-- 55 thru 64 -->
+  <li>Events</h2>  <!-- 55 thru 64 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="55">
 <li>
@@ -1576,3 +1605,8 @@ That does it. the end…
 </ol></li>
 </ol></li>
 </ol>
+
+<h6>Last Updated 9/18/2024 Wed 12+pm</h6>
+
+</body>
+</html>
