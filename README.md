@@ -1098,26 +1098,21 @@ can be displayed.</li>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="8-cookies">8. Cookies</h2>  <!-- 112 thru 120 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-What is cookie?
+<ol start="112">
+  <li>What is cookie?<br/>
 The Cookies are small items of data that consists of name and value
 pair. Cookies are stored on your computer so that it can be accessed
-by your web browser.
+by your web browser.<br/>
 A web browser and server communicate through HTTP which is
-stateless
-protocol.
-Stateless
-protocol
-treats
-each
-request
-independently, so server does not keep data after sending it to
-browser. With cookies such data can be fetched directly from stored
-cookie file instead of communicating with server.
-For example when user visits web page, user name can be stored in
+stateless protocol.<br/>
+Stateless protocol treats each request independently, so server does not 
+keep data after sending it to browser. With cookies such data can be 
+fetched directly from stored cookie file instead of communicating with server.
+For example when user visits web page, user name can be stored in 
 cookie. Now when next time user visits the page cookie belonging to
 the page is added to the request. This way server gets necessary data
-“remembered” by cookie.
-113. How cookie helps client server HTTP communication?
+“remembered” by cookie.</li>
+  <li>How cookie helps client server HTTP communication?<br/>
 When a user sends a request to the server, then each of that request
 is treated as a new request sent by the different user.
 When receiving an HTTP request, a server can possibly send a Set-
@@ -1125,106 +1120,84 @@ Cookie header with the response.
 Now, whenever a user sends a request to the server, the cookie is
 added with that request automatically. Due to the cookie, the server
 recognizes the users
-Where are cookies stored?
+Where are cookies stored?<br/>
 During browsing session browser stored cookies in memory, at the
 time of quitting they go to file called as cookies.txt.
 Different browser store cookies file in a different location on disk.
 For instance, on windows chrome stores the cookies in below
-location, C:\Users\<YourUser>\AppData\Local\Google\Chrome
+location, C:\Users\&lt;YourUser&gt;\AppData\Local\Google\Chrome
 \User Data\Default\
 As cookie expires it is no longer saved on hard drive.
-115. Where are parameters of cookie?
+115. Where are parameters of cookie?<br/>
 There are six parameters of cookie: name, value, expires, path,
-domain and security.
+domain and security.<br/>
 The name and value are required whereas all other parameters are
 optional.
-document.cookie=”name=VALUE;expires=DATE;path=PATH;domain=DOMAIN;secure”;
+<pre>document.cookie=”name=VALUE;expires=DATE;path=PATH;domain=DOMAIN;secure”;</pre>
 Name and Value : The first part of cookie must have name and
 value. The entire name/value must be a single string with no
-commas, semicolons or whitespace charactors.
+commas, semicolons or whitespace charactors.<br/>
 Expires : The cookie will disappear when user exits the browser, to
 give more life to the cookies you must set an expiration date in the
-following format.
-DD-Mon-YY HH:MM:SS GMT
+following format.<br/>
+DD-Mon-YY HH:MM:SS GMT<br/>
 Path : Usually the path is set to root level directory (‘/’), which
 means the cookie is available for all the pages of your site. If you
-want
-the
-cookie
-to
-be
-readable
-in
-specific
-directory
-<directoryname>,
-path
-should
-be
-specified
-as
-path=/<
-directoryname>.
+want the cookie to be readable in specific directory &lt;directoryname&gt;,
+path should be specified as path=&lt;directoryname&gt;.<br/>
 Domain : Some websites have lots of domains. The purpose of the
 ‘domain’ is to allow cookies to other subdomains. In case, if website
-is
-http://www.<domain>.com
-with
-subdomains
-http://
-www.<subdomainone>.<domain>.com
-and
-http://
-www.<subdomaintwo>.<domain>.com.
-If
-web
-page
-on
-subdomainone set a cookie pages on subdomaintwo cannot read that
-cookie. But if you add domain=<domain> then all subdomains
-ending with <domain> can read the cookie.
+is http://www.&lt;domain&gt;.com
+with subdomains
+http://www.&lt;subdomainone&gt;.&lt;domain&gt;.com
+and http://www.&lt;subdomaintwo&gt;.&lt;domain&gt;.com.<br/>
+If web page on subdomainone set a cookie pages on subdomaintwo cannot read that
+cookie. But if you add domain=&lt;domain&gt; then all subdomains
+ending with &lt;domain&gt; can read the cookie.<br/>
 Secure : The last parameter of cookie is secure which is a Boolean
 value. Its default value is false. If cookie is marked as secure then
 cookie will be sent to web server and try to retrieve it using secure
-communication channel.
-116. Can user disable cookies?
+communication channel.</li>
+  <li>Can user disable cookies?<br/>
 Yes, user can disable cookies from browser.
-In chrome, you can go to settings-->Advanced Settings-->Privacy
-and security-->Content setting-->Cookies and disable cookies.
-117. How to create cookie?
+In chrome, you can go to settings--&gt;Advanced Settings--&gt;Privacy
+and security--&gt;Content setting--&gt;Cookies and disable cookies.</li>
+  <li>How to create cookie?<br/>
 When visitor visits web page for first time he enters his or her name.
 This name will be stored in cookies as below,
-function createCookie(username, value) {
+<pre>function createCookie(username, value) {
 ​ document.cookie=username + ”=” + value;
-}
-118. How to read cookie?
+}</pre>
+</li>
+  <li>How to read cookie?<br/>
 Javascript cookies can be read like this,
-var x = document.cookie;
-119. How to delete cookie?
+<pre>var x = document.cookie;</pre>
+</li>
+  <li>How to delete cookie?<br/>
 While deleting cookie you don’t have to specify value.
 Javascript cookies can be deleted by specifying expires parameter to
 a past date.
-document.cookie=”username=;
-expires=Thu,
-01
-Jan
-1970
-00:00:00 UTC; path= /; ”;
+<pre>
+document.cookie=”username=; 
+expires=Thu, 01 Jan 1970 00:00:00 UTC; path= /; ”;
+</pre>
 Some browsers will not let you delete cookie if you don’t specify the
-path.
-120. What is difference between local storage and session storage?
+path.</li>
+  <li>What is difference between local storage and session storage?<br/>
 Local Storage : For every HTTP request, the data is not sent back to
 the server (HTML, images, JavaScript, CSS, etc) reducing the total
 traffic between client and server. Data will stay until it is manually
-cleared using settings or through program.
+cleared using settings or through program.<br/>
 Session Storage : It is similar to local storage; the only difference is
 data stored in local storage has no expiration time whereas data
 stored in session storage gets cleared when the page session ends.
-Session Storage will cleared when the browser is closed.
+Session Storage will cleared when the browser is closed.</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="9-formValidation">9. Form validation</h2>  <!-- 121 thru 130 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-121. What is form validation?
+<ol start="121">
+  <li>121. What is form validation?<br/>
 Form validation verifies whether all fields in form are filled
 according to required format.
 If data entered by user is not according to format then appropriate
@@ -1237,29 +1210,29 @@ require server connection but it is less secure.
 Javascript is used for client side validation.
 Advantages of client side validation is that, it saves time, reduces
 load on server and can validate form element even before form is
-submitted.
-122. What is required attribute?
+submitted.</li>
+  <li>What is required attribute?<br/>
 The required attribute in HTML element prevents that element being
 submitted as blank.
 e.g.
-<input type=”text” name=”employeename” required>
+<pre>&lt;input type=”text” name=”employeename” required&gt;</pre>
 In above case, as long as text field employeename is blank form
-submission will be prevented.
-123. What is pattern attribute?
+submission will be prevented.</li>
+  <li>What is pattern attribute?<br/>
 The pattern attribute specifies a regular expression against which
 elements value is checked.
 If element value does not match the regex pattern form submission
 will be prevented.
 e.g
-<input type=”text” name=”employeename” pattern=”[A-Za-z]”>
+<pre>&lt;input type=”text” name=”employeename” pattern=”&lbrack;A-Za-z&rbrack;”&gt;</pre>
 In above case, if employee name contains value which is not
-alphabet then form submission will be prevented.
-124. How to validate form using Javascript function?
+alphabet then form submission will be prevented.</li>
+  <li>How to validate form using Javascript function?<br/>
 Below example shows validation of form using Javascript.
 Here, we have created form having name input and then when while
 saving save validateName function will be called and it will validate
 if name is blank.
-<script>
+<pre>&lt;script&gt;
 function validateName() {
 ​ var name = document.nameform.name.value;
 ​ if(name==undefined || name==””) {
@@ -1268,275 +1241,276 @@ function validateName() {
 ​ }
 ​ Return true;
 }
-</script>
-<form
-name=”nameform”
-method=”post”
-onsubmit=”return
-validateform()”>
-Name: <input type=”text” name=”name”>
-<input type=”submit” name=”save”>
-</form>
-125. How to validate email in the form?
+&lt;/script&gt;
+&lt;form
+  name=”nameform”
+  method=”post”
+  onsubmit=”return
+  validateform()”&gt;
+  Name: &lt;input type=”text” name=”name”&gt;
+  &lt;input type=”submit” name=”save”&gt;
+&lt;/form&gt;</pre>
+</li>
+  <li>How to validate email in the form?<br/>
 Below function can be used to validate email in the form.
-function validateEmail(emailField){
-var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-
-Za-z]{2,4})$/;
-if (reg.test(emailField.value) == false)
-{
-alert('Invalid Email Address');
-return false;
-}
-return true;
-}
-126. How to validate field without submitting form?
+<pre>function validateEmail(emailField){
+  var reg = /^(&lbrack;A-Za-z0-9_\-\.&rbrack;)+\@(&lbrack;A-Za-z0-9_\-\.&rbrack;)+\.(&lbrack;A-
+    Za-z&rbrack;{2,4})$/;
+  if (reg.test(emailField.value) == false)
+    {
+    alert('Invalid Email Address');
+    return false;
+    }
+  return true;
+}</pre>
+</li>
+  <li>How to validate field without submitting form?<br/>
 To validate field without submitting form you can use validation
-function in onblur event of input field.
-<input type="text" onblur="validateEmail(this);" />
-Here, input field will be available to validateEmail function.
-127. What is .test method?
+function in onblur event of input field.<br/>
+<pre>&lt;input type="text" onblur="validateEmail(this);" /&gt;</pre>
+Here, input field will be available to validateEmail function.</li>
+  <li>What is .test method?<br/>
 The .test() API runs a search for a match between a regex and a
-string.
+string.<br/>
 The .test() API returns a Boolean(true/false), returns true if test
 passes and false if it doesn’t.
-Using .test() returns no data, so don’t expect any.
-128. What is .match method?
+Using .test() returns no data, so don’t expect any.</li>
+  <li>What is .match method?<br/>
 Using .match() is best when you are expecting data back in test
 result, .match() returns an array with matches or simply null if there
 are none.
 With match you won’t just be testing for presence of data, you will
-also see if data pattern exist and return that data.
-129. How to validate Date?
-function validateDate(dateField) {
-var reg = /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/
-if (reg.test(dateField.value) == false) {
-alert(“Invalid Date!!!”);
-return false;
-}
-return true;
-}
-130. How to allow number only in input field?
-function validateNumber(numField) {
-var reg = /^[0-9]+$/
-if (reg.test(numField.value) == false) {
-alert(“Invalid Number!!!”);
-return false;
-}
-return true;
-}
+also see if data pattern exist and return that data.</li>
+  <li>How to validate Date?<br/>
+<pre>function validateDate(dateField) {
+  var reg = /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/
+  if (reg.test(dateField.value) == false) {
+    alert(“Invalid Date!!!”);
+    return false;
+  }
+    return true;
+  }</pre>
+</li>
+  <li>How to allow number only in input field?<br/>
+<pre>function validateNumber(numField) {
+  var reg = /^[0-9]+$/
+  if (reg.test(numField.value) == false) {
+    alert(“Invalid Number!!!”);
+      return false;
+  }
+      return true;
+  }</pre>
+</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="10-errorHandling">10. Error and Exception Handling</h2>  <!-- 131 thru 135 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-131. What is error object?
+<ol start="131">
+  <li>What is error object?<br/>
 When an exception occurs, an object representing the error is
-constructed and thrown.
-The Error constructor creates an error object.
+constructed and thrown.<br/>
+The Error constructor creates an error object.<br/>
 When runtime errors occur, instances of Error objects are thrown.
 The Error object can be used as a base object for user-defined
 exceptions.
-var error = new Error("error message");
+<pre>var error = new Error("error message");</pre>
 “Error” objects contain two properties, “name” and “message”. The
 “name” property specifies the type of exception The “message”
 property provides a more detailed description of the exception.
 The “message” gets its value from the string passed to the
-constructor of exception.
-132. What are different error types in Javascript?
-Below are primary error types in javascript:
+constructor of exception.</li>
+  <li>What are different error types in Javascript?<br/>
+Below are primary error types in javascript:<br/>
 SyntaxError : Raised when syntax error occurs while parsing the
-Javascript code.
-RangeError : Raised when numeric value exceeds allowed range.
+Javascript code.<br/>
+RangeError : Raised when numeric value exceeds allowed range.<br/>
 EvalError : Raised when the eval() function is used in an incorrect
-manner.
-ReferenceError : Raised when an invalid reference is used
-TypeError : Raised when type of variable is not as expected.
+manner.<br/>
+ReferenceError : Raised when an invalid reference is used<br/>
+TypeError : Raised when type of variable is not as expected.<br/>
 URIError : Raised when the encodeURI() or decodeURI() functions
-are used in an inaccurate manner.
+are used in an inaccurate manner.<br/>
 InternalError : Raised when internal error in the javascript engine is
-thrown.
-133. How to handle exceptions in JavaScript?
+thrown.</li>
+  <li>How to handle exceptions in JavaScript?<br/>
 JavaScript uses the try...catch...finally statement as well as the throw
-operator to handle exceptions.
+operator to handle exceptions.<br/>
 You can catch user-defined and runtime exceptions, but you cannot
-catch JavaScript syntax errors.
-134. Explain try…catch…finally.
-Try : wraps suspicious code that may throw an error in try block.
+catch JavaScript syntax errors.</li>
+  <li>Explain try…catch…finally.<br/>
+Try : wraps suspicious code that may throw an error in try block.<br/>
 Catch : Write code to do something when error occurs in catch
 block. The catch block can have parameters which will give you
 error information. Usually, catch block is used to log an error or
-display specific messages to the user.
+display specific messages to the user.<br/>
 Finally : code in finally block will always be executed regardless of
 the occurrence of an error. The finally block is usually used to
 complete the remaining task or reset variables that might have
-changed before error occurred in try block.
-135. How to throw exceptions programmatically?
+changed before error occurred in try block.</li>
+  <li>How to throw exceptions programmatically?<br/>
 It is possible to throw exceptions programmatically using “throw”
-statement.
+statement.<br/>
 There is no restriction on data type that can be thrown as an
-exception.
-e.g.
-throw “error occurred!!”;
-throw new SyntaxError(“syntax error occurred!!”);
+exception. e.g.
+<pre>throw “error occurred!!”;
+throw new SyntaxError(“syntax error occurred!!”);</pre>
+</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="11-debug">11. Debugging</h2>  <!-- 136 thru 145 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-136. What is debugging?
+<ol start="136">
+  <li>136. What is debugging?<br/>
 Debugging is the process of detecting and fixing existing and
 potential errors in software code that can cause it to behave
 unexpectedly.
 To debug a program, programmer has to start with problem, identify
 source of the problem and then fix it.
 Sometimes it takes more time debugging a program than coding it.
-137. What is debugger keyword?
+  <li>What is debugger keyword?<br/>
 Debugger statement stops the execution of Javascript. If debugging
 functionality is not available, this statement has no effect.
 Debugger keyword is like breakpoint in script source code.
 e.g.
-function someErroraniousFunction() {
+<pre>function someErroraniousFunction() {
 ​ debugger;
 ​ code;
-}
-138. What is console object?
-Console
-object
-provides
-access
-to
-browsers
-debugging
-console.
+}</pre>
+  </li>What is console object?<br/>
+Console object provides access to browsers debugging console.<br/>
 If browser supports debugging you can use console.log() method to
-display required text in debugging window.
+display required text in debugging window.<br/>
 Console object provides methods like debug(), log(), error(), info(),
-trace(), warn() which are useful for code debugging.
-139. How to activate debugging in browser?
+trace(), warn() which are useful for code debugging.</li>
+  <li>How to activate debugging in browser?<br/>
 You can activate debugging in browser by pressing F12 and then
-select console in debugger menu.
-140. How to get mobile devices view of webpage in desktop
-browser?
+select console in debugger menu.</li>
+  <li>How to get mobile devices view of webpage in desktop browser?<br/>
 In browser press F12,
 Then click on toggle device toolbar,
-Then, select device for which you want webpage view.
-141. How to deactivate breakpoint in browser?
+Then, select device for which you want webpage view.</li>
+  <li>How to deactivate breakpoint in browser?<br/>
 This can be done by clicking on “deactivate breakpoints” icon in
-“Sources” tab of browser developer tool.
-142. How to pause script execution?
+“Sources” tab of browser developer tool.</li>
+  <li>How to pause script execution?<br/>
 This can be done by clicking on “pause script execution” icon in
-“Sources” tab of browser developer tool.
-143. How to execute function line by line while debugging?
+“Sources” tab of browser developer tool.</li>
+  <li>How to execute function line by line while debugging?<br/>
 This can be done by clicking on "Step into next fnuction call" icon in
-"Sources" tab of browser developer tool.
+"Sources" tab of browser developer tool.<br/>
 How to execute function without stepping into it while
-debugging?
+debugging?<br/>
 This can be done by clicking on “Step over next function call” icon in
-“Sources” tab of browser developer tool.
-145. What is code smell?
+“Sources” tab of browser developer tool.</li>
+  <li>What is code smell?<br/>
 In computer programming, a code smell is any characteristic in the
 source code of a program which possibly indicates a deeper problem.
 Determining what is a code smell and what is not a code smell is
 subjective, and varies by language, developer, and development
-methodology.
+methodology.<br/>
 The two main know open source tools used for JavaScript code
 analysis are JSLint and JSHint, the second being a fork of the first
 one. There are however many different tools that try to achieve the
 same goal and you might find something more suited to your own
-needs
+needs</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="12-ajax">12. AJAX overview</h2>  <!-- 146 thru 151 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-146. What is AJAX?
+<ol start="146">
+  <li>What is AJAX?<br/>
 AJAX stands for Asynchronous Javascript and XML. It is collection of
 related technologies like Javascript, XML, JSON, HTML and
 XMLHttpRequest etc.
 AJAX allows you to send and receive data asynchronously without
 reloading web page and hence makes web pages more fast and
-interactive.
-147. What is difference between GET and POST?
-GET
-POST
-History
-Parameters remain in browser
-history as they are part of URL.
-Parameters are not saved in
-browser history.
-Security
-GET is less secure as data sent
-as part of URL.
-POST is more secure than
-GET because parameters are
-not stored in browser
-history.
-ParametersParameter data is limited to
-what you can stuff in URL.
-Safest to use less than 2K of
-parameters.
-Parameters can contain
-uploaded data files and
-larger data than GET.
-Caching
-Can be cached.
-Not cached.
-148. What is XMLHttpRequest object?
+interactive.</li>
+  <li>What is difference between GET and POST?<br/>
+<table border="1" style="width:200px">
+  <thead>
+    <tr>
+      <th></th>
+      <th>GET</th>
+      <th>POST</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>History</td>
+      <td>Parameters remain in browser history as they are part of URL.</td>
+	  <td>Parameters are not saved in browser history.</td>
+    </tr>
+    <tr>
+      <td>Security</td>
+      <td>GET is less secure as data sent as part of URL.</td>
+      <td>POST is more secure than GET because parameters are not stored in browser history.</td>
+    </tr>
+	<tr>
+	  <td>Parameters</td>
+	  <td>Parameter data is limited to what you can stuff in URL. Safest to use less than 2K of parameters.</td>
+      <td>Parameters can contain uploaded data files and larger data than GET.</td>
+	</tr>
+	<tr>
+	  <td>Caching</td>
+      <td>Can be cached.</td>
+      <td>Not cached.</td>
+    </tr>
+  </tbody>
+</table></li>
+  <li>What is XMLHttpRequest object?<br/>
 XMLHttpRequest object is used for asynchronous communication
-between client and server.
+between client and server.<br/>
 It provides methods like open(), send(), setRequestHeader() for
-exchanging data between client and server.
-149. How to make HTTP GET call using AJAX?
+exchanging data between client and server.</li>
+  <li>How to make HTTP GET call using AJAX?<br/>
 To make HTTP call in AJAX, you first need to initialize a new
-XMLHttpRequest() object.
+XMLHttpRequest() object.<br/>
 Specify URL endpoint, HTTP method (GET) to open() method of
-XMLHttpRequest() object.
-Then call send() method to hit the request.
+XMLHttpRequest() object.<br/>
+Then call send() method to hit the request.<br/>
 Receive the response using XMLHttpRequest.onreadystatechange
-property.
-e.g.
-const xmlHttpRequest = new XMLHttpRequest();
+property. e.g.
+<pre>const xmlHttpRequest = new XMLHttpRequest();
 xmlHttpRequest.open(“GET”,”http://some.domain.com/method”);
 xmlHttpRequest.send();
-xmlHttpRequest.onreadystatechange=(e)=>{
+xmlHttpRequest.onreadystatechange=(e)=&gt;{
 ​ console.log(xmlHttpRequest.responceText);
-}
-150. How to make HTTP POST call using AJAX?
+}</pre></li>
+  <li>How to make HTTP POST call using AJAX?<br/>
 To make HTTP call in AJAX, you first need to initialize a new
-XMLHttpRequest() object.
+XMLHttpRequest() object.<br/>
 Specify URL endpoint, HTTP method (POST) to open() method of
-XMLHttpRequest() object.
+XMLHttpRequest() object.<br/>
 Then call send() and pass data to send() method to hit the request.
 Receive the response using XMLHttpRequest.onreadystatechange
-property.
-e.g.
-const xmlHttpRequest = new XMLHttpRequest();
+property. e.g.
+<pre>const xmlHttpRequest = new XMLHttpRequest();
 xmlHttpRequest.open(“POST”,”http://some.domain.com/method”);
 xmlHttpRequest.send(“fname=Pratik&lname=Bandal”);
 xmlHttpRequest.onreadystatechange=(e)=>{
 ​ console.log(xmlHttpRequest.responceText);
-}
-151. What are HTTP status codes?
+}</pre></li>
+  <li>What are HTTP status codes?<br/>
 HTTP status code are the standard response code given by web site
 servers. These codes help identify the cause of problem when web
 page or other resource does not load properly.<br/>
-
 <b>4xx Client Error:</b><br/>
 This category of HTTP status code includes those where request for a
 web page or other resource contains bad syntax or cannot be filled
-for some other reason, presumably due to fault of client.
-
+for some other reason, presumably due to fault of client.<br/>
 Some common client error HTTP status codes are<br/>
-<b>404 (Not Found)</b>, <b>403 (Forbidden) and 400 (Bad request).</b>
-
+<b>404 (Not Found)</b>, <b>403 (Forbidden) and 400 (Bad request).</b><br/>
 <b>5xx Client Error:</b><br/>
 This category of HTTP status code include those where the request
 for a web page or other resource is understood by the websites server
 but is incapable of filling it for some reason.<br/>
 Some common server error HTTP status codes are<br/>
-
-<b>500 (Internal server error), 503 (Service Unavailable) and 502 (Bad Gateway).</b>
+<b>500 (Internal server error), 503 (Service Unavailable) and 502 (Bad Gateway).</b><br/>
 There are also <b>1xx, 2xx and 3xx</b> code that are informational, confirm
 success or dictate redirection which are not errors, so you shouldn’t
-be alerted about them.<br/>
-
-You may also like to read (available on amazon):<br/>
-Angular Interview Questions and Answers: Includes Angular 8, 7, 6, 5, 4
-and 2
-Core Java Interview Questions and Answers: Includes Java 12, 11, 10, ...
-That does it.  the end...
-
+be alerted about them.<br/></li>
+</ol>
+<p>You may also like to read (available on amazon):<br/>
+Angular Interview Questions and Answers: Includes Angular 8, 7, 6, 5, 4 and 2<br/>
+Core Java Interview Questions and Answers: Includes Java 12, 11, 10, ...<br/>
+That does it.  the end...</p>
