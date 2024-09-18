@@ -1,3 +1,13 @@
+---
+title: "JavaScript Tips - First 151"
+author: "bbauska"
+date created: "9/18/2024 Wed 4+pm"
+date last editted: "9/18/2024 Wed 1+pm"
+
+output: 
+  markdown:
+    with some style
+---
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 id="js-tips">JS-TIPS (1st 151 things to learn)</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
