@@ -501,32 +501,32 @@
 	which you can respond in some way. Events are handled by function known as event handler.</li>
   <li>What are different events in Javascript?<br/>
     Few of the important events are listed below:<br/>
-	<b><i>Input Events</i></b>
-	• onsubmit - triggers on submitting a form.
-	• onselect - triggers on selecting an element.
-	• onchange - triggers when changes happen to an element.
-	• onfocus - triggers when windows gets focus.
-	• onreset - triggers when user clicks reset button.
-	• onblur - triggers when window loses focus.
-	• onkeyup - triggers on releasing a key.
-	• onkeydown - triggers on pressing a key.
-    <b><i>Click Events</i></b>
-	• onclick - trigger on clicking a mouse button.
-	• ondblclick - triggers on double clicking mouse button.
-    <b><i>Mouse Events</i></b>
-	• ondrag - triggers when element is dragged.
-	• ondragend - triggers when drag ends.
-	• ondragstart - triggers when drag starts.
-	• ondragenter - triggers when dragged element is dropped.
-	• ondragleave - triggers on leaving target while dragging element.
-	• onmouseover - triggers when mouse pointer moves over element.
-	• onmousedown - triggers on pressing mouse button.
-	• onmouseup - triggers on releasing mouse button.
-	• onscroll -​ triggers on scrolling a scroll bar of an element.
-	<b><i>Load Events</i></b>
-	• onload- triggers when page has been loaded.
-	• onerror- triggers when an error occurs when loading an image.
-	• onunload- triggers when browser closes document.</li>
+	<b><i>Input Events</i></b><br/>
+    - • onsubmit - triggers on submitting a form.<br/>
+	- • onselect - triggers on selecting an element.<br/>
+	- • onchange - triggers when changes happen to an element.<br/>
+	- • onfocus - triggers when windows gets focus.<br/>
+	- • onreset - triggers when user clicks reset button.<br/>
+    - • onblur - triggers when window loses focus.<br/>
+    - • onkeyup - triggers on releasing a key.<br/>
+    - • onkeydown - triggers on pressing a key.<br/>
+    <b><i>Click Events</i></b><br/>
+    - • onclick - trigger on clicking a mouse button.<br/>
+    - • ondblclick - triggers on double clicking mouse button.<br/>
+    <b><i>Mouse Events</i></b><br/>
+    - ondrag - triggers when element is dragged.<br/>
+    - ondragend - triggers when drag ends.<br/>
+    - ondragstart - triggers when drag starts.<br/>
+    - • ondragenter - triggers when dragged element is dropped.<br/>
+    - • ondragleave - triggers on leaving target while dragging element.<br/>
+    - • onmouseover - triggers when mouse pointer moves over element.<br/>
+    - • onmousedown - triggers on pressing mouse button.<br/>
+    - • onmouseup - triggers on releasing mouse button.<br/>
+    - • onscroll -​ triggers on scrolling a scroll bar of an element.<br/>
+	<b><i>Load Events</i></b><br/>
+    - • onload- triggers when page has been loaded.<br/>
+    - • onerror- triggers when an error occurs when loading an image.<br/>
+    - • onunload- triggers when browser closes document.</li>
   <li>What are event handlers?<br/>
     Event handler is a routine that is used to deal with event, allowing programmers to 
 	write code that will be executed when event occurs.</li>
@@ -543,10 +543,10 @@
 The removeEventListener() is an inbuilt function in JavaScript which
 removes an event handler from an element for attached event.
 Below example show how to remove event listener which was added
-in previous example.
-e.g.
-document.getElementById(“someUniqueDivId”).removeEventListener("click",
-respondtoclick);
+in previous example. e.g.
+<pre>document.getElementById(“someUniqueDivId”).removeEventListener("click",
+respondtoclick);</pre>
+</li>
   <li>What are different key codes?<br/>
 It is necessary to know the codes associated with keys to identify
 which key is pressed in the code.<br/>
@@ -677,7 +677,8 @@ delete
 9
 57select key
 93scroll lock
-145</li>
+145
+</li>
 <li>What is event bubbling?<br/>
 When an event happens on an element, it first runs the handlers on
 that particular element, after that handlers on its parent runs, this
@@ -685,7 +686,6 @@ happens all the way up on all other ancestors.
 This bubbling of events from child to parent is called event bubbling.
 A click on inner &lt;p&gt; first runs onclick on that &lt;p&gt;, then on outer
 &lt;div&gt;, then on outer &lt;form&gt; and so on till document object.
-
 This process is called “bubbling”, because events “bubble” from the
 inner element up through parent like a bubble in the water.</li>
   <li>Is it possible to stop event bubbling?<br/>
@@ -823,8 +823,8 @@ Date object is created as,
 <pre>new Date();
 new Date(value);
 new Date(dateString);
-new Date(year, monthIndex &lbrack;, day &lbrack;, hours &lbrack;, minutes &lbrack;, seconds &lbrack;, milliseconds&rbrack;&rbrack;&rbrack;&rbrack;);
-</pre></li>
+new Date(year, monthIndex &lbrack;, day &lbrack;, hours &lbrack;, minutes &lbrack;, seconds &lbrack;, milliseconds&rbrack;&rbrack;&rbrack;&rbrack;);</pre>
+</li>
   <li>Explain about Math object.<br/>
 Math is a built-in object that has methods and properties for
 mathematical constants and functions.
@@ -862,7 +862,8 @@ accessible and modifiable and object's prototype property is not
 visible.
 The prototype property allows you to add properties and methods to
 any object. e.g.
-<pre>somecustomcreationobject.prototype.age=29;</pre></li>
+<pre>somecustomcreationobject.prototype.age=29;</pre>
+</li>
   <li>What is prototypal inheritance?<br/>
 Object have property called as prototype which can refer to other
 object.
@@ -919,7 +920,8 @@ When alert() is called,the browser creates a system message box that
 displays the given text with an OK button.<br/>
 For example, the following line of code causes the message box in to
 be displayed:
-<pre>alert(“Your error message!!!”);</pre></li>
+<pre>alert(“Your error message!!!”);</pre>
+</li>
   <li>Explain confirm method of window object.<br/>
 A confirm dialog appears similar to an alert dialog.
 The main difference between them is the presence of a Cancel button
@@ -927,7 +929,8 @@ along with the OK button in the confirm dialog, which allows the
 user to confirm if a given action should be taken.<br/>
 For example, the following line of code displays the confirm dialog
 shown in Figure 
-<pre>confirm(“Do you wish to proceed?”);</pre></li>
+<pre>confirm(“Do you wish to proceed?”);</pre>
+</li>
 <li>Explain prompt method of window object.<br/>
 The prompt method is used to display dialog with input from user.
 Along with OK and Cancel buttons, prompt dialog also has a text box
@@ -1197,7 +1200,7 @@ Session Storage will cleared when the browser is closed.</li>
 <h2 id="9-formValidation">9. Form validation</h2>  <!-- 121 thru 130 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="121">
-  <li>121. What is form validation?<br/>
+  <li>What is form validation?<br/>
 Form validation verifies whether all fields in form are filled
 according to required format.
 If data entered by user is not according to format then appropriate
