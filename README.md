@@ -264,16 +264,13 @@ output:
     to the top of their functional/local scope (if declared inside a
     function) or to the top of their global scope (if declared outside of a
     function).
-    This lifting of scopes is called hoisting. Hence,<br/>
-	<pre>
-    ​bla = 2;
-    var bla;
-    </pre>
+    This lifting of scopes is called hoisting. Hence,
+	<pre>​bla = 2;
+    var bla;</pre>
     // ...is implicitly understood as:<br/>
-	<pre>
-​    var bla;
-    bla = 2;
-	</pre></li>
+	<pre>var bla;
+    bla = 2;</pre>
+  </li>
   <li>What is difference between undefined and null?<br/>
     The undefined means a variable has been declared but has no value has yet been assigned.
     On the other hand, null is basically a value which has been assigned.
@@ -283,23 +280,19 @@ output:
     Whereas JavaScript never sets a value to null. That must be done programmatically.</li>
   <li>What is output of null == undefined?<br/>
     null == undefined will return true.<br/>
-    However, null === undefined will return false .</li>
+    However, null === undefined will return false.</li>
   <li>What are escape characters?<br/>
     Escape characters (backslash) is used before special characters like
-    ampersand, single quotes, double quotes and apostrophes to display them.<br/>
-    e.g.<br/>
-	<pre>
-    console.log(‘I\’m Brian Bauska’); ☐ Correct syntax<br/>
-    console.log(‘I’m Brian Bauska’); ☐ Syntax error<br/>
-	</pre>
+    ampersand, single quotes, double quotes and apostrophes to display them. e.g.
+	<pre>console.log(‘I\’m Brian Bauska’); ☐ Correct syntax
+    console.log(‘I’m Brian Bauska’); ☐ Syntax error</pre>
     In above example, if backslash is not used before single quotes this
-    line will give syntax error.</li>
+    line will give syntax error.
+  </li>
   <li>How to create array in javascript?<br/>
     You can define arrays using the array literal as follows-<br/>
-	<pre>
-    var a = &lbrack;&rbrack;;
-    var b = &lbrack;1, 2, 3&rbrack;;
-	</pre>
+	<pre>var a = &lbrack;&rbrack;;
+    var b = &lbrack;1, 2, 3&rbrack;;</pre>
   </li>
   <li>How to create three dimensional array?<br/>
     You can define three dimensional arrays using the array as follows:<br/>
@@ -325,16 +318,16 @@ output:
     </li>
   <li>What are types of functions in Javascript?<br>
     Below are the types of functions:<br>
-    <b>Named</b>: Functions which have name at the time of definition are named functions.<br/>
-    e.g. function print() {<br>
-  ​ console.log(“This is named function!!!”);<br/>
-   }<br/>
+    <b>Named</b>: Functions which have name at the time of definition are named functions. e.g. 
+	<pre>function print() {
+  ​   console.log(“This is named function!!!”);
+   }</pre>
    <b>Anonymous</b>: Functions which do not have names are anonymous functions.<br/>
    var print=function() {<br/>
   ​ console.log(“This is anonymous function!!!”);<br/>
    }</li>
   <li>What are frequently used built-in global functions?<br/>
-    Alert(), prompt(),isNan(), eval(), isFinite(),confirm(), parseInt(),
+    Alert(), prompt(),isNan(), eval(), isFinite(), confirm(), parseInt(),
     parseFloat(), escape(), unescape() are most frequently used built-in
     global functions.</li>
   <li>What is isNaN?<br/>
@@ -354,20 +347,17 @@ output:
     The confirm() function displays a message box with two buttons, Ok and cancel. When you click the 
     Ok button, the function returns true. When you click cancel button function returns false.</li>
   <li>What is charAt?<br/>
-    The charAt() function returns character from specified index.<br/>
-    e.g.<br/>
-  ​ ​ var str=”Pratik”;<br/>
-  ​ ​ console.log(str.charAt(0));<br/>
-  ​ ​ Output :<br/>
-  ​ ​ P</li>
+    The charAt() function returns character from specified index. e.g.
+	<pre>var str=”Pratik”;
+  ​ ​ console.log(str.charAt(0));
+  ​ ​ Output : P</pre>
   <li>What is indexOf?<br/>
     This function returns the index within the calling string object of first occurrence 
-    of the specified value and returns index of found occurrence or -1 if not found.<br/>
-    e.g.<br/>
-​   ​ var str=”This is javascript book”;<br/>
-​   ​ console.log(str .indexOf(“javascript”));<br/>
-  ​ ​ Output:<br/>
-  ​ ​ 8</li>
+    of the specified value and returns index of found occurrence or -1 if not found. e.g.
+<pre>var str=”This is javascript book”;
+console.log(str .indexOf(“javascript”));
+Output: 8</pre>
+  </li>
   <li>What are function scopes?<br/>
     Scope defines accessibility of function and its variables. In Javascript scope is 
     divided into two categories:<br/>
@@ -394,16 +384,16 @@ output:
     A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function’s variables.</li>
   <li>What is callback function?<br/>
     A function passed into another function as an argument, which is then invoked inside the outer 
-    function to complete some kind action is called as callback function.<br/>
-    e.g.<br/>
-    function showName(name) {<br/>
-    alert('User name is:' + name);<br/>
-    }<br/>
-    function displayName(callback) {<br/>
-    var name = prompt('Please enter name to be displayed');<br/>
-    callback(name);<br/>
-    }<br/>
-    displayName(showName);</li>
+    function to complete some kind action is called as callback function. e.g.
+<pre>function showName(name) {
+  alert('User name is:' + name);
+}
+function displayName(callback) {
+  var name = prompt('Please enter name to be displayed');
+  callback(name);
+}
+displayName(showName);</pre>
+  </li>
   <li>What is setTimeout function?<br/>
     The setTimeout() function executes function at specified interval.<br/>
     setTimeout(expression, timeout);<br/>
@@ -451,9 +441,9 @@ output:
     - • onclick - trigger on clicking a mouse button.<br/>
     - • ondblclick - triggers on double clicking mouse button.<br/>
     <b><i>Mouse Events</i></b><br/>
-    - ondrag - triggers when element is dragged.<br/>
-    - ondragend - triggers when drag ends.<br/>
-    - ondragstart - triggers when drag starts.<br/>
+    - • ondrag - triggers when element is dragged.<br/>
+    - • ondragend - triggers when drag ends.<br/>
+    - • ondragstart - triggers when drag starts.<br/>
     - • ondragenter - triggers when dragged element is dropped.<br/>
     - • ondragleave - triggers on leaving target while dragging element.<br/>
     - • onmouseover - triggers when mouse pointer moves over element.<br/>
@@ -471,24 +461,23 @@ output:
     The addEventListener() method attaches an event handler to specified element.
     You can add multiple event handlers to one element. It is possible to add event 
 	listener to any DOM object. e.g.
-	<pre>      document.getElementById(“someUniqueDivId”).addEventListener(“click”, respondtoclick);
-      function respondtoclick() {
-        console.log(“Do some stuff!!!”);
-      }</pre>
+<pre>document.getElementById(“someUniqueDivId”).addEventListener(“click”, respondtoclick);
+function respondtoclick() {
+  console.log(“Do some stuff!!!”);
+}</pre>
   </li>
   <li>How to remove event listener from any element?<br/>
 The removeEventListener() is an inbuilt function in JavaScript which
 removes an event handler from an element for attached event.
 Below example show how to remove event listener which was added
 in previous example. e.g.
-<pre>document.getElementById(“someUniqueDivId”).removeEventListener("click",
-respondtoclick);</pre>
+<pre>document.getElementById(“someUniqueDivId”).removeEventListener("click", respondtoclick);</pre>
 </li>
   <li>What are different key codes?<br/>
 It is necessary to know the codes associated with keys to identify
 which key is pressed in the code.<br/>
 Below table gives key codes:<br/>
-
+<pre>
 Key
 CodeKey
 CodeKey
@@ -615,6 +604,7 @@ delete
 57select key
 93scroll lock
 145
+</pre>
 </li>
 <li>What is event bubbling?<br/>
 When an event happens on an element, it first runs the handlers on
@@ -657,14 +647,15 @@ the list items.</li>
   <li>What is Object?<br/>
 The object is collection of properties and methods.
 Object in Javascript are variables as well. Object can have properties
-any data types (String, Number, Boolean etc.).
+any data types (String, Number, Boolean etc.).<br/>
 Object properties can be primitive values, other objects and
 functions. e.g.
 <pre>var book = {
 ​  name : “Javascript Book”,
 ​  auther: “Pratik Bandal”,
 ​  pages: 100
-}</pre></li>
+}</pre>
+  </li>
   <li>What are ways to create objects?<br/>
 In Javascript you can create objects through following ways:
 Using literals:
