@@ -150,6 +150,7 @@ output:
   <li>What are different Javascript frameworks that you know?<br/>
     Many frameworks are based on Javascript now, below are few of them:
 
+| script  | library  | script  | library  | script  | library  |
 |---|---|---|---|---|---|
 | <a href="https://reactjs.org/" target="_blank">React</a>   | <a href="https://angularjs.org/" target="_blank">Angular</a>  | <a href="https://vuejs.org/" target="_blank">Vue.js</a>   | <a href="https://nodejs.org/en/" target="_blank">Node.js</a>   | <a href="https://expressjs.com/" target="_blank">Express.js</a>  | <a href="https://www.meteor.com/" target="_blank">Meteor.js</a> |
 | <a href="https://nextjs.org/" target="_blank">Next.js</a>  | <a href="https://emberjs.com/" target="_blank">Ember.js</a>  | <a href="https://backbonejs.org/" target="_blank">Backbone.js</a>  | <a href="https://svelte.dev/" target="_blank">Svelte</a>  | <a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a>  | Remix  |
