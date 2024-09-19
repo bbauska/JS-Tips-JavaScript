@@ -150,7 +150,7 @@ output:
   <li>What are different Javascript frameworks that you know?<br/>
     Many frameworks are based on Javascript now, below are few of them:
 
-| framework  | library  | framework  | library  | framework  | library  |
+| js framework  | &amp; library  | &amp; framework  | &amp; library  | &amp; framework  | &amp; library  |
 |---|---|---|---|---|---|
 | <a href="https://reactjs.org/" target="_blank">React</a>   | <a href="https://angularjs.org/" target="_blank">Angular</a>  | <a href="https://vuejs.org/" target="_blank">Vue.js</a>   | <a href="https://nodejs.org/en/" target="_blank">Node.js</a>   | <a href="https://expressjs.com/" target="_blank">Express.js</a>  | <a href="https://www.meteor.com/" target="_blank">Meteor.js</a> |
 | <a href="https://nextjs.org/" target="_blank">Next.js</a>  | <a href="https://emberjs.com/" target="_blank">Ember.js</a>  | <a href="https://backbonejs.org/" target="_blank">Backbone.js</a>  | <a href="https://svelte.dev/" target="_blank">Svelte</a>  | <a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a>  | Remix  |
@@ -162,52 +162,15 @@ output:
 | <a href="https://masonry.desandro.com/" target="_blank">Masonry</a>  | <a href="http://omniscientjs.github.io/" target="_blank">Omniscient</a>  | <a href="http://parsleyjs.org/" target="_blank">Parsley</a>  | <a href="https://popper.js.org/" target="_blank">Popper.js</a>  | <a href="https://github.com/sindresorhus/screenfull.js/" target="_blank">Screenfull.js</a>  | <a href="https://vocajs.com/" target="_blank">Voca</a>  |
 | <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> | <a href="https://mochajs.org/" target="_blank">Mocha</a> | <a href="https://ionicframework.com/" target="_blank">Ionic</a> | <a href="https://webix.com/" target="_blank">Webix</a> | <a href="https://p5js.org/" target="_blank">p5</a> | <a href="https://www.babylonjs.com/" target="_blank">Babylon.js</a> |
 | <a href="https://github.com/aframevr/aframe" target="_blank">Aframe</a> | <a href="https://zeptojs.com/" target="_blank">Zepto</a> | <a href="https://createjs.com/" target="_blank">CreateJS</a> | <a href="https://nightwatchjs.org/" target="_blank">Nightwatch.js</a> | <a href="https://stimulus.hotwired.dev/" target="_blank">Stimulus</a> | <a href="https://nativescript.org/" target="_blank">NativeScript</a> |
+| <a href="https://relay.dev/" target="_blank">Relay</a> | <a href="https://cycle.js.org/" target="_blank">Cycle.js</a> | <a href="https://flightjs.github.io/" target="_blank">Flight</a> | <a href="http://trykickoff.com/" target="_blank">Kickoff</a> | <a href="https://cylonjs.com/" target="_blank">Cylon.js</a> | <a href="https://jestjs.io/" target="_blank">Jest</a> |
+| <a href="https://feathersjs.com/" target="_blank">Feathers</a> | <a href="http://bootboxjs.com/" target="_blank">Bootbox.js</a> | <a href="https://modernizr.com/" target="_blank">Modernizr</a> | <a href="https://cube.dev/" target="_blank">Cube.js</a> | <a href="https://requirejs.org/" target="_blank">RequireJS</a> | <a href="https://jasmine.github.io/" target="_blank">Jasmine</a> |
+| <a href="https://qunitjs.com/" target="_blank">QUnit</a> | <a href="https://github.com/soulwire/sketch.js" target="_blank">sketch.js</a> | <a href="https://github.com/wso2/jaggery" target="_blank">Jaggery</a> | <a href="https://kangoextensions.com/" target="_blank">Kango</a> | <a href="https://www.cappuccino.dev/" target="_blank">Cappuccino</a> | <a href="https://konvajs.org/" target="_blank">Konva</a> |
+| <a href="https://sproutcore.com/" target="_blank">SproutCore</a> | <a href="https://webix.com/" target="_blank">Webix</a> | <a href="https://github.com/quirkey/sammy" target="_blank">Sammy</a> | <a href="https://seemple.js.org/#!home" target="_blank">Seemple.js</a> | <a href="https://socket.io/" target="_blank">Socket.IO</a> | <a href="https://xstyled.dev/" target="_blank">xstyled</a> |
+| <a href="http://vanilla-js.com/" target="_blank">VanillaJS</a> | <a href="https://github.com/linnovate/mean" target="_blank">MEAN</a> | <a href="https://github.com/flatiron/flatiron" target="_blank">Flatiron</a> | <a href="https://ripplejs.github.io/" target="_blank">ripple.js</a> | <a href="https://sailsjs.com/" target="_blank">Sails.js</a> | <a href="https://mochi.github.io/mochikit/" target="_blank">MochiKit</a> |
+| <a href="https://optimizely.github.io/nuclear-js/" target="_blank">NuclearJS</a> | <a href="https://ampersandjs.com/" target="_blank">Ampersand.js</a> | <a href="https://heisenbergjs.github.io/heisenberg/" target="_blank">Heisenberg.js</a> | <a href="https://marionettejs.com/" target="_blank">Marionette</a> | <a href="https://pagerjs.com/" target="_blank">pager.js</a> | <a href="https://canjs.com/" target="_blank">CanJS</a> |
+| <a href="http://rivetsjs.com/" target="_blank">Rivets.js</a> | Preact | Alpine | Aurealia | Polymer | Mithril |
+| Backend JS: Express | Nest | Meteor |  |  |  |
 
-    <ul style="list-style-type="circle">
-    <li><a href="https://relay.dev/" target="_blank">Relay</a></li>
-    <li><a href="https://cycle.js.org/" target="_blank">Cycle.js</a></li>
-    <li><a href="https://flightjs.github.io/" target="_blank">Flight</a></li>
-    <li><a href="http://trykickoff.com/" target="_blank">Kickoff</a></li>
-    <li><a href="https://cylonjs.com/" target="_blank">Cylon.js</a></li>
-    <li><a href="https://jestjs.io/" target="_blank">Jest</a></li>
-    <li><a href="https://feathersjs.com/" target="_blank">Feathers</a></li>
-    <li><a href="http://bootboxjs.com/" target="_blank">Bootbox.js</a></li>
-    <li><a href="https://modernizr.com/" target="_blank">Modernizr</a></li>
-    <li><a href="https://cube.dev/" target="_blank">Cube.js</a></li>
-    <li><a href="https://requirejs.org/" target="_blank">RequireJS</a></li>
-    <li><a href="https://jasmine.github.io/" target="_blank">Jasmine</a></li>
-    <li><a href="https://qunitjs.com/" target="_blank">QUnit</a></li>
-    <li><a href="https://github.com/soulwire/sketch.js" target="_blank">sketch.js</a></li>
-    <li><a href="https://github.com/wso2/jaggery" target="_blank">Jaggery</a></li>
-    <li><a href="https://kangoextensions.com/" target="_blank">Kango</a></li>
-    <li><a href="https://www.cappuccino.dev/" target="_blank">Cappuccino</a></li>
-    <li><a href="https://konvajs.org/" target="_blank">Konva</a></li>
-    <li><a href="https://sproutcore.com/" target="_blank">SproutCore</a></li>
-    <li><a href="https://webix.com/" target="_blank">Webix</a></li>
-    <li><a href="https://github.com/quirkey/sammy" target="_blank">Sammy</a></li>
-    <li><a href="https://seemple.js.org/#!home" target="_blank">Seemple.js</a></li>
-    <li><a href="https://socket.io/" target="_blank">Socket.IO</a></li>
-    <li><a href="https://xstyled.dev/" target="_blank">xstyled</a></li>
-    <li><a href="http://vanilla-js.com/" target="_blank">VanillaJS</a></li>
-    <li><a href="https://github.com/linnovate/mean" target="_blank">MEAN</a></li>
-    <li><a href="https://github.com/flatiron/flatiron" target="_blank">Flatiron</a></li>
-    <li><a href="https://ripplejs.github.io/" target="_blank">ripple.js</a></li>
-    <li><a href="https://sailsjs.com/" target="_blank">Sails.js</a></li>
-    <li><a href="https://mochi.github.io/mochikit/" target="_blank">MochiKit</a></li>
-    <li><a href="https://optimizely.github.io/nuclear-js/" target="_blank">NuclearJS</a></li>
-    <li><a href="https://ampersandjs.com/" target="_blank">Ampersand.js</a></li>
-    <li><a href="https://heisenbergjs.github.io/heisenberg/" target="_blank">Heisenberg.js</a></li>
-    <li><a href="https://marionettejs.com/" target="_blank">Marionette</a></li>
-    <li><a href="https://pagerjs.com/" target="_blank">pager.js</a></li>
-    <li><a href="https://canjs.com/" target="_blank">CanJS</a></li>
-    <li><a href="http://rivetsjs.com/" target="_blank">Rivets.js</a></li>
-      <li>Preact</li>
-      <li>Alpine</li>
-      <li>Aurelia</li>
-      <li>Polymer</li>
-      <li>Mithril</li>
-      <li>Backend JS: Express, Nest, Meteor</li>
-    </ul>
   </li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -218,11 +181,12 @@ output:
     Basically, variable is used for temporary storage of data. It has name, value and 
     memory address. You have to declare variable before using it for storing data.<br/>
     Below is syntax to declare variable: var variablename;<br/>
-    Here var is keyword and variablename is name of the variable.
-    You can also define multiple variables using single statement as:<br/>
-    var variable1, variable2, variable3;<br/>
+    Here var is keyword and variablename is name of the variable.<br/>
+    You can also define multiple variables using single statement as:
+	<pre>var variable1, variable2, variable3;</pre>
     Value can be assigned to variable as:<br/>
-    var variablename = value;</li>
+	<pre>var variablename = value;</pre>
+  </li>
   <li>What is var?<br/>
     The var statement declares a variable and can also optionally initialize its value.<br/>
     Variables are declared using var as below,<br/>
@@ -300,13 +264,16 @@ output:
     to the top of their functional/local scope (if declared inside a
     function) or to the top of their global scope (if declared outside of a
     function).
-    This lifting of scopes is called hoisting.
-    Hence,<br/>
-    ​bla = 2;<br/>
-   ​ var bla;<br/>
+    This lifting of scopes is called hoisting. Hence,<br/>
+	<pre>
+    ​bla = 2;
+    var bla;
+    </pre>
     // ...is implicitly understood as:<br/>
-​    var bla;<br/>
-    bla = 2;</li>
+	<pre>
+​    var bla;
+    bla = 2;
+	</pre></li>
   <li>What is difference between undefined and null?<br/>
     The undefined means a variable has been declared but has no value has yet been assigned.
     On the other hand, null is basically a value which has been assigned.
@@ -321,14 +288,19 @@ output:
     Escape characters (backslash) is used before special characters like
     ampersand, single quotes, double quotes and apostrophes to display them.<br/>
     e.g.<br/>
+	<pre>
     console.log(‘I\’m Brian Bauska’); ☐ Correct syntax<br/>
     console.log(‘I’m Brian Bauska’); ☐ Syntax error<br/>
+	</pre>
     In above example, if backslash is not used before single quotes this
     line will give syntax error.</li>
   <li>How to create array in javascript?<br/>
     You can define arrays using the array literal as follows-<br/>
-    var a = &lbrack;&rbrack;;<br/>
-    var b = &lbrack;1, 2, 3&rbrack;;</li>
+	<pre>
+    var a = &lbrack;&rbrack;;
+    var b = &lbrack;1, 2, 3&rbrack;;
+	</pre>
+  </li>
   <li>How to create three dimensional array?<br/>
     You can define three dimensional arrays using the array as follows:<br/>
     var threedimensionalarray = &lbrack;&lbrack;&lbrack;&rbrack;&rbrack;&rbrack;;</li>
