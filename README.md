@@ -149,51 +149,19 @@ output:
     JavaScriptCore is Apples engine for its Safari browser.</li>
   <li>What are different Javascript frameworks that you know?<br/>
     Many frameworks are based on Javascript now, below are few of them:
+
 |---|---|---|---|---|---|
-|<a href="https://reactjs.org/" target="_blank">React</a>   | <a href="https://angularjs.org/" target="_blank">Angular</a>  | <a href="https://vuejs.org/" target="_blank">Vue.js</a>   | <a href="https://nodejs.org/en/" target="_blank">Node.js</a>   | <a href="https://expressjs.com/" target="_blank">Express.js</a>  | <a href="https://www.meteor.com/" target="_blank">Meteor.js</a>  |
+| <a href="https://reactjs.org/" target="_blank">React</a>   | <a href="https://angularjs.org/" target="_blank">Angular</a>  | <a href="https://vuejs.org/" target="_blank">Vue.js</a>   | <a href="https://nodejs.org/en/" target="_blank">Node.js</a>   | <a href="https://expressjs.com/" target="_blank">Express.js</a>  | <a href="https://www.meteor.com/" target="_blank">Meteor.js</a> |
+| <a href="https://nextjs.org/" target="_blank">Next.js</a>  | <a href="https://emberjs.com/" target="_blank">Ember.js</a>  | <a href="https://backbonejs.org/" target="_blank">Backbone.js</a>  | <a href="https://svelte.dev/" target="_blank">Svelte</a>  | <a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a>  | Remix  |
+| <a href="https://nuxt.com/" target="_blank">Nuxt.js</a>  | Astro  | Solid  | <a href="https://github.com/CesiumGS/cesium" target="_blank">Cesium</a>  | <a href="https://zzz.dog/" target="_blank">Zdog</a>  | <a href="https://www.vantajs.com/" target="_blank">Vanta.js</a>  |
+| <a href="https://github.com/micku7zu/vanilla-tilt.js" target="_blank">Tilt.js</a>  | <a href="https://github.com/micku7zu/vanilla-tilt.js" target="_blank">Tilt.js</a>  | <a href="https://threejs.org/" target="_blank">Three.js</a>  | <a href="https://www.sencha.com/products/extjs/" target="_blank">ExtJS</a>  | <a href="https://mithril.js.org/" target="_blank">Mithril</a>  | <a href="https://jquery.com/" target="_blank">jQuery</a>  |
+| <a href="https://playcanvas.com/" target="_blank">PlayCanvas</a>  | <a href="https://polymer-library.polymer-project.org/" target="_blank">Polymer</a>  | <a href="http://aurelia.io/" target="_blank">Aurelia</a>  | <a href="https://alpinejs.dev/" target="_blank">Alpine.js</a>  | <a href="https://d3js.org/" target="_blank">D3.js</a>  | <a href="https://underscorejs.org/" target="_blank">Underscore.js</a>  |
+| <a href="https://lodash.com/" target="_blank">Lodash</a>  | <a href="https://pixijs.com/" target="_blank">PixiJS</a>  | <a href="https://animejs.com/" target="_blank">Anime.js</a>  | <a href="https://rishabhp.github.io/bideo.js/" target="_blank">Bideo.js</a>  | <a href="https://www.chartjs.org/" target="_blank">Chart.js</a>  | <a href="https://nosir.github.io/cleave.js/" target="_blank">Cleave.js</a>  |
+| <a href="https://glimmerjs.com/" target="_blank">Glimmer</a>  | <a href="https://sarcadass.github.io/granim.js/" target="_blank">Granim.js</a>  | <a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank">fullPage.js</a>  | <a href="https://leafletjs.com/" target="_blank">Leaflet</a>  | <a href="https://multiple.js.org/" target="_blank">Multiple.js</a>  | <a href="https://momentjs.com/" target="_blank">Moment.js</a>  |
+| <a href="https://masonry.desandro.com/" target="_blank">Masonry</a>  | <a href="http://omniscientjs.github.io/" target="_blank">Omniscient</a>  | <a href="http://parsleyjs.org/" target="_blank">Parsley</a>  | <a href="https://popper.js.org/" target="_blank">Popper.js</a>  | <a href="https://github.com/sindresorhus/screenfull.js/" target="_blank">Screenfull.js</a>  | <a href="https://vocajs.com/" target="_blank">Voca</a>  |
 
     <ul style="list-style-type="circle">
-    <li><a href="https://nextjs.org/" target="_blank">Next.js</a></li>
-    <li><a href="https://emberjs.com/" target="_blank">Ember.js</a></li>
-    <li><a href="https://backbonejs.org/" target="_blank">Backbone.js</a></li>
-    <li><a href="https://svelte.dev/" target="_blank">Svelte</a></li>
-    <li><a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a></li>
-      <li>Remix</li>
-      <li><a href="https://nuxt.com/" target="_blank">Nuxt.js</a></li>
-      <li>Astro</li>
-      <li>Solid</li>
-    <li><a href="https://github.com/CesiumGS/cesium" target="_blank">Cesium</a></li>
-    <li><a href="https://zzz.dog/" target="_blank">Zdog</a></li>
-    <li><a href="https://www.vantajs.com/" target="_blank">Vanta.js</a></li>
-    <li><a href="https://github.com/micku7zu/vanilla-tilt.js" target="_blank">Tilt.js</a></li>
-    <li><a href="https://threejs.org/" target="_blank">Three.js</a></li>
-    <li><a href="https://www.sencha.com/products/extjs/" target="_blank">ExtJS</a></li>
-    <li><a href="https://mithril.js.org/" target="_blank">Mithril</a></li>
-    <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
-    <li><a href="https://playcanvas.com/" target="_blank">PlayCanvas</a></li>
-    <li><a href="https://polymer-library.polymer-project.org/" target="_blank">Polymer</a></li>
-    <li><a href="http://aurelia.io/" target="_blank">Aurelia</a></li>
-    <li><a href="https://alpinejs.dev/" target="_blank">Alpine.js</a></li>
-    <li><a href="https://d3js.org/" target="_blank">D3.js</a></li>
-    <li><a href="https://underscorejs.org/" target="_blank">Underscore.js</a></li>
-    <li><a href="https://lodash.com/" target="_blank">Lodash</a></li>
-    <li><a href="https://pixijs.com/" target="_blank">PixiJS</a></li>
-    <li><a href="https://animejs.com/" target="_blank">Anime.js</a></li>
-    <li><a href="https://rishabhp.github.io/bideo.js/" target="_blank">Bideo.js</a></li>
-    <li><a href="https://www.chartjs.org/" target="_blank">Chart.js</a></li>
-    <li><a href="https://nosir.github.io/cleave.js/" target="_blank">Cleave.js</a></li>
-    <li><a href="https://glimmerjs.com/" target="_blank">Glimmer</a></li>
-    <li><a href="https://sarcadass.github.io/granim.js/" target="_blank">Granim.js</a></li>
-    <li><a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank">fullPage.js</a></li>
-    <li><a href="https://leafletjs.com/" target="_blank">Leaflet</a></li>
-    <li><a href="https://multiple.js.org/" target="_blank">Multiple.js</a></li>
-    <li><a href="https://momentjs.com/" target="_blank">Moment.js</a></li>
-    <li><a href="https://masonry.desandro.com/" target="_blank">Masonry</a></li>
-    <li><a href="http://omniscientjs.github.io/" target="_blank">Omniscient</a></li>
-    <li><a href="http://parsleyjs.org/" target="_blank">Parsley</a></li>
-    <li><a href="https://popper.js.org/" target="_blank">Popper.js</a></li>
-    <li><a href="https://github.com/sindresorhus/screenfull.js/" target="_blank">Screenfull.js</a></li>
-    <li><a href="https://vocajs.com/" target="_blank">Voca</a></li>
+    <li></li>
     <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
     <li><a href="https://mochajs.org/" target="_blank">Mocha</a></li>
     <li><a href="https://ionicframework.com/" target="_blank">Ionic</a></li>
