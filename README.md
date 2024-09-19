@@ -150,7 +150,7 @@ output:
   <li>What are different Javascript frameworks that you know?<br/>
     Many frameworks are based on Javascript now, below are few of them:
 
-| script  | library  | script  | library  | script  | library  |
+| framework  | library  | framework  | library  | framework  | library  |
 |---|---|---|---|---|---|
 | <a href="https://reactjs.org/" target="_blank">React</a>   | <a href="https://angularjs.org/" target="_blank">Angular</a>  | <a href="https://vuejs.org/" target="_blank">Vue.js</a>   | <a href="https://nodejs.org/en/" target="_blank">Node.js</a>   | <a href="https://expressjs.com/" target="_blank">Express.js</a>  | <a href="https://www.meteor.com/" target="_blank">Meteor.js</a> |
 | <a href="https://nextjs.org/" target="_blank">Next.js</a>  | <a href="https://emberjs.com/" target="_blank">Ember.js</a>  | <a href="https://backbonejs.org/" target="_blank">Backbone.js</a>  | <a href="https://svelte.dev/" target="_blank">Svelte</a>  | <a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a>  | Remix  |
@@ -160,21 +160,10 @@ output:
 | <a href="https://lodash.com/" target="_blank">Lodash</a>  | <a href="https://pixijs.com/" target="_blank">PixiJS</a>  | <a href="https://animejs.com/" target="_blank">Anime.js</a>  | <a href="https://rishabhp.github.io/bideo.js/" target="_blank">Bideo.js</a>  | <a href="https://www.chartjs.org/" target="_blank">Chart.js</a>  | <a href="https://nosir.github.io/cleave.js/" target="_blank">Cleave.js</a>  |
 | <a href="https://glimmerjs.com/" target="_blank">Glimmer</a>  | <a href="https://sarcadass.github.io/granim.js/" target="_blank">Granim.js</a>  | <a href="https://github.com/alvarotrigo/fullPage.js/" target="_blank">fullPage.js</a>  | <a href="https://leafletjs.com/" target="_blank">Leaflet</a>  | <a href="https://multiple.js.org/" target="_blank">Multiple.js</a>  | <a href="https://momentjs.com/" target="_blank">Moment.js</a>  |
 | <a href="https://masonry.desandro.com/" target="_blank">Masonry</a>  | <a href="http://omniscientjs.github.io/" target="_blank">Omniscient</a>  | <a href="http://parsleyjs.org/" target="_blank">Parsley</a>  | <a href="https://popper.js.org/" target="_blank">Popper.js</a>  | <a href="https://github.com/sindresorhus/screenfull.js/" target="_blank">Screenfull.js</a>  | <a href="https://vocajs.com/" target="_blank">Voca</a>  |
+| <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> | <a href="https://mochajs.org/" target="_blank">Mocha</a> | <a href="https://ionicframework.com/" target="_blank">Ionic</a> | <a href="https://webix.com/" target="_blank">Webix</a> | <a href="https://p5js.org/" target="_blank">p5</a> | <a href="https://www.babylonjs.com/" target="_blank">Babylon.js</a> |
+| <a href="https://github.com/aframevr/aframe" target="_blank">Aframe</a> | <a href="https://zeptojs.com/" target="_blank">Zepto</a> | <a href="https://createjs.com/" target="_blank">CreateJS</a> | <a href="https://nightwatchjs.org/" target="_blank">Nightwatch.js</a> | <a href="https://stimulus.hotwired.dev/" target="_blank">Stimulus</a> | <a href="https://nativescript.org/" target="_blank">NativeScript</a> |
 
     <ul style="list-style-type="circle">
-    <li></li>
-    <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
-    <li><a href="https://mochajs.org/" target="_blank">Mocha</a></li>
-    <li><a href="https://ionicframework.com/" target="_blank">Ionic</a></li>
-    <li><a href="https://webix.com/" target="_blank">Webix</a></li>
-    <li><a href="https://p5js.org/" target="_blank">p5</a></li>
-    <li><a href="https://www.babylonjs.com/" target="_blank">Babylon.js</a></li>
-    <li><a href="https://github.com/aframevr/aframe" target="_blank">Aframe</a></li>
-    <li><a href="https://zeptojs.com/" target="_blank">Zepto</a></li>
-    <li><a href="https://createjs.com/" target="_blank">CreateJS</a></li>
-    <li><a href="https://nightwatchjs.org/" target="_blank">Nightwatch.js</a></li>
-    <li><a href="https://stimulus.hotwired.dev/" target="_blank">Stimulus</a></li>
-    <li><a href="https://nativescript.org/" target="_blank">NativeScript</a></li>
     <li><a href="https://relay.dev/" target="_blank">Relay</a></li>
     <li><a href="https://cycle.js.org/" target="_blank">Cycle.js</a></li>
     <li><a href="https://flightjs.github.io/" target="_blank">Flight</a></li>
