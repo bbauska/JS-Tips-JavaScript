@@ -169,7 +169,7 @@ output:
 | <a href="http://vanilla-js.com/" target="_blank">VanillaJS</a> | <a href="https://github.com/linnovate/mean" target="_blank">MEAN</a> | <a href="https://github.com/flatiron/flatiron" target="_blank">Flatiron</a> | <a href="https://ripplejs.github.io/" target="_blank">ripple.js</a> | <a href="https://sailsjs.com/" target="_blank">Sails.js</a> | <a href="https://mochi.github.io/mochikit/" target="_blank">MochiKit</a> |
 | <a href="https://optimizely.github.io/nuclear-js/" target="_blank">NuclearJS</a> | <a href="https://ampersandjs.com/" target="_blank">Ampersand.js</a> | <a href="https://heisenbergjs.github.io/heisenberg/" target="_blank">Heisenberg.js</a> | <a href="https://marionettejs.com/" target="_blank">Marionette</a> | <a href="https://pagerjs.com/" target="_blank">pager.js</a> | <a href="https://canjs.com/" target="_blank">CanJS</a> |
 | <a href="http://rivetsjs.com/" target="_blank">Rivets.js</a> | Preact | Alpine | Aurealia | Polymer | Mithril |
-| Backend JS: Express | Nest | Meteor |  |  |  |
+| Backend JS: <b>Express</b> | Nest | Meteor |  |  |  |
 
   </li>
 </ol>
@@ -184,7 +184,7 @@ output:
     Here var is keyword and variablename is name of the variable.<br/>
     You can also define multiple variables using single statement as:
 	<pre>var variable1, variable2, variable3;</pre>
-    Value can be assigned to variable as:<br/>
+    Value can be assigned to variable as:
 	<pre>var variablename = value;</pre>
   </li>
   <li>What is var?<br/>
@@ -265,11 +265,11 @@ output:
     function) or to the top of their global scope (if declared outside of a
     function).
     This lifting of scopes is called hoisting. Hence,
-	<pre>​bla = 2;
-    var bla;</pre>
-    // ...is implicitly understood as:<br/>
-	<pre>var bla;
-    bla = 2;</pre>
+<pre>​bla = 2;
+var bla;
+// ...is implicitly understood as:
+var bla;
+bla = 2;</pre>
   </li>
   <li>What is difference between undefined and null?<br/>
     The undefined means a variable has been declared but has no value has yet been assigned.
@@ -284,15 +284,15 @@ output:
   <li>What are escape characters?<br/>
     Escape characters (backslash) is used before special characters like
     ampersand, single quotes, double quotes and apostrophes to display them. e.g.
-	<pre>console.log(‘I\’m Brian Bauska’); ☐ Correct syntax
-    console.log(‘I’m Brian Bauska’); ☐ Syntax error</pre>
+<pre>console.log(‘I\’m Brian Bauska’); ☐ Correct syntax
+console.log(‘I’m Brian Bauska’); ☐ Syntax error</pre>
     In above example, if backslash is not used before single quotes this
     line will give syntax error.
   </li>
   <li>How to create array in javascript?<br/>
     You can define arrays using the array literal as follows-<br/>
-	<pre>var a = &lbrack;&rbrack;;
-    var b = &lbrack;1, 2, 3&rbrack;;</pre>
+<pre>var a = &lbrack;&rbrack;;
+var b = &lbrack;1, 2, 3&rbrack;;</pre>
   </li>
   <li>How to create three dimensional array?<br/>
     You can define three dimensional arrays using the array as follows:<br/>
