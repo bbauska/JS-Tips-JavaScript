@@ -101,18 +101,18 @@ in the list below the example.
 
 The following list provides more details about the sample above:
 
-The <div> tag in this section identifies the location on the page where the IFrame API 
+The &lt;div&gt; tag in this section identifies the location on the page where the IFrame API 
 will place the video player. The constructor for the player object, which is described 
-in the Loading a video player section, identifies the <div> tag by its id to ensure 
-that the API places the <iframe> in the proper location. Specifically, the IFrame API 
-will replace the <div> tag with the <iframe> tag.
+in the Loading a video player section, identifies the &lt;div&gt; tag by its id to ensure 
+that the API places the &lt;iframe&gt; in the proper location. Specifically, the IFrame API 
+will replace the &lt;div&gt; tag with the &lt;iframe&gt; tag.
 
-As an alternative, you could also put the <iframe> element directly on the page. The 
+As an alternative, you could also put the &lt;iframe&gt; element directly on the page. The 
 Loading a video player section explains how to do so.
 
 The code in this section loads the IFrame Player API JavaScript code. The example uses 
 DOM modification to download the API code to ensure that the code is retrieved 
-asynchronously. (The <script> tag's async attribute, which also enables asynchronous 
+asynchronously. (The &lt;script&gt; tag's async attribute, which also enables asynchronous 
 downloads, is not yet supported in all modern browsers as discussed in this Stack 
 Overflow answer.
 
@@ -156,11 +156,11 @@ function onYouTubeIframeAPIReady() {
 The constructor for the video player specifies the following parameters:
 
 The first parameter specifies either the DOM element or the id of the HTML element where 
-the API will insert the <iframe> tag containing the player.
+the API will insert the &lt;iframe&gt; tag containing the player.
 
-The IFrame API will replace the specified element with the <iframe> element containing 
+The IFrame API will replace the specified element with the &lt;iframe&gt; element containing 
 the player. This could affect the layout of your page if the element being replaced has 
-a different display style than the inserted <iframe> element. By default, an <iframe> 
+a different display style than the inserted &lt;iframe&gt; element. By default, an &lt;iframe&gt; 
 displays as an inline-block element.
 
 The second parameter is an object that specifies player options. The object contains the 
@@ -176,19 +176,20 @@ functions (event listeners) that the API will call when those events occur. In t
 the constructor indicates that the onPlayerReady function will execute when the onReady 
 event fires and that the onPlayerStateChange function will execute when the onStateChange 
 event fires.
-As mentioned in the Getting started section, instead of writing an empty <div> element 
-on your page, which the player API's JavaScript code will then replace with an <iframe> 
-element, you could create the <iframe> tag yourself. The first example in the Examples 
+As mentioned in the Getting started section, instead of writing an empty &lt;div&gt; element 
+on your page, which the player API's JavaScript code will then replace with an &lt;iframe&gt; 
+element, you could create the &lt;iframe&gt; tag yourself. The first example in the Examples 
 section shows how to do this.
 
 <pre>
-<iframe id="player" type="text/html" width="640" height="390"
+&lt;iframe id="player" type="text/html" width="640" height="390"
   src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
-  frameborder="0"></iframe>
+  frameborder="0"&gt;&lt;/iframe&gt;
 </pre>
-Note that if you do write the <iframe> tag, then when you construct the YT.Player object, 
+
+Note that if you do write the &lt;iframe&gt; tag, then when you construct the YT.Player object, 
 you do not need to specify values for the width and height, which are specified as 
-attributes of the <iframe> tag, or the videoId and player parameters, which are are 
+attributes of the &lt;iframe&gt; tag, or the videoId and player parameters, which are are 
 specified in the src URL. As an extra security measure, you should also include the 
 origin parameter to the URL, specifying the URL scheme (http:// or https://) and full 
 domain of your host page as the parameter value. While origin is optional, including it 
@@ -222,9 +223,7 @@ does not support.
 
 Argument syntax
 
-<pre>
-loadVideoById("bHQqvYy5KYo", 5, "large")
-</pre>
+<pre>loadVideoById("bHQqvYy5KYo", 5, "large")</pre>
 
 Object syntax
 
@@ -236,9 +235,7 @@ loadVideoById({'videoId': 'bHQqvYy5KYo',
 
 Queueing functions for videos
 
-<pre>
-cueVideoById
-</pre>
+<pre>cueVideoById</pre>
 
 Argument syntax
 
@@ -359,9 +356,7 @@ a user's uploaded videos.
 Since the functions work differently depending on whether they are called using the 
 argument syntax or the object syntax, both calling methods are documented below.
 
-<pre>
-cuePlaylist
-</pre>
+<pre>cuePlaylist</pre>
 
 Argument syntax
 
@@ -427,9 +422,8 @@ plays from the time specified in the seekTo() call. If you cue a list and then c
 the playVideoAt() function, the player will start playing at the beginning of the 
 specified video.
 
-<pre>
-loadPlaylist
-</pre>
+<pre>loadPlaylist</pre>
+
 Argument syntax
 
 <pre>
@@ -437,6 +431,7 @@ player.loadPlaylist(playlist:String|Array,
                     index:Number,
                     startSeconds:Number):Void
 </pre>
+
 This function loads the specified playlist and plays it.
 The required playlist parameter specifies an array of YouTube video IDs. In the YouTube 
 Data API, the video resource's id property specifies a video ID.
@@ -484,20 +479,21 @@ which the first video in the list should start playing.
 Playback controls and player settings
 
 Playing a video
-<pre>
-player.playVideo():Void
-</pre>
+
+<pre>player.playVideo():Void</pre>
 
 Plays the currently cued/loaded video. The final player state after this function 
 executes will be playing (1).
 
 Note: A playback only counts toward a video's official view count if it is initiated via 
 a native play button in the player.
+
 <pre>player.pauseVideo():Void</pre>
 
 Pauses the currently playing video. The final player state after this function executes 
 will be paused (2) unless the player is in the ended (0) state when the function is 
 called, in which case the player state will not change.
+
 <pre>player.stopVideo():Void</pre>
 
 Stops and cancels loading of the current video. This function should be reserved for rare 
@@ -536,6 +532,7 @@ the viewing perspective at all, including through the API, using orientation sen
 responding to touch/drag actions on the device's screen.
 
 <pre>player.getSphericalProperties():Object</pre>
+
 Retrieves properties that describe the viewer's current perspective, or view, for a 
 video playback. In addition:
 This object is only populated for 360° videos, which are also called spherical videos.
@@ -618,6 +615,7 @@ Unsupported mobile devices
 The enableOrientationSensor property value does not have any effect on the playback experience.
 
 Playing a video in a playlist
+
 <pre>player.nextVideo():Void</pre>
 
 This function loads and plays the next video in the playlist.
@@ -648,33 +646,41 @@ first video in the list. If you have shuffled the playlist, this function will p
 video at the specified position in the shuffled playlist.
 
 Changing the player volume
+
 <pre>player.mute():Void</pre>
 
 Mutes the player.
+
 <pre>player.unMute():Void</pre>
 
 Unmutes the player.
+
 <pre>player.isMuted():Boolean</pre>
 
 Returns true if the player is muted, false if not.
+
 <pre>player.setVolume(volume:Number):Void</pre>
 
 Sets the volume. Accepts an integer between 0 and 100.
+
 <pre>player.getVolume():Number</pre>
 
 Returns the player's current volume, an integer between 0 and 100. Note that getVolume() 
 will return the volume even if the player is muted.
 
 Setting the player size
+
 <pre>player.setSize(width:Number, height:Number):Object</pre>
 
-Sets the size in pixels of the <iframe> that contains the player.
+Sets the size in pixels of the <iframe&gt; that contains the player.
 Setting the playback rate
+
 <pre>player.getPlaybackRate():Number</pre>
 
 This function retrieves the playback rate of the currently playing video. The default 
 playback rate is 1, which indicates that the video is playing at normal speed. Playback 
 rates may include values like 0.25, 0.5, 1, 1.5, and 2.
+
 <pre>player.setPlaybackRate(suggestedRate:Number):Void</pre>
 
 This function sets the suggested playback rate for the current video. If the playback 
@@ -779,7 +785,9 @@ video that has been loaded by dividing the getVideoBytesLoaded value by the
 getVideoBytesTotal value.
 
 Retrieving video information
+
 <pre>player.getDuration():Number</pre>
+
 Returns the duration in seconds of the currently playing video. Note that getDuration() 
 will return 0 until the video's metadata is loaded, which normally happens just after 
 the video starts playing.
@@ -791,14 +799,17 @@ duration is commonly longer than the actual event time since streaming may begin
 the event's start time.
 
 <pre>player.getVideoUrl():String</pre>
+
 Returns the YouTube.com URL for the currently loaded/playing video.
 
 <pre>player.getVideoEmbedCode():String</pre>
+
 Returns the embed code for the currently loaded/playing video.
 
 Retrieving playlist information
 
 <pre>player.getPlaylist():Array</pre>
+
 This function returns an array of the video IDs in the playlist as they are currently 
 ordered. By default, this function will return video IDs in the order designated by 
 the playlist owner. However, if you have called the setShuffle function to shuffle the 
@@ -806,6 +817,7 @@ playlist order, then the getPlaylist() function's return value will reflect the 
 order.
 
 <pre>player.getPlaylistIndex():Number</pre>
+
 This function returns the index of the playlist video that is currently playing.
 If you have not shuffled the playlist, the return value will identify the position 
 where the playlist creator placed the video. The return value uses a zero-based index, 
@@ -817,20 +829,24 @@ within the shuffled playlist.
 Adding or removing an event listener
 
 <pre>player.addEventListener(event:String, listener:String):Void</pre>
+
 Adds a listener function for the specified event. The Events section below identifies the 
 different events that the player might fire. The listener is a string that specifies the 
 function that will execute when the specified event fires.
 
 <pre>player.removeEventListener(event:String, listener:String):Void</pre>
+
 Removes a listener function for the specified event. The listener is a string that 
 identifies the function that will no longer execute when the specified event fires.
 Accessing and modifying DOM nodes
 
 <pre>player.getIframe():Object</pre>
-This method returns the DOM node for the embedded <iframe>.
+
+This method returns the DOM node for the embedded &lt;iframe&gt;.
 
 <pre>player.destroy():Void</pre>
-Removes the <iframe> containing the player.
+
+Removes the &lt;iframe&gt; containing the player.
 
 Events
 The API fires events to notify your application of changes to the embedded player. As 
@@ -857,6 +873,7 @@ that the API passes to the function has a target property, which identifies the 
 The function retrieves the embed code for the currently loaded video, starts to play 
 the video, and displays the embed code in the page element that has an id value of 
 embed-code.
+
 <pre>
 function onPlayerReady(event) {
   var embedCode = event.target.getVideoEmbedCode();
@@ -937,6 +954,7 @@ The following command retrieves an array of module names for which you can set p
 options:
 
 <pre>player.getOptions();</pre>
+
 Currently, the only module that you can set options for is the captions module, which 
 handles closed captioning in the player. Upon receiving an onApiChange event, your 
 application can use the following command to determine which options can be set for the 
@@ -947,9 +965,11 @@ By polling the player with this command, you can confirm that the options you wa
 access are, indeed, accessible. The following commands retrieve and update module options:
 
 Retrieving an option:
+
 <pre>player.getOption(module, option);</pre>
 
 Setting an option
+
 <pre>player.setOption(module, option, value);</pre>
 
 The table below lists the options that the API supports:
@@ -1001,14 +1021,14 @@ the player is playing, red when paused, blue when buffering, and so forth.
 This example uses the following code:
 
 <pre>
-<iframe id="existing-iframe-example"
+&lt;iframe id="existing-iframe-example"
         width="640" height="360"
         src="https://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1"
         frameborder="0"
-        style="border: solid 4px #37474F">
-</iframe>
+        style="border: solid 4px #37474F"&gt;
+&lt;/iframe&gt;
 
-<script type="text/javascript">
+&lt;script type="text/javascript"&gt;
   var tag = document.createElement('script');
   tag.id = 'iframe-demo';
   tag.src = 'https://www.youtube.com/iframe_api';
@@ -1049,7 +1069,7 @@ This example uses the following code:
   function onPlayerStateChange(event) {
     changeBorderColor(event.data);
   }
-</script>
+&lt;/script&gt;
 </pre>
 
 <h4>Example 2: Loud playback</h4>
@@ -1103,45 +1123,45 @@ function onYouTubeIframeAPIReady() {
 <p>This example uses the following code:</p>
 
 <pre>
-<style>
+&lt;style&gt;
   .current-values {
     color: #666;
     font-size: 12px;
   }
-</style>
-<!-- The player is inserted in the following div element -->
-<div id="spherical-video-player"></div>
+&lt;/style&gt;
+&lt;!-- The player is inserted in the following div element --&gt;
+&lt;div id="spherical-video-player"&gt;&lt;/div&gt;
 
-<!-- Display spherical property values and enable user to update them. -->
-<table style="border: 0; width: 640px;">
-  <tr style="background: #fff;">
-    <td>
-      <label for="yaw-property">yaw: </label>
-      <input type="text" id="yaw-property" style="width: 80px"><br>
-      <div id="yaw-current-value" class="current-values"> </div>
-    </td>
-    <td>
-      <label for="pitch-property">pitch: </label>
-      <input type="text" id="pitch-property" style="width: 80px"><br>
-      <div id="pitch-current-value" class="current-values"> </div>
-    </td>
-    <td>
-      <label for="roll-property">roll: </label>
-      <input type="text" id="roll-property" style="width: 80px"><br>
-      <div id="roll-current-value" class="current-values"> </div>
-    </td>
-    <td>
-      <label for="fov-property">fov: </label>
-      <input type="text" id="fov-property" style="width: 80px"><br>
-      <div id="fov-current-value" class="current-values"> </div>
-    </td>
-    <td style="vertical-align: bottom;">
-      <button id="spherical-properties-button">Update properties</button>
-    </td>
-  </tr>
-</table>
+&lt;!-- Display spherical property values and enable user to update them. --&gt;
+&lt;table style="border: 0; width: 640px;"&gt;
+  &lt;tr style="background: #fff;"&gt;
+    &lt;td&gt;
+      &lt;label for="yaw-property"&gt;yaw: &lt;/label&gt;
+      &lt;input type="text" id="yaw-property" style="width: 80px"&gt;&lt;br&gt;
+      &lt;div id="yaw-current-value" class="current-values"&gt; &lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;label for="pitch-property"&gt;pitch: &lt;/label&gt;
+      &lt;input type="text" id="pitch-property" style="width: 80px"&gt;&lt;br&gt;
+      &lt;div id="pitch-current-value" class="current-values"&gt; &lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;label for="roll-property"&gt;roll: &lt;/label&gt;
+      &lt;input type="text" id="roll-property" style="width: 80px"&gt;&lt;br&gt;
+      &lt;div id="roll-current-value" class="current-values"&gt; &lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;label for="fov-property"&gt;fov: &lt;/label&gt;
+      &lt;input type="text" id="fov-property" style="width: 80px"&gt;&lt;br&gt;
+      &lt;div id="fov-current-value" class="current-values"&gt; &lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td style="vertical-align: bottom;"&gt;
+      &lt;button id="spherical-properties-button"&gt;Update properties&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
-&lt;script type="text/javascript">
+&lt;script type="text/javascript"&gt;
   var tag = document.createElement('script');
   tag.id = 'iframe-demo';
   tag.src = 'https://www.youtube.com/iframe_api';
@@ -1200,7 +1220,7 @@ function onYouTubeIframeAPIReady() {
     }
     ytplayer.setSphericalProperties(sphericalProperties);
   }
-&lt;/script>
+&lt;/script&gt;
 </pre>
 
 <h4>Android WebView Media Integrity API integration</h4>
@@ -1218,6 +1238,7 @@ developers can configure their app identity in the WebView Media Integrity API. 
 configuration supports an opt-out option.
 
 <h4>Revision history</h4>
+
 June 24, 2024
 The documentation has been updated to note that YouTube has extended the Android 
 WebView Media Integrity API to enable embedded media players, including YouTube 
@@ -1321,7 +1342,7 @@ access to the captions module and not the cc module.
 
 June 24, 2016
 The Examples section has been updated to include an example that demonstrates how 
-to use the API with an existing <iframe> element.
+to use the API with an existing &lt;iframe&gt; element.
 
 January 6, 2016
 The clearVideo function has been deprecated and removed from the documentation. The 
@@ -1376,8 +1397,8 @@ August 22, 2012
 This update contains the following changes:
 
 The example in the Loading a video player section that demonstrates how to manually 
-create the <iframe> tag has been updated to include a closing </iframe> tag since 
-the onYouTubeIframeAPIReady function is only called if the closing </iframe> element 
+create the &lt;iframe&gt; tag has been updated to include a closing &lt;/iframe&gt; tag since 
+the onYouTubeIframeAPIReady function is only called if the closing &lt;/iframe&gt; element 
 is present.
 
 August 6, 2012
