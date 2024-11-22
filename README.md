@@ -42,13 +42,13 @@ in the list below the example.
   <summary>YouTube on the Web</summary>
 
 <pre>
-<!DOCTYPE html>
-<html>
-  <body>
-    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player"></div>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;!-- 1. The &lt;iframe&gt; (and video player) will replace this &lt;div&gt; tag. --&gt;
+    &lt;div id="player"&gt;&lt;/div&gt;
 
-    <script>
+    &lt;script&gt;
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
 
@@ -56,7 +56,7 @@ in the list below the example.
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      // 3. This function creates an <iframe> (and YouTube player)
+      // 3. This function creates an &lt;iframe&gt; (and YouTube player)
       //    after the API code downloads.
       var player;
       function onYouTubeIframeAPIReady() {
@@ -92,9 +92,9 @@ in the list below the example.
       function stopVideo() {
         player.stopVideo();
       }
-    </script>
-  </body>
-</html>
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 
 </details>
@@ -1102,7 +1102,7 @@ function onYouTubeIframeAPIReady() {
 
 <p>This example uses the following code:</p>
 
-```
+<pre>
 <style>
   .current-values {
     color: #666;
@@ -1141,7 +1141,7 @@ function onYouTubeIframeAPIReady() {
   </tr>
 </table>
 
-<script type="text/javascript">
+&lt;script type="text/javascript">
   var tag = document.createElement('script');
   tag.id = 'iframe-demo';
   tag.src = 'https://www.youtube.com/iframe_api';
@@ -1163,7 +1163,7 @@ function onYouTubeIframeAPIReady() {
 
   // Don't display current spherical settings because there aren't any.
   function hideCurrentSettings() {
-    for (var p = 0; p < PROPERTIES.length; p++) {
+    for (var p = 0; p &lt; PROPERTIES.length; p++) {
       document.getElementById(PROPERTIES[p] + '-current-value').innerHTML = '';
     }
   }
@@ -1177,7 +1177,7 @@ function onYouTubeIframeAPIReady() {
       if (Object.keys(newSettings).length === 0) {
         hideCurrentSettings();
       } else {
-        for (var p = 0; p < PROPERTIES.length; p++) {
+        for (var p = 0; p &lt; PROPERTIES.length; p++) {
           if (newSettings.hasOwnProperty(PROPERTIES[p])) {
             currentValueNode = document.getElementById(PROPERTIES[p] +
                                                        '-current-value');
@@ -1194,14 +1194,14 @@ function onYouTubeIframeAPIReady() {
   // Call the API to update spherical property values.
   updateButton.onclick = function() {
     var sphericalProperties = {};
-    for (var p = 0; p < PROPERTIES.length; p++) {
+    for (var p = 0; p &lt; PROPERTIES.length; p++) {
       var propertyInput = document.getElementById(PROPERTIES[p] + '-property');
       sphericalProperties[PROPERTIES[p]] = parseFloat(propertyInput.value);
     }
     ytplayer.setSphericalProperties(sphericalProperties);
   }
-</script>
-```
+&lt;/script>
+</pre>
 
 <h4>Android WebView Media Integrity API integration</h4>
 
@@ -1425,35 +1425,3 @@ URL for the IFrame Player API code has changed to http://www.youtube.com/iframe_
 To ensure that this change does not affect existing implementations, the old URL 
 (http://www.youtube.com/player_api) will continue to work.
 
-July 16, 2012
-This update contains the following changes:
-
-The Operations section now explains that the API supports the setSize() and destroy() 
-methods. The setSize() method sets the size in pixels of the <iframe> that contains the 
-player and the destroy() method removes the <iframe>.
-
-June 6, 2012
-This update contains the following changes:
-
-We have removed the experimental status from the IFrame Player API.
-
-The Loading a video player section has been updated to point out that when inserting 
-the <iframe> element that will contain the YouTube player, the IFrame API replaces the 
-element specified in the constructor for the YouTube player. This documentation change 
-does not reflect a change in the API and is intended solely to clarify existing behavior.
-
-In addition, that section now notes that the insertion of the <iframe> element could 
-affect the layout of your page if the element being replaced has a different display 
-style than the inserted <iframe> element. By default, an <iframe> displays as an 
-inline-block element.
-
-March 30, 2012
-This update contains the following changes:
-
-The Operations section has been updated to explain that the IFrame API supports a new 
-method, getIframe(), which returns the DOM node for the IFrame embed.
-
-March 26, 2012
-This update contains the following changes:
-
-The Requirements section has been updated to note the minimum player size.
