@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of js-tips.bauska.xyz ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <head>
   <meta charset="utf-8" />
   <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico">
@@ -18,32 +17,32 @@
 <!--  <link rel="stylesheet" type="text/css" href="/css/hover-menu.css"> -->
 </head>
 <body>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <script>
-  <!-- get the button -->
-  var mybutton = document.getElementById("myBtn");
+    <!-- get the button -->
+    var mybutton = document.getElementById("myBtn");
 
-  <!-- when the user scrolls down 10px from the top of the document, show the button -->
-  window.onscroll = function() {scrollFunction()};
+    <!-- when the user scrolls down 10px from the top of the document, show the button -->
+    window.onscroll = function() {scrollFunction()};
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
+    function scrollFunction() {
+      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
     }
-  }
 
-  <!-- when the user clicks on the button, scroll to the top of the document. 0,0 or -->
-  <!-- to table of contents (approx ###), if applicable was; 315 -->
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
+    <!-- when the user clicks on the button, scroll to the top of the document. 0,0 or -->
+    <!-- to table of contents (approx ###), if applicable was; 315 -->
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
@@ -52,22 +51,19 @@
     <h6 style="text-align:center;">(by Brian Bauska, retired Systems Analyst
     <span class="citation" data-cites="Bauska">@bbauska</span>)</h6>
   </header>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of js-tips.bauska.xyz ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1 id="js-tips">JS-TIPS (1st 151 things to learn)</h1>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>JavaScript Tips, Tricks, and Techniques. Moderate to intermediate level of knowledge, overall.</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="1-fundamentals">
-<ol type="1">
-  <li>Fundamentals</h2>  <!-- 1 thru 14 -->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<ol type="1">
-  <li>What is Javascript?<br/> Javascript is basically scripting language used to make web 
-    pages more interactive as it can be inserted into HTML. Javascript is understood by all 
-    modern web browsers.</li>
-  <li>What are features of Javascript?
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <h1 id="js-tips">JS-TIPS (1st 151 things to learn)</h1>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <h4>JavaScript Tips, Tricks, and Techniques. Moderate to intermediate level of knowledge, overall.</h4>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <h2 id="1-fundamentals">
+  <ol type="1">
+    <li>Fundamentals</li>  <!-- 1 thru 14 -->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <li>What is Javascript?<br/> Javascript is basically scripting language used to make web 
+      pages more interactive as it can be inserted into HTML. Javascript is understood by all 
+      modern web browsers.</li>
+    <li>What are features of Javascript?
     <ul style="list-style-type:disc">
       <li>Input validation : Javascript allows you to validate user input before sending 
         it to server for backend operations.</li>
