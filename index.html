@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of js-tips.bauska.xyz ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of js-tips.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <head>
   <meta charset="utf-8" />
   <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico">
@@ -9,12 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Brian Bauska (bbauska)" />
   <meta name="title" content="JavaScript Tips" />
-  <meta name="description" content="JavaScript (JS) Tips - first 151 'things to know' with 
-    regard to with JavaScript, jQuery, AJAX and JS-related: The course objective is to 
-    familiarize viewers with all things JavaScript." />
+  <meta name="description" content="JavaScript (JS) Tips - first 151 'things to know' with regard to 
+    with JavaScript, jQuery, AJAX and JS-related: The course objective is to familiarize viewers with 
+    all things JavaScript." />
   <title>JavaScript Tips</title>
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
-<!--  <link rel="stylesheet" type="text/css" href="/css/hover-menu.css"> -->
 </head>
 <body>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -49,18 +48,17 @@
   <header id="title-block-header">
     <h1 style="text-align:center;" class="title">JavaScript Tips</h1>
     <h6 style="text-align:center;">(by Brian Bauska, retired Systems Analyst
-    <span class="citation" data-cites="Bauska">@bbauska</span>)</h6>
+      <span class="citation" data-cites="Bauska">@bbauska</span>)</h6>
   </header>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <h1 id="js-tips">JS-TIPS (1st 151 things to learn)</h1>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <h4>JavaScript Tips, Tricks, and Techniques. Moderate to intermediate level of knowledge, overall.</h4>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <h2 id="1-fundamentals">
+  <h2 id="1-fundamentals">1. Fundamentals</h2>  <!-- 1 thru 14 -->
   <ol type="1">
-    <li>Fundamentals</li>  <!-- 1 thru 14 -->
-  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <li>What is Javascript?<br/> Javascript is basically scripting language used to make web 
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <li>What is Javascript?<br/> Javascript is basically a scripting language used to make web 
       pages more interactive as it can be inserted into HTML. Javascript is understood by all 
       modern web browsers.</li>
     <li>What are features of Javascript?
@@ -312,9 +310,7 @@
     </li>
   </ol>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <h2 id="2-vars">
-    <ol start="2" type="1">
-      <li>Variables, Operators and Statements</h2>  <!-- 16 thru 36 -->
+  <h2 id="2-vars">2. Variables, Operators and Statements</h2>  <!-- 16 thru 36 -->
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <ol start="16">
     <li>Explain variable in Javascript.<br/> Basically, variable is used for temporary storage 
@@ -425,9 +421,7 @@
       the value of your variable.</li>
   </ol>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <h2 id="3-functions">
-  <ol start="3" type="1">
-    <li>Functions</h2>  <!-- 37 thru 54 -->
+  <h2 id="3-functions">3. Functions</h2>  <!-- 37 thru 54 -->
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <ol start="37">
     <li>What are functions?<br/> Function is a collection of statements which can be used anywhere 
@@ -545,81 +539,68 @@ What is decodeURI() method?<br/> The decodeURI() method decodes a
 Uniform Resource Identifier previously created by encodeURI().
 </li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="4-events">
-<ol start="4" type="1">
-  <li>Events</h2>  <!-- 55 thru 64 -->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<ol start="55">
-<li>
-What are Events?<br/> Events are actions or occurrences that happen in
-the system you are programming to which you can respond in some way.
-Events are handled by function known as event handler.
-</li>
-<li>
-What are different events in Javascript?<br/> Few of the important
-events are listed below:<br/> <b><i>Input Events</i></b><br/></li>
-</ol></li>
-</ol></li>
-</ol>
-<ul>
-<li>• onsubmit - triggers on submitting a form.<br/></li>
-<li>• onselect - triggers on selecting an element.<br/></li>
-<li>• onchange - triggers when changes happen to an element.<br/></li>
-<li>• onfocus - triggers when windows gets focus.<br/></li>
-<li>• onreset - triggers when user clicks reset button.<br/></li>
-<li>• onblur - triggers when window loses focus.<br/></li>
-<li>• onkeyup - triggers on releasing a key.<br/></li>
-<li>• onkeydown - triggers on pressing a key.<br/> <b><i>Click
-Events</i></b><br/></li>
-<li>• onclick - trigger on clicking a mouse button.<br/></li>
-<li>• ondblclick - triggers on double clicking mouse button.<br/>
-<b><i>Mouse Events</i></b><br/></li>
-<li>ondrag - triggers when element is dragged.<br/></li>
-<li>ondragend - triggers when drag ends.<br/></li>
-<li>ondragstart - triggers when drag starts.<br/></li>
-<li>• ondragenter - triggers when dragged element is dropped.<br/></li>
-<li>• ondragleave - triggers on leaving target while dragging
-element.<br/></li>
-<li>• onmouseover - triggers when mouse pointer moves over
-element.<br/></li>
-<li>• onmousedown - triggers on pressing mouse button.<br/></li>
-<li>• onmouseup - triggers on releasing mouse button.<br/></li>
-<li>• onscroll -​ triggers on scrolling a scroll bar of an element.<br/>
-<b><i>Load Events</i></b><br/></li>
-<li>• onload- triggers when page has been loaded.<br/></li>
-<li>• onerror- triggers when an error occurs when loading an
-image.<br/></li>
-<li>• onunload- triggers when browser closes document.
-</li>
-<li>
-What are event handlers?<br/> Event handler is a routine that is used to
-deal with event, allowing programmers to write code that will be
-executed when event occurs.
-</li>
-<li>
-What is addEventListener() method?<br/> The addEventListener() method
-attaches an event handler to specified element. You can add multiple
-event handlers to one element. It is possible to add event listener to
-any DOM object. e.g.
-<pre>      document.getElementById(“someUniqueDivId”).addEventListener(“click”, respondtoclick);
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <h2 id="4-events">4. Events</h2>  <!-- 55 thru 64 -->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <ol start="55">
+    <li>What are Events?<br/> Events are actions or occurrences that happen in the system you are 
+      programming to which you can respond in some way. Events are handled by function known as 
+      event handler.</li>
+    <li>What are different events in Javascript?<br/> Few of the important events are listed below:<br/>
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <b><i>Input Events</i></b><br/>
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <ul>
+      <li>• onsubmit - triggers on submitting a form.<br/></li>
+      <li>• onselect - triggers on selecting an element.<br/></li>
+      <li>• onchange - triggers when changes happen to an element.<br/></li>
+      <li>• onfocus - triggers when windows gets focus.<br/></li>
+      <li>• onreset - triggers when user clicks reset button.<br/></li>
+      <li>• onblur - triggers when window loses focus.<br/></li>
+      <li>• onkeyup - triggers on releasing a key.<br/></li>
+      <li>• onkeydown - triggers on pressing a key.<br/>
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <b><i>Click Events</i></b><br/></li>
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <li>• onclick - trigger on clicking a mouse button.<br/></li>
+      <li>• ondblclick - triggers on double clicking mouse button.<br/>
+      <b><i>Mouse Events</i></b><br/></li>
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <li>• ondrag - triggers when element is dragged.<br/></li>
+      <li>• ondragend - triggers when drag ends.<br/></li>
+      <li>• ondragstart - triggers when drag starts.<br/></li>
+      <li>• ondragenter - triggers when dragged element is dropped.<br/></li>
+      <li>• ondragleave - triggers on leaving target while dragging element.<br/></li>
+      <li>• onmouseover - triggers when mouse pointer moves over element.<br/></li>
+      <li>• onmousedown - triggers on pressing mouse button.<br/></li>
+      <li>• onmouseup - triggers on releasing mouse button.<br/></li>
+      <li>• onscroll -​ triggers on scrolling a scroll bar of an element.<br/>
+      <b><i>Load Events</i></b><br/></li>
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <li>• onload- triggers when page has been loaded.<br/></li>
+      <li>• onerror- triggers when an error occurs when loading an image.<br/></li>
+      <li>• onunload- triggers when browser closes document.</li>
+    </ul>
+  </li>
+  <li>What are event handlers?<br/> Event handler is a routine that is used to deal with event, allowing 
+    programmers to write code that will be executed when event occurs.</li>
+  <li>What is addEventListener() method?<br/> The addEventListener() method attaches an event handler to 
+    specified element. You can add multiple event handlers to one element. It is possible to add event 
+	listener to any DOM object. e.g.
+<pre>document.getElementById(“someUniqueDivId”).addEventListener(“click”, respondtoclick);
 function respondtoclick() {
   console.log(“Do some stuff!!!”);
 }</pre>
-</li>
-<li>
-How to remove event listener from any element?<br/> The
-removeEventListener() is an inbuilt function in JavaScript which removes
-an event handler from an element for attached event. Below example show
-how to remove event listener which was added in previous example. e.g.
-<pre>document.getElementById(“someUniqueDivId”).removeEventListener("click",
-respondtoclick);</pre>
-</li>
-<li>
-What are different key codes?<br/> It is necessary to know the codes
-associated with keys to identify which key is pressed in the code.<br/>
-Below table gives key codes:<br/></li>
-</ul></li>
+  </li>
+  <li>How to remove event listener from any element?<br/> The removeEventListener() is an inbuilt function 
+    in JavaScript which removes an event handler from an element for attached event. Below example show
+	how to remove event listener which was added in previous example. e.g. 
+<pre>document.getElementById(“someUniqueDivId”).removeEventListener("click", respondtoclick);</pre>
+  </li>
+  <li>What are different key codes?<br/> It is necessary to know the codes associated with keys to 
+    identify which key is pressed in the code.<br/>
+	Below table gives key codes:<br/></li>
+  </ul></li>
 </ol>
 Key CodeKey CodeKey CodeKey Code backspace 8 A 65 numpad 0 96 semi-colon
 186 Tab 9 B 66 numpad 1 97 equal sign 187 Enter 13 C 67 numpad 2 98
@@ -672,60 +653,50 @@ each one of them&lt;li&gt; to pop up a message when clicked and it will
 bubble to the list items.
 </li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="5-objects">
-<ol start="5" type="1">
-<li>Objects
-</h2>
-<!-- 65 - 81 -->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<ol start="65">
-<li>
-What is Object?<br/> The object is collection of properties and methods.
-Object in Javascript are variables as well. Object can have properties
-any data types (String, Number, Boolean etc.). Object properties can be
-primitive values, other objects and functions. e.g.
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <h2 id="5-objects">5. Objects</h2>  <!-- 65 thru 81 -->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <ol start="65">
+    <li>What is Object?<br/> The object is collection of properties and methods. Object in Javascript 
+	  are variables as well. Object can have properties any data types (String, Number, Boolean etc.). 
+	  Object properties can be primitive values, other objects and functions. e.g.
 <pre>var book = {
 ​  name : “Javascript Book”,
 ​  auther: “Pratik Bandal”,
 ​  pages: 100
 }</pre>
-</li>
-<li>
-What are ways to create objects?<br/> In Javascript you can create
-objects through following ways: Using literals: Using object literal you
-can basically create object by using name value pairs inside curly {}
-braces. e.g.
+    </li>
+    <li>What are ways to create objects?<br/> In Javascript you can create objects through following 
+      ways: Using literals: Using object literal you can basically create object by using name value 
+	  pairs inside curly {} braces. e.g.
 <pre>var book = {
 ​ name : “Javascript Book”,
 ​ auther: “Pratik Bandal”,
 ​ pages: 100
 }</pre>
-Using new keyword with built-in object constructor function: Using new
-keyword you can create object and then set its properties as below, e.g.
+    Using new keyword with built-in object constructor function: Using new keyword you can create 
+	object and then set its properties as below, e.g.
 <pre>var book= new Object();
 person.name= "John";
 person.auther= "Doe";
 person.pages= 50;</pre>
-Using new keyword with built-in user defined constructor function: We
-first create a constructor function and then get objects using ‘new’
-keyword. e.g.
+    Using new keyword with built-in user defined constructor function: We first create a constructor 
+	function and then get objects using ‘new’ keyword. e.g.
 <pre>function Book(name, author, pages) {
 this.name = name;
 this.author = author;
 this.pages = pages;
 }</pre>
-And then we create Book object as below, ​
+    And then we create Book object as below, ​
 <pre>var book = new Book(“Javascript Book”, ”Pratik Bandal”, 100);</pre>
-Using Object.create(): The Object.create() method creates a new object,
-using an existing object as the prototype of the newly created object.
-e.g.
+    Using Object.create(): The Object.create() method creates a new object, using an existing object 
+	as the prototype of the newly created object. e.g.
 <pre>​ const person = {
 ​ ​ isHuman: false,
 ​ ​ printIntroduction: function () {
 ​ };​ ​ }​ ​ ​ console.log(`Am I human? ${this.isHuman}`);
 ​ const me = Object.create(person);</pre>
-</li>
+    </li>
 <li>
 Which are built-in or native objects?<br/> JavaScript provides Number,
 Boolean, String, Array, Date, Math, RegExp which are built in objects.
@@ -1505,8 +1476,6 @@ That does it. the end…
 </ol></li>
 </ol></li>
 </ol></li>
-</ol></li>
-</ol>
 
 <h6>Last Updated 9/18/2024 Wed 12+pm</h6>
 
