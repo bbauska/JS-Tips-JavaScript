@@ -155,52 +155,62 @@
         var pratik;<br/> 
         var praTik;<br/> 
       In above case pratik and praTik will be considered as different variables.
-    </li>
+    </li>  <!-- #9 ends -->
     <li>Is Semicolon compulsory in Javascript at end of the statement?<br/> No, it is not 
       necessary to use semicolon at end of the statement still it will be considered as 
       valid statement.</li>
-    <li>What are different data types in Javascript?<br/> Below are basic data types in 
-      Javascript:<br/> <b>Primitive Data Types:</b> &lt;ul style=“list-style-type=”square”&gt;
-      <ul>
+    <li>What are different data types in Javascript?<br/> 
+      Below are basic data types in Javascript:<br/> 
+      <b class="large-icon">Primitive Data Types:</b>
+      <ul style="list-style-type:square">
         <li>Number: Represent numeric values, both integer and float.</li>
         <li>String: Sequence of characters are represented using String.</li>
         <li>Boolean: Represent Boolean value, true or false.</li>
         <li>Undefined: Represent undefined value.</li>
         <li>Null: Represent null.</li>
       </ul>
-      <b>Non-Primitive Data Types:</b> &lt;ul style=“list-style-type=”disc”&gt;
-      <ul>
+      <b class="large-icon">Non-Primitive Data Types:</b>
+      <ul style="list-style-type:circle">
         <li>Object: Represent more complex data structure.</li>
         <li>Array: Represent group of elements.</li>
         <li>RegExp: Represent regular expression.</li>
       </ul>
-    </li>
-    <li>How to add comment?<br/> JavaScript provides two kinds of comments:<br/>
-      Single-line comments and multiline comments.<br/> Single-line comments
-      start with // and are terminated by the end of the line:<br/> e.g. x++;
-      // single-line comment<br/> Multiline comments are delimited by /* and
-      */: e.g. /* This <br/> is a multiline<br/> comment.<br/> ​ */
-    </li>
-    <li>What is Javascript engine?<br/> JavaScript engine is a computer program
+    </li>  <!-- 11 -->
+    <li>How to add comment?<br/>
+      JavaScript provides two kinds of comments:<br/>
+      Single-line comments and multiline comments.<br/>
+      Single-line comments start with &quot;//&quot; and are terminated by the end of the line:<br/> 
+      e.g. x++; // single-line comment<br/>
+      Multiline comments are delimited by &quot;/*&quot; and &quot;*/&quot;:<br/>
+      e.g. /* This<br/> is a multiline<br/>comment.<br/> ​*/
+    </li>  <!-- 12 -->
+    <li>What is a Javascript engine?<br/> JavaScript engine is a computer program
       used to execute Javascript code. JS engines were developed by web
       browser vendors and every major browser has one.<br/> Chrome V8 from
-      google is most used engine, Google chrome use it. SpiderMonkey is
-      developed by Mozilla for use in firefox. JavaScriptCore is Apples engine
-      for its Safari browser.</li>
+      google is the most used engine, Google chrome use it. SpiderMonkey is
+      developed by Mozilla for use in Firefox. JavaScriptCore is Apples engine
+      for its Safari browser.
+	</li>  <!-- 13 -->
     <li>What are different Javascript frameworks that you know?<br/> Many frameworks are 
-      based on Javascript now, below are few of them: &lt;ul style=“list-style-type=”circle”&gt;
-      <ul id="six">
-        <li><b><a href="https://reactjs.org/" target="_blank">React</a></b></li>
-        <li>The library for web and native user interfaces.</li>
-        <li><a href="https://angularjs.org/" target="_blank">Angular</a> - Angular is a typescript-based 
-          web application framework that supports full-stack development for building all types of web 
-          applications.</li>
-        <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
-        <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
-        <li><a href="https://expressjs.com/" target="_blank">Express.js</a></li>
-        <li><a href="https://www.meteor.com/" target="_blank">Meteor.js</a></li>
-        <li><a href="https://nextjs.org/" target="_blank">Next.js</a></li>
-        <li><a href="https://emberjs.com/" target="_blank">Ember.js</a></li>
+      based on Javascript now, below are few of them:
+      <ul style="list-style-type:circle" id="six">
+        <li><b><a href="https://reactjs.org/" target="_blank">React</a></b>
+          - v19.2 - The library for web and native user interfaces.</li>
+        <li><a href="https://angularjs.org/" target="_blank">Angular</a> 
+		  - Support Ended Jan, 2022 - A typescript-based web application framework that supports full-stack 
+		  development for building all types of web applications.</li>
+        <li><a href="https://vuejs.org/" target="_blank">Vue.js</a>
+		  - v3.0 - A progressive framework, <a href="https://madewithvuejs.com/" target="_blank">Sample Vue Projects.</li>
+        <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a>
+		  - v26.3.1 - Cross-platform to create servers, web apps, command-line tools and scripts.</li>
+        <li><a href="https://expressjs.com/" target="_blank">Express.js</a>
+		  - v5.2.1 - Minimalist web framework for Node.js </li>
+        <li><a href="https://www.meteor.com/" target="_blank">Meteor.js</a> 
+		  - v3.4.1 - With React making to-do lists, account password entry form, more.</li>
+        <li><a href="https://nextjs.org/" target="_blank">Next.js</a>
+		  - v16.2.9 - <a href="https://nextjs.org/learn?utm_source=next-site&utm_medium=homepage-cta&utm_campaign=home">With React framework, a progressive web builder</a>.</li>
+        <li><a href="https://emberjs.com/" target="_blank">Ember.js</a>
+		  - v7.0 - Template-based HTML user-interface.</li>
         <li><a href="https://backbonejs.org/" target="_blank">Backbone.js</a></li>
         <li><a href="https://svelte.dev/" target="_blank">Svelte</a></li>
         <li><a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a></li>
@@ -586,7 +596,7 @@ Uniform Resource Identifier previously created by encodeURI().
     programmers to write code that will be executed when event occurs.</li>
   <li>What is addEventListener() method?<br/> The addEventListener() method attaches an event handler to 
     specified element. You can add multiple event handlers to one element. It is possible to add event 
-	listener to any DOM object. e.g.
+    listener to any DOM object. e.g.
 <pre>document.getElementById(“someUniqueDivId”).addEventListener(“click”, respondtoclick);
 function respondtoclick() {
   console.log(“Do some stuff!!!”);
@@ -594,12 +604,12 @@ function respondtoclick() {
   </li>
   <li>How to remove event listener from any element?<br/> The removeEventListener() is an inbuilt function 
     in JavaScript which removes an event handler from an element for attached event. Below example show
-	how to remove event listener which was added in previous example. e.g. 
+    how to remove event listener which was added in previous example. e.g. 
 <pre>document.getElementById(“someUniqueDivId”).removeEventListener("click", respondtoclick);</pre>
   </li>
   <li>What are different key codes?<br/> It is necessary to know the codes associated with keys to 
     identify which key is pressed in the code.<br/>
-	Below table gives key codes:<br/></li>
+    Below table gives key codes:<br/></li>
   </ul></li>
 </ol>
 Key CodeKey CodeKey CodeKey Code backspace 8 A 65 numpad 0 96 semi-colon
@@ -658,8 +668,8 @@ bubble to the list items.
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <ol start="65">
     <li>What is Object?<br/> The object is collection of properties and methods. Object in Javascript 
-	  are variables as well. Object can have properties any data types (String, Number, Boolean etc.). 
-	  Object properties can be primitive values, other objects and functions. e.g.
+      are variables as well. Object can have properties any data types (String, Number, Boolean etc.). 
+      Object properties can be primitive values, other objects and functions. e.g.
 <pre>var book = {
 ​  name : “Javascript Book”,
 ​  auther: “Pratik Bandal”,
@@ -668,20 +678,20 @@ bubble to the list items.
     </li>
     <li>What are ways to create objects?<br/> In Javascript you can create objects through following 
       ways: Using literals: Using object literal you can basically create object by using name value 
-	  pairs inside curly {} braces. e.g.
+      pairs inside curly {} braces. e.g.
 <pre>var book = {
 ​ name : “Javascript Book”,
 ​ auther: “Pratik Bandal”,
 ​ pages: 100
 }</pre>
     Using new keyword with built-in object constructor function: Using new keyword you can create 
-	object and then set its properties as below, e.g.
+    object and then set its properties as below, e.g.
 <pre>var book= new Object();
 person.name= "John";
 person.auther= "Doe";
 person.pages= 50;</pre>
     Using new keyword with built-in user defined constructor function: We first create a constructor 
-	function and then get objects using ‘new’ keyword. e.g.
+    function and then get objects using ‘new’ keyword. e.g.
 <pre>function Book(name, author, pages) {
 this.name = name;
 this.author = author;
@@ -690,7 +700,7 @@ this.pages = pages;
     And then we create Book object as below, ​
 <pre>var book = new Book(“Javascript Book”, ”Pratik Bandal”, 100);</pre>
     Using Object.create(): The Object.create() method creates a new object, using an existing object 
-	as the prototype of the newly created object. e.g.
+    as the prototype of the newly created object. e.g.
 <pre>​ const person = {
 ​ ​ isHuman: false,
 ​ ​ printIntroduction: function () {
