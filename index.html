@@ -491,105 +491,105 @@
     <li>What is isNaN?<br/> It is a function which determine whether or not value is an illegal 
       number. The isNan() method returns true if the passed value is NaN(Not a number) and is of 
       type number, else it returns false.<br/> e.g.<br> Input: ‘213’<br/> Output: false<br/>
-    Input:’hello’<br/> Output: true</li>  <!-- 40 -->
-  <li>What is parseInt?<br/> The parseInt is a function which parses the string and returns the 
-    integer value found in string.</li>
-  <li>What is alert?<br/> The alert() function is used to display information in message box.</li>
-  <li>What is confirm?<br/> The confirm() function displays a message box with two buttons, Ok and 
-    cancel. When you click the Ok button, the function returns true. When you click cancel button 
-    function returns false.</li>
-  <li>What is charAt?<br/> The charAt() function returns character from specified index.<br/> 
-    e.g.<br/> ​ ​ var str=”Pratik”;<br/> ​ ​
-    console.log(str.charAt(0));<br/> ​ ​ Output :<br/> ​ ​ P</li>
-  <li>What is indexOf?<br/> This function returns the index within the calling string object of 
-    first occurrence of the specified value and returns index of found occurrence or -1 if not 
-    found.<br/> e.g.<br/> 
+      Input:’hello’<br/> Output: true</li>  <!-- 40 -->
+    <li>What is parseInt?<br/> The parseInt is a function which parses the string and returns the 
+      integer value found in string.</li>
+    <li>What is alert?<br/> The alert() function is used to display information in message box.</li>
+    <li>What is confirm?<br/> The confirm() function displays a message box with two buttons, Ok and 
+      cancel. When you click the Ok button, the function returns true. When you click cancel button 
+      function returns false.</li>
+    <li>What is charAt?<br/> The charAt() function returns character from specified index.<br/> 
+      e.g.<br/> ​ ​ var str=”Pratik”;<br/> ​ ​
+      console.log(str.charAt(0));<br/> ​ ​ Output :<br/> ​ ​ P</li>
+    <li>What is indexOf?<br/> This function returns the index within the calling string object of 
+      first occurrence of the specified value and returns index of found occurrence or -1 if not 
+      found.<br/> e.g.<br/> 
     ​ ​ var str=”This is javascript book”;<br/> ​ ​ console.log(str
       .indexOf(“javascript”));<br/> ​ ​ Output:<br/> ​ ​ 8
-  </li>  <!-- 45 -->
-  <li>
-    What are function scopes?<br/> Scope defines accessibility of function
-    and its variables. In Javascript scope is divided into two
-    categories:<br/>
-  <ul>
+    </li>  <!-- 45 -->
     <li>
-      <b>Global</b> : Function with global scope can be accessed anywhere in
-      the program.
+      What are function scopes?<br/> Scope defines accessibility of function
+      and its variables. In Javascript scope is divided into two
+      categories:<br/>
+    <ul>
+      <li>
+        <b>Global</b> : Function with global scope can be accessed anywhere in
+        the program.
+      </li>
+      <li>
+        <b>Local</b> : Function with local scope can be accessed only within its
+        parent function.
+      </li>
+    </ul>
     </li>
     <li>
-      <b>Local</b> : Function with local scope can be accessed only within its
-      parent function.
+      What is strict mode?<br/> Strict mode prevents certain actions and
+      throws more exceptions. The statement “use strict” orders browser to use
+      the Strict mode, which is a reduced and safer feature set of
+      JavaScript.<br/> Strict mode eliminates some silent errors in JavaScript
+      by changing them to throw errors.<br/> Strict mode resolves mistakes
+      that make it difficult for JavaScript engines to perform optimizations
+      hence strict mode code can sometimes run faster than identical code
+      that’s not strict mode.<br/> Strict mode forbids some syntax likely to
+      be defined in future versions of ECMAScript.<br/> It prevents, or throws
+      errors, when unsafe actions are taken (such as gaining access to the
+      global object). It disables features that are confusing or poorly
+      thought out. Due to Strict mode it becomes easier to write secure
+      JavaScript.<br/> Strict mode applies to individual functions or to
+      entire scripts. It doesn’t apply to block statements enclosed in {}
+      braces; attempting to apply it to such contexts does nothing.<br/> To
+      invoke strict mode for an entire script, put statement “use strict”
+      before any other statements.<br/> To invoke strict mode for a function,
+      put statement “use strict” in the function’s body before any other
+      statements.
+    </li>  <!-- 47 -->
+    <li>
+      What is function closure?<br/> A closure is a feature in JavaScript
+      where an inner function has access to the outer (enclosing) function’s
+      variables.
     </li>
-  </ul>
-  </li>
-<li>
-What is strict mode?<br/> Strict mode prevents certain actions and
-throws more exceptions. The statement “use strict” orders browser to use
-the Strict mode, which is a reduced and safer feature set of
-JavaScript.<br/> Strict mode eliminates some silent errors in JavaScript
-by changing them to throw errors.<br/> Strict mode resolves mistakes
-that make it difficult for JavaScript engines to perform optimizations
-hence strict mode code can sometimes run faster than identical code
-that’s not strict mode.<br/> Strict mode forbids some syntax likely to
-be defined in future versions of ECMAScript.<br/> It prevents, or throws
-errors, when unsafe actions are taken (such as gaining access to the
-global object). It disables features that are confusing or poorly
-thought out. Due to Strict mode it becomes easier to write secure
-JavaScript.<br/> Strict mode applies to individual functions or to
-entire scripts. It doesn’t apply to block statements enclosed in {}
-braces; attempting to apply it to such contexts does nothing.<br/> To
-invoke strict mode for an entire script, put statement “use strict”
-before any other statements.<br/> To invoke strict mode for a function,
-put statement “use strict” in the function’s body before any other
-statements.
-</li>  <!-- 47 -->
-<li>
-What is function closure?<br/> A closure is a feature in JavaScript
-where an inner function has access to the outer (enclosing) function’s
-variables.
-</li>
-<li>
-What is callback function?<br/> A function passed into another function
-as an argument, which is then invoked inside the outer function to
-complete some kind action is called as callback function.<br/> e.g.<br/>
-function showName(name) {<br/> alert(‘User name is:’ + name);<br/>
-}<br/> function displayName(callback) {<br/> var name = prompt(‘Please
-enter name to be displayed’);<br/> callback(name);<br/> }<br/>
-displayName(showName);
-</li>
-<li>
-What is setTimeout function?<br/> The setTimeout() function executes
-function at specified interval.<br/> setTimeout(expression,
-timeout);<br/> Here, expression is the function/code that is called only
-once and timeout is number of milliseconds to wait before calling the
-function. The clearTimeout() function is used to deactivate or cancel
-timer set by setTimeout() fuction.
-</li>  <!-- 50 -->
-<li>
-What is setInterval function?<br/> The setInterval() function executes a
-function after a specified time interval.<br/> ​ setInterval(expression,
-timeout);<br/> Here, expression specifies function/code to be called
-after particular time interval and timeout specifies the time interval
-between function calls.<br/> The clearInterval() function is used to
-cancel or deactivate the timer set by setInterval() function.
-</li>
-<li>
-What is difference between setInterval and setTimeout functions?<br/>
-The setTimeout(expression, timeout) runs the function once after timeout
-The setInterval(expression, timeout) runs the function in intervals
-repeatedly, with length of timeout between them.
-</li>
-<li>
-What is encodeURI() method?<br/> The encodeURI() method encodes a
-Uniform Resource Identifier by replacing each instance of particular
-characters by one, two, three or four escape sequences representing
-UTF-8 encoding of character.
-</li>
-<li>
-What is decodeURI() method?<br/> The decodeURI() method decodes a
-Uniform Resource Identifier previously created by encodeURI().
-</li>  <!-- 54 -->
-</ol>
+    <li>
+      What is callback function?<br/> A function passed into another function
+      as an argument, which is then invoked inside the outer function to
+      complete some kind action is called as callback function.<br/> e.g.<br/>
+      function showName(name) {<br/> alert(‘User name is:’ + name);<br/>
+      }<br/> function displayName(callback) {<br/> var name = prompt(‘Please
+      enter name to be displayed’);<br/> callback(name);<br/> }<br/>
+      displayName(showName);
+    </li>
+    <li>
+      What is setTimeout function?<br/> The setTimeout() function executes
+      function at specified interval.<br/> setTimeout(expression,
+      timeout);<br/> Here, expression is the function/code that is called only
+      once and timeout is number of milliseconds to wait before calling the
+      function. The clearTimeout() function is used to deactivate or cancel
+      timer set by setTimeout() fuction.
+    </li>  <!-- 50 -->
+    <li>
+      What is setInterval function?<br/> The setInterval() function executes a
+      function after a specified time interval.<br/> ​ setInterval(expression,
+      timeout);<br/> Here, expression specifies function/code to be called
+      after particular time interval and timeout specifies the time interval
+      between function calls.<br/> The clearInterval() function is used to
+      cancel or deactivate the timer set by setInterval() function.
+    </li>
+    <li>
+      What is difference between setInterval and setTimeout functions?<br/>
+      The setTimeout(expression, timeout) runs the function once after timeout
+      The setInterval(expression, timeout) runs the function in intervals
+      repeatedly, with length of timeout between them.
+    </li>
+    <li>
+      What is encodeURI() method?<br/> The encodeURI() method encodes a
+      Uniform Resource Identifier by replacing each instance of particular
+      characters by one, two, three or four escape sequences representing
+      UTF-8 encoding of character.
+    </li>
+    <li>
+      What is decodeURI() method?<br/> The decodeURI() method decodes a
+      Uniform Resource Identifier previously created by encodeURI().
+    </li>  <!-- 54 -->
+  </ol>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <h2 id="4-events">4. Events</h2>  <!-- 55 thru 64 -->
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
