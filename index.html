@@ -339,12 +339,12 @@
 		  - Another JavaScript framework for single page applications.</li>
         <li>Backend JS: Express, Nest, Meteor</li>
       </ul>
-    </li>
+    </li>  <!-- 14 -->
   </ol>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <h2 id="2-vars">2. Variables, Operators and Statements</h2>  <!-- 16 thru 36 -->
+  <h2 id="2-vars">2. Variables, Operators and Statements</h2>  <!-- 15 thru 36 -->
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <ol start="16">
+  <ol start="15">
     <li>Explain variable in Javascript.<br/> Basically, variable is used for temporary storage 
     of data. It has name, value and memory address. You have to declare variable before using 
     it for storing data.<br/> Below is syntax to declare variable: var variablename;<br/> 
@@ -375,7 +375,7 @@
       Block Scope. A variable declared with ‘let’ keyword has a scope only with in that block.</li>
     <li>What is difference between let and const?<br/> ‘let’ allows you change the value of 
       variable any number of times. Using ‘const’, after the first assignment of the value 
-      we cannot redefine the value again.</li>
+      we cannot redefine the value again.</li>  <!-- 20 -->
     <li>What is automatic type conversion?<br/> When Javascript tries to operate on a wrong 
       date type it will try to convert the value to a “right” type.</li>
     <li>What are operators in Javascript?<br/>
@@ -399,7 +399,7 @@
         <li><b><i>Conditional operator</i></b> : Conditional operators are used to assign values 
           to variable conditionally. (condition) ? value1: value2 is conditional operator.</li>
       </ul>
-    </li>
+    </li>  <!-- 23 -->
     <li>What are control flow statements?<br/> You can change the sequence in which Javascript statements 
       are executed by using control flow statements. Below are types of control flow statements:<br/> 
       Selection statements: Selection statements use condition to determine which group of statements 
@@ -430,7 +430,7 @@
       assigned. Also, undefined is a type itself (undefined) while null is an object. Unassigned variables 
       are initialized with a default value of undefined by JavaScript or undefined can be assigned to 
       variable through code. Whereas JavaScript never sets a value to null. That must be done
-      programmatically.</li>
+      programmatically.</li>  <!-- 30 -->
     <li>What is output of null == undefined?<br/> null == undefined will return true.<br/> 
       However, null === undefined will return false.</li>
     <li>What are escape characters?<br/> Escape characters (backslash) is used before special characters 
@@ -450,7 +450,7 @@
       variable names are case sensitive.</li>
     <li>Why you should not prefer to use global variables?<br/> Global variable can be created 
       by many developers resulting in duplicate global variables. Duplicate variable can overwrite 
-      the value of your variable.</li>
+      the value of your variable.</li>  <!-- 36 -->
   </ol>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <h2 id="3-functions">3. Functions</h2>  <!-- 37 thru 54 -->
@@ -472,7 +472,7 @@
     <li>What is isNaN?<br/> It is a function which determine whether or not value is an illegal 
       number. The isNan() method returns true if the passed value is NaN(Not a number) and is of 
       type number, else it returns false.<br/> e.g.<br> Input: ‘213’<br/> Output: false<br/>
-    Input:’hello’<br/> Output: true</li>
+    Input:’hello’<br/> Output: true</li>  <!-- 40 -->
   <li>What is parseInt?<br/> The parseInt is a function which parses the string and returns the 
     integer value found in string.</li>
   <li>What is alert?<br/> The alert() function is used to display information in message box.</li>
@@ -487,7 +487,7 @@
     found.<br/> e.g.<br/> 
     ​ ​ var str=”This is javascript book”;<br/> ​ ​ console.log(str
       .indexOf(“javascript”));<br/> ​ ​ Output:<br/> ​ ​ 8
-  </li>
+  </li>  <!-- 45 -->
   <li>
     What are function scopes?<br/> Scope defines accessibility of function
     and its variables. In Javascript scope is divided into two
@@ -523,7 +523,7 @@ invoke strict mode for an entire script, put statement “use strict”
 before any other statements.<br/> To invoke strict mode for a function,
 put statement “use strict” in the function’s body before any other
 statements.
-</li>
+</li>  <!-- 47 -->
 <li>
 What is function closure?<br/> A closure is a feature in JavaScript
 where an inner function has access to the outer (enclosing) function’s
@@ -545,7 +545,7 @@ timeout);<br/> Here, expression is the function/code that is called only
 once and timeout is number of milliseconds to wait before calling the
 function. The clearTimeout() function is used to deactivate or cancel
 timer set by setTimeout() fuction.
-</li>
+</li>  <!-- 50 -->
 <li>
 What is setInterval function?<br/> The setInterval() function executes a
 function after a specified time interval.<br/> ​ setInterval(expression,
@@ -569,7 +569,7 @@ UTF-8 encoding of character.
 <li>
 What is decodeURI() method?<br/> The decodeURI() method decodes a
 Uniform Resource Identifier previously created by encodeURI().
-</li>
+</li>  <!-- 54 -->
 </ol>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <h2 id="4-events">4. Events</h2>  <!-- 55 thru 64 -->
@@ -623,7 +623,7 @@ Uniform Resource Identifier previously created by encodeURI().
 function respondtoclick() {
   console.log(“Do some stuff!!!”);
 }</pre>
-  </li>
+  </li>  <!-- 58 -->
   <li>How to remove event listener from any element?<br/> The removeEventListener() is an inbuilt function 
     in JavaScript which removes an event handler from an element for attached event. Below example show
     how to remove event listener which was added in previous example. e.g. 
@@ -631,9 +631,10 @@ function respondtoclick() {
   </li>
   <li>What are different key codes?<br/> It is necessary to know the codes associated with keys to 
     identify which key is pressed in the code.<br/>
-    Below table gives key codes:<br/></li>
-  </ul></li>
+    Below table gives key codes:<br/></li>  <!-- 60 -->
 </ol>
+  <ol start="61">
+<li>
 Key CodeKey CodeKey CodeKey Code backspace 8 A 65 numpad 0 96 semi-colon
 186 Tab 9 B 66 numpad 1 97 equal sign 187 Enter 13 C 67 numpad 2 98
 comma 188 Shift 16 D 68 numpad 3 99 dash 189 Ctrl 17E 69numpad 4
@@ -672,7 +673,7 @@ runs it if so. Then it moves on to the next element inside &lt;html&gt;
 and does the same thing, then the next one, and so on until it reaches
 the element that was actually clicked on. The capturing phase is not
 often used. Usually it is invisible to us.
-</li>
+</li>  <!-- 64 -->
 <li>
 What is event delegation?<br/> Event delegation concept relies on the
 fact that if you want some code to run when you click on any one of a
@@ -683,12 +684,12 @@ individually. A good example is a series of list items &lt;li&gt; — You
 can set the click event listener on the parent &lt;ul&gt;, if you want
 each one of them&lt;li&gt; to pop up a message when clicked and it will
 bubble to the list items.
-</li>
+</li>  <!-- 65 -->
 </ol>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <h2 id="5-objects">5. Objects</h2>  <!-- 65 thru 81 -->
+  <h2 id="5-objects">5. Objects</h2>  <!-- 66 thru 81 -->
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <ol start="65">
+  <ol start="66">
     <li>What is Object?<br/> The object is collection of properties and methods. Object in Javascript 
       are variables as well. Object can have properties any data types (String, Number, Boolean etc.). 
       Object properties can be primitive values, other objects and functions. e.g.
@@ -749,7 +750,7 @@ operations on String object. It provides methods like charAt(),
 charCodeAt(), concat(), indexOf(), match(), slice(), split(), substr(),
 toLowerCase(), toUpperCase(), valueOf(), toString() which provides
 important functionalities that can be performed on string.
-</li>
+</li>  <!-- 70 -->
 <li>
 What is Number object?<br/> The number is Javascript wrapper object
 which allows you to work with numerical values. Number object is created
@@ -776,7 +777,7 @@ object is created as,
 <pre>new Array(ele0, ele1&lbrack;, ...&lbrack;, eleN&rbrack;&rbrack;)
 new Array(arrayLength)
 </pre>
-</li>
+</li>  <!-- 73 -->
 <li>
 Explain about Date object.<br/> The JavaScript Date object represents a
 single moment in time. Date objects use a unix timestamp which is a
@@ -816,7 +817,7 @@ access function within it:
 }
 ...
 myProjectNameSpace. Projectfunctionone();</pre>
-</li>
+</li>  <!-- 78 -->
 <li>
 What is prototype in javascript?<br/> All objects in Javascript have
 property called as prototype, the prototype is an object which has a
@@ -852,16 +853,13 @@ reason. This enables asynchronous methods return values like synchronous
 methods: instead of immediately returning final value, the asynchronous
 method returns a promise to provide the value at some point in the
 future.
-</li>
+</li>  <!-- 82 -->
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="6-bom">
-<ol start="6" type="1">
-<li>Browser Object Model
-</h2>
-<!-- 82 - 96 -->
+<h2 id="6-bom">6. Browser Object Model</h2>
+<!-- 83 - 96 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<ol start="82">
+<ol start="83">
 <li>
 What is Browser Object Model?<br/> The browser object model (BOM) is a
 hierarchy of browser objects that are used to manipulate methods and
@@ -906,7 +904,7 @@ text to display to the user and the default value for the text box
 (which can be an empty string if you so desire). The following line
 results in the window displayed:
 <pre>prompt("Enter the country","USA");</pre>
-</li>
+</li>  <!-- 87 -->
 <li>
 How to redirect other webpage?<br/> It is possible to redirect to other
 webpage in javascript by directly assigning value to window.location or
@@ -944,7 +942,7 @@ number|URL parameter can either be a number which goes to the URL within
 the specific position (1 goes forward one page, -1 goes back one page),
 or a string. The string has to be a partial or full URL, and the
 function will go to the first URL that matches the string.
-</li>
+</li>  <!-- 94 -->
 <li>
 What is Screen Object?<br/> The Screen object consist of information
 about display screen like height, width and colour bits of screen.
@@ -957,16 +955,13 @@ like assign(), reload and replace().
 <li>
 How to print a web page?<br/> The window.print() will print the current
 web page when invoked.
-</li>
+</li>  <!-- 97 -->
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="7-dom">
-<ol start="7" type="1">
-<li>Document Object Model
-</h2>
-<!-- 97 thru 111 -->
+<h2 id="7-dom">7. Document Object Model</h2>
+<!-- 98 thru 111 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<ol start="97">
+<ol start="98">
 <li>
 What is Document Object?<br/> The Document object represents HTML
 document that is displayed in window. Document object has properties
@@ -992,7 +987,7 @@ attribute.<br/> Node has node properties that contain information about
 the node<br/> The nodeName property specifies name of the node.<br/> The
 nodeValue property specifies value of the node.<br/> The nodeType
 property specifies type of the node.
-</li>
+</li>  <!-- 100 -->
 <li>
 How to get element with id in DOM?<br/> The getElementById() method of
 document object can be used to get element using id. e.g.
@@ -1032,7 +1027,7 @@ dynamically update the content and structure of document while ensuring
 the document is valid.<br/> EVENTS: extents functionality of Events
 specified by DOM level 2.<br/> XPATH: XPATH is a path language that can
 be used to access DOM tree.
-</li>
+</li>  <!-- 104 -->
 <li>
 What are deferred scripts?<br/> By default, Javascript files will
 interrupt parsing of HTML document in order for them to be fetched and
@@ -1074,7 +1069,7 @@ generic collection of elements (in document order) and offers methods
 length property which returns the number of items in the
 collection.<br/> It is not possible to iterate over HTMLCollection list
 using forEach by default.
-</li>
+</li>  <!-- 110 -->
 <li>
 What is NodeList?<br/> NodeList objects are collections of nodes which
 are usually returned by properties such as Node.childNodes and functions
@@ -1085,16 +1080,13 @@ loop over NodeList objects accurately.
 <li>
 What are frames?<br/> Frame divides page into section and in each
 section different page can be displayed.
-</li>
+</li>  <!-- 112 -->
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="8-cookies">
-<ol start="8" type="1">
-<li>Cookies
-</h2>
-<!-- 112 thru 120 -->
+<h2 id="8-cookies">8. Cookies</h2>
+<!-- 113 thru 120 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<ol start="112">
+<ol start="113">
 <li>
 What is cookie?<br/> The Cookies are small items of data that consists
 of name and value pair. Cookies are stored on your computer so that it
@@ -1121,9 +1113,6 @@ as cookies.txt. Different browser store cookies file in a different
 location on disk. For instance, on windows chrome stores the cookies in
 below location, C:&amp;lt;YourUser&gt; Data<br />
 As cookie expires it is no longer saved on hard drive.</li>
-</ol></li>
-</ol></li>
-</ol></li>
 <li>Where are parameters of cookie?<br/> There are six parameters of
 cookie: name, value, expires, path, domain and security.<br/> The name
 and value are required whereas all other parameters are optional.
@@ -1187,13 +1176,10 @@ to local storage; the only difference is data stored in local storage
 has no expiration time whereas data stored in session storage gets
 cleared when the page session ends. Session Storage will cleared when
 the browser is closed.
-</li>
+</li>  <!-- 120 -->
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="9-formValidation">
-<ol start="9" type="1">
-<li>Form validation
-</h2>
+<h2 id="9-formValidation">9. Form validation</h2>
 <!-- 121 thru 130 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="121">
@@ -1248,7 +1234,7 @@ function validateName() {
   Name: &lt;input type=”text” name=”name”&gt;
   &lt;input type=”submit” name=”save”&gt;
 &lt;/form&gt;</pre>
-</li>
+</li>  <!-- 124 -->
 <li>
 How to validate email in the form?<br/> Below function can be used to
 validate email in the form.
@@ -1304,13 +1290,10 @@ How to allow number only in input field?<br/>
   }
  return true;
   }</pre>
-</li>
+</li>  <!-- 130 -->
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="10-errorHandling">
-<ol start="10" type="1">
-<li>Error and Exception Handling
-</h2>
+<h2 id="10-errorHandling">10. Error and Exception Handling</h2>
 <!-- 131 thru 135 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="131">
@@ -1354,19 +1337,17 @@ code in finally block will always be executed regardless of the
 occurrence of an error. The finally block is usually used to complete
 the remaining task or reset variables that might have changed before
 error occurred in try block.
-</li>
+</li>  <!-- 134 -->
 <li>
 How to throw exceptions programmatically?<br/> It is possible to throw
 exceptions programmatically using “throw” statement.<br/> There is no
 restriction on data type that can be thrown as an exception. e.g.
 <pre>throw “error occurred!!”;
 throw new SyntaxError(“syntax error occurred!!”);</pre>
-</li>
+</li>  <!-- 135 -->
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="11-debug">
-  <ol start="11" type="1">
-    <li>Debugging</h2>
+<h2 id="11-debug">11. Debugging</h2>
 <!-- 136 thru 145 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="136">
@@ -1410,7 +1391,7 @@ throw new SyntaxError(“syntax error occurred!!”);</pre>
       suited to your own needs</li>
   </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="12-ajax"><ol start="12" type="1"><li>AJAX overview</h2>
+<h2 id="12-ajax">12. AJAX overview</h2>
 <!-- 146 thru 151 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="146">
@@ -1503,11 +1484,7 @@ throw new SyntaxError(“syntax error occurred!!”);</pre>
 Includes Angular 8, 7, 6, 5, 4 and 2<br/> Core Java Interview Questions and Answers: Includes Java 
 12, 11, 10, …<br/>
 That does it. the end…
-</p></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
+</p>
 
 <h6>Last Updated 9/18/2024 Wed 12+pm</h6>
 <h6>Last Updated 6/23/2026 Tue 2+pm</h6>
