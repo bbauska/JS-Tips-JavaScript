@@ -42,9 +42,9 @@ a[href]:hover {
 div {
   float: left; }
 
-h1 { font-size: 21px;
+h1 { font-size: 23px;
      font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; }
-h2 { font-size: 18px;
+h2 { font-size: 21px;
      font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; }
 h3 { font-size: 17px;
      font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; }
@@ -58,30 +58,30 @@ h6 { font-size: 10px;
 body {
   font-family: Bahnschrift, Inter, Helvetic, sans-serif;
   font-size: 1.2rem;
-  background-color: #eeeeee;  /* very light gray */
+  background-color: #f3f3f3;  /* very light gray (mostly white) */
   color: #000000;  /* black */
   text-align: left;
   padding: 10px;
   }
 
-  #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 11px;
-    border: none;
-    outline: none;
-    background-color: #8b0000;  /* dark red */
-    color: #fdfeff;  /* very pale (mostly white) blue */
-    cursor: pointer;
-    padding: 10px;  /* 15px */
-    border-radius: 1px;  /* 4px */
-  }
-  #myBtn:hover {
-    background-color: #ff9d9d;  /* pale red/pink tone, 555 = very dark gray */
-  }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 11px;
+  border: none;
+  outline: none;
+  background-color: #8b0000;  /* dark red */
+  color: #fdfeff;  /* very pale (mostly white) blue */
+  cursor: pointer;
+  padding: 10px;  /* 15px */
+  border-radius: 1px;  /* 4px */
+}
+#myBtn:hover {
+  background-color: #ff9d9d;  /* pale red/pink tone, 555 = very dark gray */
+}
 
 details {
   font: 11px Inter, sans-serif, Bahnschrift, Calibri;
@@ -90,21 +90,21 @@ details {
 details > summary {
   padding: 2px 6px;
   width: max-content;  /* 12em */
-  background-color: #eee;  /* very light gray */
+  background-color: #f3f3f3;  /* very light gray (mostly white) */
   border: none;
   box-shadow: 3px 3px 4px #00008b;  /* dark blue */
   cursor: pointer;
 }
 details > p {
   border-radius: 0 0 10px 10px;
-  background-color: #fff;  /* white */
+  background-color: #ffffff;  /* white */
   padding: 2px 6px;
   margin: 0;
-  box-shadow: 3px 3px 4px #0008b;  /* dark blue */
+  box-shadow: 3px 3px 4px #0008b1;  /* dark blue */
   cursor: pointer;
 }
 details[open] > summary {
-  background-color: yellow;
+  background-color: #ffff00;  /* yellow */
 }
 
 pre, code {
