@@ -4,33 +4,33 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of js-tips.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <head>
   <meta charset="utf-8" />
+  <!-- shortcut icon, viewport, author, title, desc, icons for apple, android, microsoft, tile color/image -->
   <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Brian Bauska (bbauska)" />
   <meta name="title" content="JavaScript Tips" />
   <meta name="description" content="JavaScript (JS) Tips - first 151 'things to know' with regard to 
     with JavaScript, jQuery, AJAX and JS-related: The course objective is to familiarize viewers with 
     all things JavaScript." />
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-	
+  <!-- title and stylesheet -->
   <title>JavaScript Tips</title>
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
@@ -473,14 +473,18 @@
       However, null === undefined will return false.</li>
     <li>What are escape characters?<br/> Escape characters (backslash) is used before special characters 
       like ampersand, single quotes, double quotes and apostrophes to display them.<br/> e.g.<br/> 
-      console.log(‘I’m Brian
-      Bauska’); ☐ Correct syntax<br/> console.log(‘I’m Brian Bauska’); ☐
-      Syntax error<br/> In above example, if backslash is not used before
+      <pre>console.log(‘I’m Brian Bauska’);</pre>
+	  ☐ Correct syntax<br/> 
+	  <pre>console.log(‘I\’m Brian Bauska’);</pre>
+	  ☐ Syntax error<br/> In above example, if backslash is not used before
       single quotes this line will give syntax error.</li>
     <li>How to create array in javascript?<br/> You can define arrays using the array literal 
-      as follows-<br/> var a = [];<br/> var b = [1, 2, 3];</li>
+      as follows-<br/> 
+	  <pre>var a = [];
+	  var b = [1, 2, 3];</pre></li>
     <li>How to create three dimensional array?<br/> You can define three dimensional arrays 
-      using the array as follows:<br/> var threedimensionalarray = [[[]]];</li>
+      using the array as follows:<br/> 
+	  <pre>var threedimensionalarray = [[[]]];</pre></li>
     <li>What are the variable naming conventions in JavaScript?<br/> The following rules are 
       to be followed while naming variables in JavaScript:<br/> You are not allowed to use 
       any of the reserved keyword as variable name. JavaScript variable names should not begin 
@@ -498,11 +502,19 @@
       in program, it is used to perform specific task.</li>
     <li>What are types of functions in Javascript?<br> Below are the types of functions:<br> 
       <b>Named</b>: Functions which have name at the time of definition are named functions.<br/> 
-      e.g. function print() {<br> ​
-      console.log(“This is named function!!!”);<br/> }<br/> <b>Anonymous</b>:
-      Functions which do not have names are anonymous functions.<br/> var
-      print=function() {<br/> ​ console.log(“This is anonymous
-      function!!!”);<br/> }
+      e.g.<br>
+	  <pre>
+	  function print() {
+        console.log(“This is named function!!!”);
+	  }
+	  </pre>
+	  <b>Anonymous</b>:<br>
+      Functions which do not have names are anonymous functions.
+	  <pre>
+	  var print=function() {
+	    console.log(“This is anonymous function!!!”); 
+	  }
+	  </pre>
     </li>
     <li>What are frequently used built-in global functions?<br/> Alert(), prompt(),isNan(), eval(), 
       isFinite(),confirm(), parseInt(), parseFloat(), escape(), unescape() are most frequently used 
@@ -518,13 +530,21 @@
       cancel. When you click the Ok button, the function returns true. When you click cancel button 
       function returns false.</li>
     <li>What is charAt?<br/> The charAt() function returns character from specified index.<br/> 
-      e.g.<br/> ​ ​ var str=”Pratik”;<br/> ​ ​
-      console.log(str.charAt(0));<br/> ​ ​ Output :<br/> ​ ​ P</li>
+      e.g.<br/>
+	  <pre>
+	  var str=”Pratik”;
+      console.log(str.charAt(0));
+	  </pre>
+	  Output:
+	  ​ P</li>
     <li>What is indexOf?<br/> This function returns the index within the calling string object of 
-      first occurrence of the specified value and returns index of found occurrence or -1 if not 
-      found.<br/> e.g.<br/> 
-    ​ ​ var str=”This is javascript book”;<br/> ​ ​ console.log(str
-      .indexOf(“javascript”));<br/> ​ ​ Output:<br/> ​ ​ 8
+      first occurrence of the specified value and returns index of found occurrence or -1 if not found.<br/>
+	  e.g.<br/>
+	  <pre>
+    ​ ​ var str=”This is javascript book”;
+	​ ​ console.log(str.indexOf(“javascript”));
+      </pre>
+      Output:<br/> ​ ​ 8
     </li>  <!-- 45 -->
     <li>
       What are function scopes?<br/> Scope defines accessibility of function
@@ -571,23 +591,31 @@
       What is callback function?<br/> A function passed into another function
       as an argument, which is then invoked inside the outer function to
       complete some kind action is called as callback function.<br/> e.g.<br/>
-      function showName(name) {<br/> alert(‘User name is:’ + name);<br/>
-      }<br/> function displayName(callback) {<br/> var name = prompt(‘Please
-      enter name to be displayed’);<br/> callback(name);<br/> }<br/>
+	  <pre>
+      function showName(name) {
+	    alert(‘User name is:’ + name);
+      }
+	  function displayName(callback) {
+	    var name = prompt(‘Please enter name to be displayed’);
+		callback(name);
+	  }
       displayName(showName);
+	  </pre>
     </li>
     <li>
       What is setTimeout function?<br/> The setTimeout() function executes
-      function at specified interval.<br/> setTimeout(expression,
-      timeout);<br/> Here, expression is the function/code that is called only
+      function at specified interval.<br/> 
+	  <pre>setTimeout(expression, timeout);</pre>
+      Here, expression is the function/code that is called only
       once and timeout is number of milliseconds to wait before calling the
       function. The clearTimeout() function is used to deactivate or cancel
       timer set by setTimeout() fuction.
     </li>  <!-- 50 -->
     <li>
       What is setInterval function?<br/> The setInterval() function executes a
-      function after a specified time interval.<br/> ​ setInterval(expression,
-      timeout);<br/> Here, expression specifies function/code to be called
+      function after a specified time interval.<br/>
+	  <pre>setInterval(expression, timeout);</pre> 
+	  Here, expression specifies function/code to be called
       after particular time interval and timeout specifies the time interval
       between function calls.<br/> The clearInterval() function is used to
       cancel or deactivate the timer set by setInterval() function.
@@ -616,7 +644,8 @@
     <li>What are Events?<br/> Events are actions or occurrences that happen in the system you are 
       programming to which you can respond in some way. Events are handled by function known as 
       event handler.</li>
-    <li>What are different events in Javascript?<br/> Few of the important events are listed below:<br/>
+    <li>What are different events in Javascript?<br/>  
+	A few of the important events are listed below:<br/>
       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       <b><i>Input Events</i></b><br/>
       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -665,24 +694,29 @@
   <li>What is addEventListener() method?<br/> The addEventListener() method attaches an event handler to 
     specified element. You can add multiple event handlers to one element. It is possible to add event 
     listener to any DOM object. e.g.
-<pre>document.getElementById(“someUniqueDivId”).addEventListener(“click”, respondtoclick);
-function respondtoclick() {
-  console.log(“Do some stuff!!!”);
-}</pre>
+  <pre>
+  document.getElementById(“someUniqueDivId”).addEventListener(“click”, respondtoclick);
+  function respondtoclick() {
+    console.log(“Do some stuff!!!”);
+  }</pre>
   </li>  <!-- 58 -->
   <li>How to remove event listener from any element?<br/> The removeEventListener() is an inbuilt function 
     in JavaScript which removes an event handler from an element for attached event. Below example show
     how to remove event listener which was added in previous example. e.g. 
-<pre>document.getElementById(“someUniqueDivId”).removeEventListener("click", respondtoclick);</pre>
+  <pre>document.getElementById(“someUniqueDivId”).removeEventListener("click", respondtoclick);</pre>
   </li>
   <li>What are different key codes?<br/> It is necessary to know the codes associated with keys to 
     identify which key is pressed in the code.<br/>
     Below table gives key codes:<br/></li>  <!-- 60 -->
-</ol>
+  </ol>
   <ol start="61">
-<li>
-Key CodeKey CodeKey CodeKey Code backspace 8 A 65 numpad 0 96 semi-colon
-186 Tab 9 B 66 numpad 1 97 equal sign 187 Enter 13 C 67 numpad 2 98
+  <li>Key CodeKey CodeKey CodeKey Code<br>
+  backspace 8 A 65 
+  numpad 0 96 
+  semi-colon 186 
+  Tab 9 B 66 
+  numpad 1 97 
+  equal sign 187 Enter 13 C 67 numpad 2 98
 comma 188 Shift 16 D 68 numpad 3 99 dash 189 Ctrl 17E 69numpad 4
 100period 190 Alt 18F 70numpad 5 101forward slash 191 pause/break 19G
 71numpad 6 102grave accent 192 caps lock 20H 72numpad 7 103open bracket
