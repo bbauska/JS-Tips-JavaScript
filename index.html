@@ -388,24 +388,24 @@
     it for storing data.<br/> Below is syntax to declare variable: var variablename;<br/> 
     Here var is keyword and variablename is name of the variable. You can also define multiple
     variables using single statement as:<br/>
-    <pre>var variable1, variable2, variable3;</pre><br/>
+    <pre>var variable1, variable2, variable3;</pre>
     Value can be assigned to variable as:
     <pre>var variablename = value;</pre>
     </li>
-    <li>What is var?<br/> The var statement declares a variable and can also optionally initialize 
+    <li>What is var?<br/>
+	  The var statement declares a variable and can also optionally initialize 
       its value.<br/>
       Variables are declared using var as below,<br/>
-      <pre>
-      var varname1 &lbrack;= value1&rbrack; &lbrack;, varname2 &lbrack; = value2&rbrack; … &lbrack;, 
-      varnameN &lbrack;= valueN&rbrack;&amp;rback;&rbrack;;
-      </pre>
+      <pre>var varname1 [= value1] [, varname2 [ = value2] … [, varnameN [= valueN]];</pre>
     </li>
-    <li>What is let?<br/> The ‘let’ allows you to declare variables that are limited in scope 
+    <li>What is let?<br/> 
+	  The ‘let’ allows you to declare variables that are limited in scope 
       to the particular block, expression on which it is used or statement. Variables are declared 
       using let as below,<br/>
       <pre>let var1 [= value1] [, var2 [= value2]] [, …, varN [= valueN];</pre>
-    </li>
-    <li>What is const?<br/> Constants are block-scoped, much like variables defined using the 
+    </li>  <!-- 17 -->
+    <li>What is const?<br/> 
+	  Constants are block-scoped, much like variables defined using the 
       let statement. The value of a constant cannot change through reassignment, and it can’t 
       be re-declared.</li>
     <li>What is difference between let and var?<br/> The variable defined with var is available 
@@ -447,12 +447,12 @@
       are jump statements.</li>
     <li>What is break statement?<br/> Break statement stops execution of loop entirely.</li>
     <li>What is continue statement?<br/> Continue statement stops execution of current iteration in a 
-      loop and continues with next iteration of loop.</li>
+      loop and continues with next iteration of loop.</li>  <!-- 26 -->
     <li>What is the difference between comparing variables using “==” and “===” operator? The ‘==’ 
       operator tests for abstract equality i.e. it does the required type conversions before doing 
       the equality comparison. But the ‘===’ operator tests for strict equality i.e. it will not do 
       the type conversion thus if the two values are not of the same type, when compared, it will 
-      return false.</li>
+      return false.</li>  <!-- 27 -->
     <li>What is typeof operator?<br/> The typeof operator is used to get the data type of its operand. 
       The operand can be either a literal or a data structure such as variable, function or an object. 
       e.g.<br/>
@@ -461,8 +461,10 @@
     <li>What is variable hoisting?<br/> In Javascript regardless of where the actual declaration has been 
       made, all variable declarations that are using var, are hoisted/lifted to the top of their 
       functional/local scope (if declared inside a function) or to the top of their global scope (if
-      declared outside of a function). This lifting of scopes is called hoisting. Hence,<br/> ​bla = 2;<br/>
-      var bla;<br/> // …is implicitly understood as:<br/> ​ var bla;<br/> bla = 2;</li>
+      declared outside of a function). This lifting of scopes is called hoisting. Hence,<br/> 
+	  <pre>​bla = 2;
+      var bla;  // …is implicitly understood as:
+	  var bla; bla = 2;</pre></li>
     <li>What is difference between undefined and null?<br/> The undefined means a variable has been declared 
       but has no value has yet been assigned. On the other hand, null is basically a value which has been 
       assigned. Also, undefined is a type itself (undefined) while null is an object. Unassigned variables 
@@ -481,7 +483,7 @@
     <li>How to create array in javascript?<br/> You can define arrays using the array literal 
       as follows-<br/> 
 	  <pre>var a = [];
-	  var b = [1, 2, 3];</pre></li>
+	  var b = [1, 2, 3];</pre></li>  <!-- 33 -->
     <li>How to create three dimensional array?<br/> You can define three dimensional arrays 
       using the array as follows:<br/> 
 	  <pre>var threedimensionalarray = [[[]]];</pre></li>
