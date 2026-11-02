@@ -15,7 +15,7 @@ var rightNow = new Date();
   src="./images/tips-date-01.jpg?raw=true"
   title="Date object (full)"
   alt="Date object (full)."
-  style="width:100%;" />
+  style="width:50%;" />
 </a>
 
 <p>Note that JavaScript gets this information from the user's computer. It is only as accurate
@@ -78,7 +78,7 @@ Saturday. This means that you'll need a bit of code to convert it back into a da
   src="./images/tips-date-02.jpg?raw=true"
   title="Date extraction methods"
   alt="Date extraction methods."
-  style="width:100%;" />
+  style="width:50%;" />
 </a>
 
 <p>Let's look at the rest of the extraction methods. Like
@@ -198,7 +198,7 @@ separating hours, minutes, and seconds.</p>
   src="./images/tips-date-03.jpg?raw=true"
   title="Change Date elements"
   alt="Change Date elements."
-  style="width:100%;" />
+  style="width:50%;" />
 </a>
 <!--  loading="lazy" -->
 
