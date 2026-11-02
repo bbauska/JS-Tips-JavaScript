@@ -34,6 +34,7 @@ round down. Here's the code for our virtual die throw.</p>
 2 var improvedNum = (bigDecimal * 6) + 1;
 3 var numberOfStars = Math.floor(improvedNum);
 </pre>
+
 <p>This is what happens in the code above, line by line:</p>
 
 <ol>
@@ -41,7 +42,7 @@ round down. Here's the code for our virtual die throw.</p>
   <li>2. Converts the 16-place decimal to a number ranging from 0.0000000000000000 through 
     5.9999999999999999, then adds 1, so the range winds up 1.0000000000000000 through 
     6.9999999999999999. This number is assigned to the variable improvedNum.<li>
-  <li>3. Rounds the value represented by improvedNum down to the nearest integer that ranges   from 1 through 6.</li>
+  <li>3. Rounds the value represented by improvedNum down to the nearest integer that ranges from 1 through 6.</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>Getting the current date and time</h1>
@@ -58,11 +59,12 @@ var rightNow = new Date();
 as the computer's date and time settings. For example, if the user just moved from the U.S.
 West Coast to the U.S. East Coast and hasn't reset the time zone on his computer, the computer
 will still be on Pacific Time. The Date object, too, will be on Pacific Time.</p>
-<p>The Date object may resemble a string, but it isn't one. For example, you can't use
-methods on it like charAt, indexOf, or slice.</p>
 
-<p>If you need the Date object to be a string, you can convert it to one the same way you
-convert a number to a string.</p>
+<p>The Date object may resemble a string, but it isn't one. For example, you can't use methods on it like 
+charAt, indexOf, or slice.</p>
+
+<p>If you need the Date object to be a string, you can convert it to one the same way you convert a number 
+to a string.</p>
 
 <pre>var dateString = rightNow.toString();</pre>
 
@@ -76,10 +78,12 @@ without converting it to a string.</p>
 chapter I'll get you started with the first piece. In the next chapter I'll cover the rest.
 The following code creates a new Date object, assigns it to the variable rightNow,
 extracts the day of the week, and assigns the day of the week to the variable theDay.</p>
+
 <pre>
   1 var rightNow = new Date();
   2 var theDay = rightNow.getDay();
 </pre>
+
 <p>In the diagram of the Date object that I showed you above, the day of the week was
 represented as "Mon." But when you extract the day of the week from the object, it's
 represented as a number. Days are designated by a number from 0 for Sunday through 6 for
@@ -87,12 +91,10 @@ Saturday. This means that you'll need a bit of code to convert it back into a da
 "Mon."</p>
 
 <pre>
-<ol>
-  <li>1 var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  <li>2 var now = new Date();
-  <li>3 var theDay = now.getDay();
-  <li>4 var nameOfToday = dayNames[theDay];
-</ol>
+  1 var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  2 var now = new Date();
+  3 var theDay = now.getDay();
+  4 var nameOfToday = dayNames[theDay];
 </pre>
 
 <p>Here's what's going on:</p>
@@ -103,12 +105,12 @@ Saturday. This means that you'll need a bit of code to convert it back into a da
   <li>4. Uses the day number as an index to specify the correct array element, i.e. the day name.</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-# Extracting parts of the date and time
+<h1>Extracting parts of the date and time</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-1 var d = new Date();
-2 var currentMonth = d.getMonth();
-
+<pre>
+  1 var d = new Date();
+  2 var currentMonth = d.getMonth();
+</pre>
 <p>getDate gives you a number for the day of the month.</p>
 
 var dayOfMonth = d.getDate();
