@@ -13,7 +13,6 @@ var rightNow = new Date();
 <a href="https://www.w3.org/2009/cheatsheet/" target="_blank" rel="noopener noreferrer">
 <img class="displayed border"
   src="./images/tips-date-01.jpg?raw=true"
-<!--  loading="lazy" -->
   title="Date object (full)"
   alt="Date object (full)."
   style="width:100%;" />
@@ -77,7 +76,6 @@ Saturday. This means that you'll need a bit of code to convert it back into a da
 <a href="https://www.w3.org/2009/cheatsheet/" target="_blank" rel="noopener noreferrer">
 <img class="displayed border"
   src="./images/tips-date-02.jpg?raw=true"
-<!--  loading="lazy" -->
   title="Date extraction methods"
   alt="Date extraction methods."
   style="width:100%;" />
@@ -198,13 +196,11 @@ separating hours, minutes, and seconds.</p>
 <a href="https://www.w3.org/2009/cheatsheet/" target="_blank" rel="noopener noreferrer">
 <img class="displayed border"
   src="./images/tips-date-03.jpg?raw=true"
-<!--  loading="lazy" -->
   title="Change Date elements"
   alt="Change Date elements."
   style="width:100%;" />
 </a>
-
-<!-- tips-date-03.jpg - image of example and results change date/time -->
+<!--  loading="lazy" -->
 
 <p>setFullYear sets the year of an existing Date object without changing any other element.</p>
 
@@ -223,9 +219,9 @@ Date object without changing any other element.
 </pre>
 
 <p>Line 1 creates a new Date object for the current moment. Line 2 changes the month of the Date object to 
-11 (December), leaving all other elements of the Date object intact. 
-setDate sets the day of the month of an existing Date object without changing any other
-element.</p>
+11 (December), leaving all other elements of the Date object intact.</p>
+
+<p>setDate sets the day of the month of an existing Date object without changing any other element.</p>
 
 <pre>
 1 var d = new Date();
@@ -241,9 +237,9 @@ setHours sets the hours of an existing Date object without changing any other el
 2 d.setHours(13);
 </pre>
 
-<p>Line 1 creates a new Date object for the current moment. Line 2 changes the hours of the
-Date object to the 13th hour (1 p.m.), leaving all other elements of the Date object intact.
-setMinutes sets the minutes of an existing Date object without changing any other
+<p>Line 1 creates a new Date object for the current moment.</p>
+<p>Line 2 changes the hours of the Date object to the 13th hour (1 p.m.), leaving all other elements of 
+the Date object intact. setMinutes sets the minutes of an existing Date object without changing any other 
 element.</p>
 
 <pre>
@@ -251,9 +247,9 @@ element.</p>
 2 d.setMinutes(05);
 </pre>
 
-<p>Line 1 creates a new Date object for the current moment. Line 2 changes the minutes of
-the Date object to 5 minutes after the hour, leaving all other elements of the Date object intact.
-setSeconds sets the seconds of an existing Date object without changing any other
+<p>Line 1 creates a new Date object for the current moment.</p>
+<p>Line 2 changes the minutes of the Date object to 5 minutes after the hour, leaving all other elements of 
+the Date object intact. setSeconds sets the seconds of an existing Date object without changing any other 
 element.</p>
 
 <pre>
@@ -261,9 +257,9 @@ element.</p>
 2 d.setSeconds(55);
 </pre>
 
-<p>Line 1 creates a new Date object for the current moment. Line 2 changes the seconds of
-the Date object to the 55 seconds after the minute, leaving all other elements of the Date object
-intact.</p>
+<p>Line 1 creates a new Date object for the current moment.</p>
+<p>Line 2 changes the seconds of the Date object to the 55 seconds after the minute, leaving all other elements 
+of the Date object intact.</p>
 
 <p>setMilliseconds sets the milliseconds of an existing Date object without changing any other element.</p>
 
@@ -272,6 +268,6 @@ intact.</p>
 2 d.setMilliseconds(867);
 </pre>
 
-<p>Line 1 creates a new Date object for the current moment. Line 2 changes the milliseconds
-of the Date object to 867 milliseconds after the second, leaving all other elements of the Date
-object intact.</p>
+<p>Line 1 creates a new Date object for the current moment.</p>
+<p>Line 2 changes the milliseconds of the Date object to 867 milliseconds after the second, leaving all 
+other elements of the Date object intact.</p>
